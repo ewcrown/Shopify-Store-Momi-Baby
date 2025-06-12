@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "navigation": {
+          "type": "navigation",
+          "disabled": true,
+          "settings": {}
+        },
+        "comments": {
+          "type": "comments",
+          "disabled": true,
+          "settings": {
+            "show_gravatar": true,
+            "comments_per_page": 5
+          }
+        },
+        "product_bpWfpc": {
+          "type": "product",
+          "settings": {
+            "product": "glass-baby-bottle"
+          }
+        },
+        "product_byrg7c": {
+          "type": "product",
+          "settings": {
+            "product": "bpa-free-plastic-baby-bottle"
+          }
+        }
+      },
+      "block_order": [
+        "navigation",
+        "comments",
+        "product_bpWfpc",
+        "product_byrg7c"
+      ],
+      "custom_css": [
+        ".product-card {border: 1px solid #653490; padding: 8px; border-radius: 6px; box-shadow: 0px 6px 12px rgba(101, 52, 144, 0.25); /* Slightly stronger shadow */}",
+        ".product-card__info {display: flex; flex-direction: column; align-items: center;}",
+        ".product-card__info .price-list {display: flex; justify-content: center; width: 100%; text-align: center;}",
+        ".v-stack .price-list .text-subdued {font-size: 18px !important; /* Change the font size */ text-align: center !important; /* Keep the alignment centered */}"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "layout": "content_first",
+        "show_author": true,
+        "show_date": true,
+        "show_comments_count": false,
+        "show_share_buttons": false,
+        "banner_background": "",
+        "banner_text_color": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_width": "750px"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,218 @@
+<search-drawer >
+  <form action="{{ routes.search_url }}" method="get" class="v-stack gap-5 sm:gap-8" role="search">
+    <div class="search-input">
+      <input type="search" name="q" placeholder="{{ 'search.general.search_placeholder' | t }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="{{ 'search.general.title' | t | escape }}">
+      
+     {% comment %} <button type="reset" class="text-subdued">{{ 'search.general.clear' | t }}</button>{% endcomment %}
+      <button type="reset" is="close-button" class="custom-search-drawer">
+       {% comment %} <span class="sr-only">{{ 'general.accessibility.close' | t }}</span>{% endcomment %}
+       <style>
+        .search-icon-custom{
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        
+        .custom-search-drawer {
+            opacity: 1 !important;
+        }
+        .search-input>input:not(:placeholder-shown)~[type=reset] .search-icon-custom{
+        opacity: 0;
+        }
+        .search-input>[type=reset] .search-icon-custom{
+        opacity: 1;
+        }
+        .search-input>[type=reset] .icon-close {
+            opacity: 0;
+        }
+        .search-input>input:not(:placeholder-shown)~[type=reset] .icon-close {
+            opacity: 1;
+        }
+         </style>
+        
+          <div class="" style="position: relative">
+            {%- render 'icon' with 'close' -%}
+            <svg class="search-icon-custom" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+            <path d="M10.3744 17.8C8.92396 17.8 7.50613 17.3699 6.30017 16.5641C5.09421 15.7583 4.15428 14.613 3.59924 13.273C3.04419 11.933 2.89897 10.4585 3.18193 9.03598C3.46489 7.61345 4.16332 6.30677 5.1889 5.28119C6.21449 4.2556 7.52116 3.55717 8.94369 3.27421C10.3662 2.99125 11.8407 3.13648 13.1807 3.69152C14.5207 4.24656 15.666 5.1865 16.4718 6.39246C17.2776 7.59842 17.7077 9.01624 17.7077 10.4666C17.7055 12.4109 16.9322 14.2749 15.5574 15.6497C14.1826 17.0245 12.3186 17.7978 10.3744 17.8ZM10.3744 4.96664C9.28656 4.96664 8.22319 5.28921 7.31872 5.89355C6.41425 6.4979 5.7093 7.35689 5.29301 8.36188C4.87673 9.36687 4.76781 10.4727 4.98003 11.5396C5.19225 12.6065 5.71608 13.5865 6.48527 14.3557C7.25445 15.1249 8.23446 15.6487 9.30136 15.861C10.3683 16.0732 11.4741 15.9643 12.4791 15.548C13.4841 15.1317 14.3431 14.4267 14.9474 13.5223C15.5518 12.6178 15.8744 11.5544 15.8744 10.4666C15.8729 9.00839 15.293 7.61029 14.2618 6.57916C13.2307 5.54802 11.8326 4.96809 10.3744 4.96664Z" fill="#653490"/>
+            <path d="M18.6248 19.6333C18.3817 19.6332 18.1486 19.5366 17.9767 19.3647L14.3101 15.698C14.1431 15.5251 14.0507 15.2936 14.0528 15.0532C14.0549 14.8129 14.1513 14.583 14.3212 14.413C14.4912 14.2431 14.7211 14.1467 14.9614 14.1446C15.2018 14.1425 15.4333 14.2349 15.6062 14.4019L19.2729 18.0685C19.401 18.1967 19.4883 18.36 19.5237 18.5378C19.559 18.7156 19.5409 18.8999 19.4715 19.0674C19.4021 19.2348 19.2847 19.378 19.134 19.4787C18.9833 19.5794 18.8061 19.6332 18.6248 19.6333Z" fill="#653490"/>
+          </svg>
+        </div>
+      </button>
+    </div>
+
+    <style>
+      #shopify-section-{{ section.id }} {
+        --predictive-search-column-count: 3;
+      }
+    </style>
+
+    <input type="hidden" name="type" value="article">
+
+    <predictive-search class="predictive-search" section-id="{{ section.id }}">
+      {%- if section.settings.search_menu.links.size > 0 -%}
+        <div slot="idle">
+          <div class="v-stack gap-3 sm:gap-4">
+            {%- if section.settings.search_menu_show_title -%}
+              <p class="bold text-subdued">{{ section.settings.search_menu.title }}</p>
+            {%- endif -%}
+
+            <ul class="v-stack gap-2 sm:gap-3" role="list">
+              {%- for link in section.settings.search_menu.links -%}
+                <li>
+                  <a href="{{ link.url }}" class="h5">
+                    <span class="reversed-link hover:show">{{ link.title }}</span>
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div slot="results">
+        {%- if predictive_search.performed -%}
+          {%- assign results_count = 0 -%}
+          {%- assign categories_count = 0 -%}
+
+          {%- for resource in predictive_search.resources -%}
+            {%- assign results_count = results_count | plus: resource.last.size -%}
+
+            {%- if resource.last.size > 0 -%}
+              {%- assign categories_count = categories_count | plus: 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if results_count == 0 -%}
+            <div class="empty-state">
+              <p class="h6">{{ 'search.general.no_results' | t }}</p>
+            </div>
+          {%- else -%}
+            <span class="sr-only" role="status">{{ 'search.results_count' | t: count: results_count, terms: predictive_search.terms }}</span>
+
+            <x-tabs class="predictive-search__tabs">
+              <template>
+                <style>
+                  [role="tablist"]::-webkit-scrollbar {display: none;}
+
+                  :host {
+                    --predictive-search-column-width: {% if categories_count > 2 %}0px{% else %}400px{% endif %};
+                  }
+                </style>
+
+                <slot role="tablist" part="tab-list" name="title"></slot>
+                <slot part="tab-panels" name="content"></slot>
+              </template>
+              {%- if predictive_search.resources.articles.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.posts' | t -}}</button>
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-items' for predictive_search.resources.articles as item, type: 'article' -%}
+                </div>
+              {%- endif -%}
+
+              
+              {%- if predictive_search.resources.pages.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.pages' | t -}}</button>
+                </div>
+
+                <div slot="content" class="predictive-search__tab-content v-stack gap-2 justify-start">
+                  {%- render 'predictive-search-result-items' for predictive_search.resources.pages as item, type: 'page' -%}
+                </div>
+              {%- endif -%}
+            </x-tabs>
+          {%- endif -%}
+        {%- elsif search.performed -%}
+          {%- if search.results_count > 0 -%}
+            <x-tabs class="predictive-search__tabs">
+              <template>
+                <style>
+                  [role="tablist"]::-webkit-scrollbar {display: none;}
+
+                  :host {
+                    --predictive-search-column-width: {% if categories_count > 2 %}0px{% else %}400px{% endif %};
+                  }
+                </style>
+
+                <slot role="tablist" part="tab-list" name="title"></slot>
+                <slot part="tab-panels" name="content"></slot>
+              </template>
+
+              
+              {%- assign article_results = search.results | where: 'object_type', 'article' | slice: 0, 10 -%}
+              {%- if article_results.size > 0 -%}
+                <div class="predictive-search__tab-item" slot="title">
+                  <button type="button" class="h5">{{- 'search.general.posts' | t -}}</button>
+                </div>
+
+                <div class="predictive-search__tab-content v-stack gap-4 sm:gap-6" slot="content">
+                  {%- render 'predictive-search-result-items' for article_results as item, type: 'article' -%}
+                </div>
+              {%- endif -%}
+
+             
+            </x-tabs>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+
+      <div slot="loading">
+        <div class="v-stack gap-5 sm:gap-6 {% if section.settings.full_width %}md:hidden{% endif %}">
+          <div class="h-stack gap-4 sm:gap-5">
+            {%- for i in (1..3) -%}
+              <span class="skeleton skeleton--tab"></span>
+            {%- endfor -%}
+          </div>
+
+          <div class="v-stack gap-4 sm:gap-6">
+            {%- for i in (1..4) -%}
+              <div class="h-stack align-center gap-5 sm:gap-6">
+                <span class="skeleton skeleton--thumbnail"></span>
+
+                <div class="v-stack gap-3 w-full">
+                  <span class="skeleton skeleton--text" style="--skeleton-text-width: 20%"></span>
+                  <span class="skeleton skeleton--text" style="--skeleton-text-width: 80%"></span>
+                  <span class="skeleton skeleton--text" style="--skeleton-text-width: 40%"></span>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+
+        {%- if section.settings.full_width -%}
+          <div class="predictive-search__skeleton-full-width hidden">
+            {%- for i in (1..3) -%}
+              <div class="v-stack gap-8">
+                <span class="skeleton skeleton--tab"></span>
+
+                {%- for i in (1..4) -%}
+                  <div class="h-stack align-center gap-5 sm:gap-6">
+                    <span class="skeleton skeleton--thumbnail"></span>
+
+                    <div class="v-stack gap-3 w-full">
+                      <span class="skeleton skeleton--text" style="--skeleton-text-width: 20%"></span>
+                      <span class="skeleton skeleton--text" style="--skeleton-text-width: 80%"></span>
+                      <span class="skeleton skeleton--text" style="--skeleton-text-width: 40%"></span>
+                    </div>
+                  </div>
+                {%- endfor -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </predictive-search>
+  </form>
+</search-drawer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(()=>{
+    const closeButton = document.querySelectorAll('button[part="outside-close-button"]');
+    closeButton.style.display = 'none';
+  },1500)
+    
+});
+
+</script>

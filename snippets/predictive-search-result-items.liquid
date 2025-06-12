@@ -1,0 +1,38 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PREDICTIVE SEARCH ITEM
+----------------------------------------------------------------------------------------------------------------------
+
+Renders a single result for the predictive search (this is abstracted as a snippet as this is rendered for both
+native predictive search and for the fallback search in Liquid, for languages that do not support predictive search)
+
+********************************************
+Supported variables
+********************************************
+
+* item: the search result item
+* type: the object type. Can be "product", "query", "article", "collection" or "page"
+{%- endcomment -%}
+
+{%- case type -%}
+
+  {%- when 'article' -%}
+    {%- assign article = item -%}
+
+    <a href="{{ article.url }}" data-instant class="predictive-search-result group">
+      {%- if article.image -%}
+        {{- article.image | image_url: width: article.image.width | image_tag: sizes: '96px', widths: '96,192' -}}
+      {%- endif -%}
+
+      <div class="v-stack justify-items-start gap-2 sm:gap-3">
+        {%- if section.settings.show_article_category and article.tags.size > 0 -%}
+          <span class="badge badge--primary">{{ article.tags | first }}</span>
+        {%- endif -%}
+
+        <span class="bold">
+          <span class="reversed-link">{{ article.title }}</span>
+        </span>
+      </div>
+    </a>
+
+{%- endcase -%}

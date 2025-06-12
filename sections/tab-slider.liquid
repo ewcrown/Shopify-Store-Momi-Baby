@@ -1,0 +1,388 @@
+<style>
+  .carousel-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+    background-color:#653490!important;
+  }
+  .carousel-inner-section {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    max-width: 1640px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .carousel-item-section {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .indicators-heading{
+    padding-top:2rem;
+    padding-bottom:2rem;
+  }  
+  .professional-heading-bg .sub-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-transform: lowercase;
+    font-family: Comfortaa;
+    color: #FFFFFF;
+  }  
+  .professional-heading-bg .indicators-heading .heading {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: lowercase;
+    cursor: pointer;
+  }
+  
+  .professional-heading-bg .indicators-heading .heading.active {
+    color: #FF0099;
+  }
+  
+  .professional-heading-bg .para {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-transform: lowercase;
+    font-family: Comfortaa;
+    color: #FFFFFF;
+  }
+  
+  .professional-carousel-content .carousel-content {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3em;
+    text-transform: lowercase;
+    font-family: Comfortaa;
+    color: #fff;
+  }
+  .professional-carousel-content .carousel-content p{
+    margin-bottom: 10px;
+  }
+/* .professional-carousel-content .carousel-content p:first-letter{
+        text-transform: initial;
+  }  */
+  .professional-carousel-content .carousel-content p{
+      text-transform: initial;
+    font-family: Open Sans, sans-serif !important;
+  }
+  .CarouselWrapper{
+    width: 50%;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+  .CarsouselImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #653490;
+  }
+  .CarsouselImg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display: none;
+  }
+  .professional-heading-bg{
+    position:relative;
+    z-index:2;
+  }
+  .professional-carousel-content{
+    width: 50%;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .carousel-image-wrapper {
+    height: 100%;
+    max-height: 68vh;
+  }
+  .carousel-image-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel-indicators .dot{
+    border-radius: 20px;
+    background: #FFFFFF;
+    width:36px;
+    height:8px;
+    display:block;
+    cursor: pointer;
+  } 
+  .carousel-indicators .dot.active{
+    background: #FF0099;
+  }
+  .carousel-indicators{
+    display:flex;
+    gap:5px;
+    margin-top: 5%;
+  }
+    #shopify-section-template--17369491734699__tab_slider_fVMiWK{
+    background-color:#fff;
+  }
+  .custom-text-wrapper .subtitle{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.25em;
+    text-transform: lowercase;
+    font-family: Comfortaa;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    max-width: 295px;
+}
+ .custom-text-wrapper .content-wrapper li,.professional-carousel-content .tab-title{
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.25em;
+    text-transform: lowercase;
+    }
+  .professional-carousel-content .tab-title{
+     margin-bottom: 0.5rem;
+  }
+  .custom-text-wrapper .content-wrapper ul{
+    margin-bottom: 2rem;
+  }
+
+@media(min-width: 1025px){
+  .carousel-item-section {
+    display: flex;
+  }
+  .content-card {
+    margin-left: 5%;
+  }
+  .carousel-indicators{
+    margin-left: 5%;
+  }
+    .professional-carousel-content .carousel-content{
+    min-height:350px;
+  } 
+}
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+.professional-carousel-content .carousel-content{
+  max-width:75%;
+  margin-left:auto;
+  margin-right:auto;
+}
+    
+  } 
+  @media(max-width:1399.98px){
+    .carousel-inner-section{
+      padding-top: 3.25rem;
+      padding-bottom: 3.25rem;
+    }
+    .professional-carousel-content .carousel-content{
+      font-size:1.8rem;
+    }
+    .professional-heading-bg .indicators-heading .heading{
+      font-size:34px;
+    }
+    .professional-carousel-content .carousel-content {
+      font-size: 16px;
+    }
+  }
+  @media(max-width: 1024px){
+    .carousel-item-section {
+      display: flex;
+      flex-direction: column;
+    }
+    .carousel-inner-section{
+      padding-top: 0;
+      padding-bottom: 2rem;
+    }
+    .CarouselWrapper{
+      padding: 0;
+      max-height: 40vh;
+    }
+    .professional-carousel-content {
+      padding: 3rem 2rem 0;
+    }
+    .CarouselWrapper,
+    .professional-carousel-content{
+      width: 100%;
+    }
+    .professional-carousel-content .carousel-content{
+      font-size:16px;
+    }
+    .custom-text-wrapper .subtitle {
+      font-size: 2rem;
+    }
+    .carousel-indicators {
+      justify-content: center;
+    }
+         .professional-carousel-content .carousel-content{
+    min-height:290px;
+  }
+  }
+  @media(max-width:767px){
+    .custom-text-wrapper .content-wrapper li,
+    .professional-carousel-content .tab-title{
+      font-size: 2.75rem;
+    }
+    .indicators-heading{
+      display:block!important;
+    }
+    .professional-heading-bg .indicators-heading .heading{
+      font-size:20px;
+    }
+    .indicators-heading {
+      padding-top:1rem;
+      padding-bottom:1rem;
+    }
+    .professional-carousel-content .carousel-content{
+      font-size:14px;
+    }
+    .ProfessionalBanner .media-with-text__content .h2{
+      font-size:30px;
+    }
+            .professional-carousel-content .content-card{
+    min-height:340px;
+  }
+    .carousel-indicators{
+      margin-top:2%;
+    }
+  }
+@media(max-width:360px){
+              .professional-carousel-content .content-card{
+    min-height:345px;
+  }
+}
+  
+</style>
+
+
+        <div class="section carousel-section {{ section.settings.class_name }}">
+          <div class="carousel-inner-section">
+            <div class="carousel-item-section active">
+             <div class="CarouselWrapper">
+               <div class="carousel-image-wrapper">
+                  <img src="https://cdn.shopify.com/s/files/1/0539/1004/4843/files/Layer_943_1080x_5f9f9ef0-8661-49f1-87dd-b2bc2f96016f.webp?v=1725036245">
+                </div>
+               {% comment %}
+                 {% for block in section.blocks %}
+                 <div class="momiImg CarsouselImg {% unless forloop.first %}hidden{% endunless %}" data-img="{{ forloop.index }}"><img src="{{ block.settings.bg-image | img_url: 'master' }}"></div>
+                   {% endfor %}
+                
+                  <div class="professional-heading-bg" style="background: url('/image.png');">
+                    {% for block in section.blocks %}
+                      <p class="momi-subheading sub-heading {% unless forloop.first %}hidden{% endunless %}" data-sub="{{ forloop.index }}">
+                          {{ block.settings.subtitle }}
+                      </p>
+                      {% endfor %}
+                      <div class="indicators-heading">
+                        {% for block in section.blocks %}
+                          <h3 class="momi heading {% if block.settings.active_tab %} active{% endif %}" data-head="{{ forloop.index }}">{{ block.settings.tabitem }}</h3>
+                          {% endfor %}
+                         
+                      </div>
+                    {% for block in section.blocks %}
+                      <p class="momi-para para {% unless forloop.first %}hidden{% endunless %}" data-subtitle="{{ forloop.index }}"> {{ block.settings.subtitle2 }}</p>
+                      {% endfor %}
+                  </div>
+                      {% endcomment %}
+             </div>         
+              <div class="professional-carousel-content">
+                 <div class="content-card">
+                   {% for block in section.blocks %}
+                      <div class="momi-carousel carousel-content {% unless forloop.first %}hidden{% endunless %}" data-content="{{ forloop.index }}">
+                        {% if block.settings.tabitem != blank %}
+                        <div class="tab-title">{{ block.settings.tabitem }}</div>
+                        {% endif %}
+                         {{ block.settings.subtext }} 
+                                 {% if block.settings.custom-text != blank %}
+                     <div class="custom-carousel-content {% unless forloop.first %}hidden{% endunless %}" data-content="{{ forloop.index }}">
+                         {{ block.settings.custom-text }}
+                      </div>
+                       {% endif %}
+                      </div>
+                     {% endfor %}
+                  </div>
+                 <div class="carousel-indicators">
+                  <span class="momi-dot dot active" data-indicator="1"></span>
+                  <span class="momi-dot dot" data-indicator="2"></span>
+                  <span class="momi-dot dot" data-indicator="3"></span>
+                  <span class="momi-dot dot" data-indicator="4"></span>
+                  <span class="momi-dot dot" data-indicator="5"></span>
+                </div> 
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+{% schema %}
+  {
+    "name": "Tab Slider",
+    "settings": [
+      {
+                  "type": "text",
+                  "id": "class_name",
+                  "label": "Class Name"
+				},
+    ],
+    "blocks": [
+		{
+          "type": "Text",
+          "name": "Carousel Item",
+          "settings": [
+            
+				{
+                  "type": "image_picker",
+                  "id": "bg-image",
+                  "label": "Bg Image"
+				},
+            		{
+                  "type": "text",
+                  "id": "subtitle",
+                  "label": "Subtitle"
+                },
+                  {
+      "type": "checkbox",
+      "id": "active_tab",
+      "label": "Active tab",
+      "default": false
+    },
+            	{
+                  "type": "text",
+                  "id": "tabitem",
+                  "label": "Tab Name"
+                },
+                {
+                  "type": "text",
+                  "id": "subtitle2",
+                  "label": "Subtitle 2"
+                },
+                   {
+                  "type": "richtext",
+                  "id": "subtext",
+                  "label": "Carousel Text"
+                },
+  	{
+                  "type": "html",
+                  "id": "custom-text",
+                  "label": "Custom Text"
+                },
+			]
+        }
+	],
+      "presets": [
+    {
+      "name": "Tab Slider"
+    }
+  ]
+  }
+{% endschema %}

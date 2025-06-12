@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="{{ 'owl.carousel.min.css' | asset_url }}">
+
+  <div class="section-stack">
+    <div class="blogsheader">
+      <h2 class="h2">more readings</h2>
+    </div>
+    <div class="blog-posts owl-carousel relatedBlog">
+      {% assign related_articles = blog.articles | where: 'tags', current_article.tags %}
+      {% assign limited_articles = related_articles | slice: 0, 3 %}
+      {% for article in limited_articles %}
+        {%- render 'blog-post-card', article: article, heading_size: 'h5', show_date: section.settings.show_date, show_author: section.settings.show_author, show_comments_count: show_comments_count -%}
+      {% endfor %}
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
+<script>
+  $('.relatedBlog').owlCarousel({
+    loop:false,
+    dots: true,
+    margin:30,
+    nav:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+          items:1,
+          margin:0
+        },
+        576:{
+            items:2,
+            margin:10
+        },
+        768:{
+            items:2,
+            margin:20
+          },
+        1025:{
+            items:3
+        }
+    }
+})
+</script> 

@@ -1,0 +1,127 @@
+<style>
+  .newsLetterCard,.followCard {
+    background-color: #EADEEE;
+    padding: 3rem 2.5rem;
+    margin-bottom: 2rem;
+  }
+  p.newsTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+  }
+  .news-menus ul {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .news-menus li {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  .news-menus li:after {
+    content: "|";
+  }
+  .news-menus li:last-child:after {
+    content: unset;
+  }
+  .newsLetterWrapper .footer__newsletter-form .form-control input[type=email] {
+    color: #653490;
+    border-bottom: 1px solid #653490;
+  }
+  .newsLetterWrapper .footer__newsletter-form .form-control label {
+    color: #653490;
+  }
+  .news-menus {
+    margin-bottom: 2rem;
+  }
+  .newsLetterWrapper .footer__newsletter-form .self-submit-button button.circle-chevron {
+    background: url('data:image/svg+xml,<svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.6628 8.68794C25.0533 8.29742 25.0533 7.66425 24.6628 7.27373L18.2988 0.909769C17.9083 0.519244 17.2751 0.519244 16.8846 0.909769C16.4941 1.30029 16.4941 1.93346 16.8846 2.32398L22.5415 7.98084L16.8846 13.6377C16.4941 14.0282 16.4941 14.6614 16.8846 15.0519C17.2751 15.4424 17.9083 15.4424 18.2988 15.0519L24.6628 8.68794ZM0.435547 8.98083L23.9557 8.98084L23.9557 6.98084L0.435547 6.98083L0.435547 8.98083Z" fill="%23FF0099"/></svg>');
+    height: 20px;
+    width: 30px;
+    background-repeat: no-repeat;
+  }
+   .newsLetterWrapper .footer__newsletter-form {
+      max-width: 400px;
+    }
+  .followCard .social-media li a.tap-area {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF0099;
+    border-radius: 8px;
+  }
+  .followCard .social-media li svg path {
+    fill: #EADEEE;
+  }
+@media(min-width: 768px) and (max-width: 1400px){
+  .news-menus li{
+    font-size: 1.5rem;
+  }
+  p.newsTitle {
+    font-size: 2.5rem;
+  }
+}
+</style>
+<div class="newsLetterCard">
+  <div class="news-menus">
+    <p class="newsTitle">stay abreast</p>
+    <ul class="m-list">
+      <li>
+        <a class="inline-block break-all" href="#">our news</a>
+      </li>
+      <li>
+        <a class="inline-block break-all" href="#">promotions</a>
+      </li>
+      <li>
+        <a class="inline-block break-all" href="#">special offers</a>
+      </li>
+    </ul>
+  </div>
+  <div class="newsLetterWrapper">
+    <div class="" {{ block.shopify_attributes }}>
+      {%- if block.settings.image != blank -%}
+        {%- capture sizes -%}{{ block.settings.image_width }}px{%- endcapture -%}
+        {%- capture widths -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 | at_most: block.settings.image.width }}{%- endcapture -%}
+        {%- capture style -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
+        {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', style: style, sizes: sizes, widths: widths -}}
+      {%- endif -%}
+
+      <div class="v-stack gap-6">
+        {%- if block.settings.title != blank -%}
+          <p class="{{ block.settings.heading_size }}">{{- block.settings.title | escape -}}</p>
+        {%- endif -%}
+
+        {%- if block.settings.content != blank -%}
+          <div class="prose text-subdued">
+            {{- block.settings.content -}}
+          </div>
+        {%- endif -%}
+
+        {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+          {%- if form.posted_successfully? -%}
+            {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
+            {%- render 'banner', content: success_message, status: 'success' -%}
+          {%- else -%}
+            {%- if form.errors -%}
+              {%- capture error_message -%}{{ form.errors.translated_fields['email'] }} {{ form.errors.messages['email'] }}{%- endcapture -%}
+              {%- render 'banner', content: error_message, status: 'error' -%}
+            {%- endif -%}
+
+            <input type="hidden" name="contact[tags]" value="newsletter">
+
+            {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
+            {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="followCard">
+  <p class="newsTitle">follow us</p>
+  {%- render 'social-media' -%}
+</div>

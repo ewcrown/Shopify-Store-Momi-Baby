@@ -1,0 +1,109 @@
+<style>
+
+.emailbox{
+  display:none;
+}
+  
+  @media(min-width:991px){
+      .column40{
+      display:none;
+  }
+    .custom_row{
+      justify-content:space-between;
+    }
+ 
+  }
+
+  @media(max-width:991px){
+    .logobtn{
+      display:none;
+    }
+  }
+
+</style>
+
+<div class="custom_row">
+
+  <div class="column40 d-md-none">
+    <p class="bold">{{ block.settings.top-menu-title }}</p>
+    <ul class="menuList" role="list">
+      <li>
+        <a class="inline-block break-all" href="javascript:;" style=" cursor: auto; ">{{ block.settings.top-menu-text1 }}</a>
+      </li>
+      <li>
+        <a class="inline-block break-all" href="javascript:;" style=" cursor: auto; ">{{ block.settings.top-menu-text2 }}</a>
+      </li>
+      <li>
+        <a class="inline-block break-all" href="javascript:;" style=" cursor: auto; ">{{ block.settings.top-menu-text3 }}</a>
+      </li>
+    </ul>
+{% comment %}
+    <ul class="menuList" role="list">
+      <li>
+        <a class="inline-block break-all" href="{{ block.settings.top-menu-url1 }}">{{ block.settings.top-menu-text1 }}</a>
+      </li>
+      <li>
+        <a class="inline-block break-all" href="{{ block.settings.top-menu-url2 }}">{{ block.settings.top-menu-text2 }}</a>
+      </li>
+      <li>
+        <a class="inline-block break-all" href="{{ block.settings.top-menu-url3 }}">{{ block.settings.top-menu-text3 }}</a>
+      </li>
+    </ul>
+{% endcomment %}
+  </div>
+  <div class="column30">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'footer_info' -%}
+                <div class="info-column logobtn">
+                  <div class="footer_logo">
+                    <a href="/"><img src="{{ block.settings.logo_img | img_url: 'master' }}" alt="footer logo"/></a>
+                  </div>
+                  <div class="about">{{ block.settings.about_content }}</div>
+                </div>
+              {% endcase %}
+              {% endfor %}
+<div class="emailbox">
+    <div class="" {{ block.shopify_attributes }}>
+      {%- if block.settings.image != blank -%}
+        {%- capture sizes -%}{{ block.settings.image_width }}px{%- endcapture -%}
+        {%- capture widths -%}{{ block.settings.image_width }}, {{ block.settings.image_width | times: 2 | at_most: block.settings.image.width }}{%- endcapture -%}
+        {%- capture style -%}max-width: {{ block.settings.image_width }}px{%- endcapture -%}
+        {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', style: style, sizes: sizes, widths: widths -}}
+      {%- endif -%}
+
+      <div class="v-stack gap-6">
+        {%- if block.settings.title != blank -%}
+          <p class="{{ block.settings.heading_size }}">{{- block.settings.title | escape -}}</p>
+        {%- endif -%}
+
+        {%- if block.settings.content != blank -%}
+          <div class="prose text-subdued">
+            {{- block.settings.content -}}
+          </div>
+        {%- endif -%}
+
+        {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form form' -%}
+          {%- if form.posted_successfully? -%}
+            {%- capture success_message -%}{{ 'general.newsletter.subscribed_successfully' | t }}{%- endcapture -%}
+            {%- render 'banner', content: success_message, status: 'success' -%}
+          {%- else -%}
+            {%- if form.errors -%}
+              {%- capture error_message -%}{{ form.errors.translated_fields['email'] }} {{ form.errors.messages['email'] }}{%- endcapture -%}
+              {%- render 'banner', content: error_message, status: 'error' -%}
+            {%- endif -%}
+
+            <input type="hidden" name="contact[tags]" value="newsletter">
+
+            {%- capture label -%}{{ 'general.newsletter.email' | t }}{%- endcapture -%}
+            {%- render 'input', name: 'contact[email]', label: label, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send', self_submit: true -%}
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    </div>
+</div>
+  </div>
+  <div class="column30">
+    {%- render 'social-media' -%}
+  </div>
+</div>

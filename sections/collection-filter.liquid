@@ -1,0 +1,87 @@
+<div class="buttons-list {{ section.settings.class_name1 }}">
+  <ul>
+     {%- for block in section.blocks -%}
+    <li class=""><a href="{{ block.settings.btn_link }}" class="nav-link {{ block.settings.class_name }}">{{ block.settings.btn_text }}</a></li>
+   
+    {%- endfor -%}
+  </ul>
+</div>
+
+
+
+<script>
+// jQuery(document).ready(function() {
+//   jQuery('.nav-link').on('click', function() {
+// jQuery('.nav-link').removeClass('active');
+//     jQuery(this).addClass('active');
+//   });
+// });
+
+  	var b = window.location.href;
+  console.log('==================>>>>>>>>>>>>>> ',b)
+  // JavaScript Code
+window.addEventListener('click', function() {
+  console.log('==================>>>>>>>>>>>>>> ',b)
+});
+
+
+	// a(".nav-link").each(function() {
+	// 	this.href === b && a(this).addClass("active")
+	// }), a(document).on("click", 'a[href^="#"]', function(b) {
+	// 	b.preventDefault(), a("html, body").animate({
+	// 		scrollTop: a(a.attr(this, "href")).offset().top - 140
+	// 	}, 500)
+	// }), a(".main-2").css({
+	// 	top: a(".main-1").outerHeight() + "px"
+	// })
+});
+
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "Collection Filter",
+    "settings": [
+                {
+          "type": "text",
+          "id": "class_name1",
+          "label": "Class Name"
+          
+        },
+    ],
+      "blocks": [
+    {
+      "name": "Filter Button",
+      "type": "filter",
+      "settings": [
+               {
+          "type": "text",
+          "id": "class_name",
+          "label": "Class Name"
+          
+        },
+
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Filter Button Text"
+          
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Filter Button Link"
+          
+        }
+      ]
+    }
+  ],
+          "presets": [
+    {
+      "name": "Collection Filter"
+    }
+  ]
+  }
+{% endschema %}

@@ -1,0 +1,146 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+BLOG POST COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+Renders a single blog post (optionally highlighted)
+
+********************************************
+Supported parameters
+********************************************
+
+* article: the article to render. If no article is passed then a placeholder is generated
+* show_excerpt: if set to true, it will show the excerpt first or truncated part of the main content if none is set
+* show_date
+* show_author
+* show_comments_count
+* show_category: if set to true, the first tag of the article is shown as a category
+* featured: if set to true, the blog post takes the full width with a different layout
+* background: the background to use for the card when the blog post is featured
+* text_color: the text color to use for the card when the blog post is featured
+* sizes: the sizes attribute to show for loading the images
+* position: the position of the card in the list. If specified, the theme will eagerly load the first 3 cards images
+{%- endcomment -%}
+
+{%- capture card_content -%}
+  {%- if article -%}
+    {%- if article.image != blank -%}
+      {%- liquid
+        assign loading_strategy = nil
+        
+        if section.index > 3 or position > 3
+          assign loading_strategy = 'lazy'
+        endif
+      -%}
+
+      <a href="{{ article.url }}" class="blog-post-card__figure {% unless featured %}rounded{% endunless %}">
+        {%- if featured != true and show_category and article.tags.size > 0 -%}
+          <span class="badge badge--primary">{{ article.tags | first }}</span>
+        {%- endif -%}
+
+        {{- article.image | image_url: width: article.image.width | image_tag: loading: loading_strategy, sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800,2000', class: 'w-full h-full object-cover zoom-image' -}}
+      </a>
+      {% else %}
+<div class="video-wrapper VideoBlog">
+      
+	<div class="video-container" id="video-container">
+		<video controls id="video-1" preload="metadata" poster="{{ article.metafields.custom.blog_poster_image | file_url }}">
+			<source src="{{ article.metafields.custom.blog_video | file_url }}" type="video/mp4">
+		</video>
+
+		<div class="play-button-wrapper">
+			<div title="Play video" data-video-id="video-1" class="play-gif circle-play-btn --{{ forloop.index }}" id="circle-play-b22">
+				<!-- SVG Play Button -->
+				<svg data-video-id="video-1" height="CurrentHeight" width="CurrentWidth" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+					<path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z" style="pointer-events:none" />
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>    {%- endif -%}
+  {%- else -%}
+    <div class="blog-post-card__figure {% unless featured %}rounded{% endunless %}">
+      {{- 'image' | placeholder_svg_tag: 'placeholder zoom-image' -}}
+    </div>
+  {%- endif -%}
+
+
+  <div class="blog-post-card__info">
+    {% if article.metafields.custom.mobile_title != blank %}
+      <div class="mobile_title"><h2>{{ article.metafields.custom.mobile_title }}</h2></div>
+  {% endif %}
+    <div class="blog-author-date-wrapper">
+              {% if article.metafields.custom.blog_date != blank  %}
+        <div class="blog_date">published on&nbsp; {{ article.metafields.custom.blog_date }}</div>
+          {% else %}
+          <div class="blog_date">published on&nbsp; {{- article.published_at | date: format: 'abbreviated_date' -}}</div>
+         {% endif %}
+      <span class="outline-blog">|</span>
+    {% if article.metafields.custom.blog_author != blank  %}
+    <div class="blog_author"> by {{ article.metafields.custom.blog_author }}</div>
+      {% else %}
+      <div class="blog_author"> by {{ article.author }}</div>
+      {% endif %}
+
+    </div>
+    <div class="v-stack {% if featured %}gap-5 sm:gap-6{% else %}gap-2{% endif %}">
+      {%- if show_date or show_author or show_comments_count -%}
+        <div class="blog-post-card__meta">
+          {% comment %}
+          {%- if show_date -%}
+            <div class="text-with-icon">
+              {%- render 'icon' with 'blog-date' -%}
+              <span {% comment %} class="text-sm" {% endcomment %}>{{- article.published_at | default: 'now' | date: format: 'abbreviated_date' -}}</span>
+            </div>
+          {%- endif -%}
+
+          {%- if show_author -%}
+            <div class="text-with-icon">
+              {%- render 'icon' with 'blog-author' -%}
+              <span {% comment %} class="text-sm" {% endcomment %}><span>by </span> <b>{{- article.author | default: 'John D.' -}}</b></span>
+            </div>
+          {%- endif -%}
+    {% endcomment %}
+          {%- if show_comments_count and article.comments_enabled? -%}
+            <div class="text-with-icon">
+              {%- render 'icon' with 'blog-comment' -%}
+              <a href="{{ article.url }}#blog-post-comments"  {% comment %} class="text-sm" {% endcomment %}>{{ 'blog.comments.count' | t: count: article.comments_count }}</a>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="v-stack gap-4 {% if featured %}sm:gap-5{% else %}sm:gap-5{% endif %}">
+        {%- if featured and show_category and article.tags.size > 0 -%}
+          <span class="badge badge--current badge--lg">{{ article.tags | first }}</span>
+        {%- endif -%}
+
+        <p class="{% if heading_size != blank %}{{ heading_size }}{% elsif featured %}h2{% else %}h3{% endif %}">
+          {%- if article -%}
+            <a href="{{ article.url }}">{{ article.title | truncate: 90 }}</a>
+          {%- else -%}
+            {{- 'general.on_boarding.blog_post_title' | t -}}
+          {%- endif -%}
+        </p>
+
+        {%- if show_excerpt -%}
+          {%- if article -%}
+            <p class="blog-card-text {% if featured %}text-lg{% endif %}">{{ article.excerpt_or_content | strip_html | truncate: 60 }}</p>
+          {%- else -%}
+            <p class="blog-card-text {% if featured %}text-lg{% endif %}">{{ 'general.on_boarding.blog_post_excerpt' | t }}</p>
+          {%- endif -%}
+          {% comment %}<a href="{{ article.url }}" class="button button--xl">read more</a>{% endcomment %}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endcapture -%}
+
+{%- if featured -%}
+  <blog-post-card {% render 'surface', class: 'blog-post-card blog-post-card--featured snap-center group rounded', background: background, text_color: text_color, background_fallback: 'bg-secondary' %}>
+    {{- card_content -}}
+  </blog-post-card>
+{%- else -%}
+  <blog-post-card class="blog-post-card snap-center group">
+    {{- card_content -}}
+  </blog-post-card>
+{%- endif -%}

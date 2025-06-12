@@ -1,0 +1,153 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "media_with_text_ErEbA3": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_GBznnc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Momi_2021.07_1_1.jpg",
+            "img1": "shopify://shop_images/Group_35712.jpg",
+            "button_text": "",
+            "btn_link": "",
+            "media_width": 60,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "about us",
+            "content": "",
+            "custom_content": "",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f6f6f6",
+            "background_gradient": "",
+            "text_color": "#653490",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GBznnc"
+      ],
+      "settings": {
+        "class_name": "about-us-banner-section",
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "about_mission_section_9WHTFx": {
+      "type": "about-mission-section",
+      "settings": {
+        "title": "mission",
+        "subtitle": "We are driven by our mission to make life better for babies and those who feed them.",
+        "image": "shopify://shop_images/momi_2.0_diagonal_purple_1_f40b30bc-6db5-4d73-a3ff-eaa29a947f4f.png",
+        "content": "This mission is embedded in everything we do - from how the moms on our front line support our customers who are struggling to feed their babies, to how our innovators never stop asking themselves and the team “how can we make it better”.<br><br><br>\nWe are humbled and grateful every time we hear from a parent or a lactation professional how a little one’s feeding challenge has been addressed by mōmi.  As a team we celebrate each of these victories.  Most of us have lived through similar challenges in our own families.<br><br><br>\nWe are honored to be a part of helping babies be fed.  We understand the impact this has - both on the baby, and on those entrusted with their feeding."
+      }
+    },
+    "timeline_MLTqBX": {
+      "type": "timeline",
+      "blocks": {
+        "slide_Fc9faR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/20200811_quackenbush-1_2x_9cdd04e1-a919-4633-b8b2-1efd45e79f43.png",
+            "navigation_label": "2011",
+            "subheading": "2011",
+            "title": "new beginnings",
+            "content": "<p>Carr Lane Quackenbush retires as president of Medela, Inc., believing that breastfeeding moms still deserve a better solution to help their babies transition seamlessly between bottle and breast, he begins thinking about what will eventually become the mōmi bottle.</p>"
+          }
+        },
+        "slide_rxYGmr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Group_17_2x_3fed2126-7101-4f4d-b42f-4ce3a565587d.png",
+            "navigation_label": "2019",
+            "subheading": "2019",
+            "title": "an idea becomes reality",
+            "content": "<p>After thoroughly researching the science of breastfeeding, Carr Lane develops an idea for an innovative nipple that would be the solution moms are looking for. Over the next eight years, he designs, prototypes, and tests countless iterations until he has perfected (and patented) the nipple that replicates natural nursing.</p>"
+          }
+        },
+        "slide_FK8a8a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2021-11-23_at_12.09.28_PM_2x_7e4acdf3-0b53-4fd5-82bd-415cc48c564d.png",
+            "navigation_label": "2020",
+            "subheading": "2020",
+            "title": "mōmi team forms",
+            "content": "<p>With the nipple ready to go to market, Carr Lane joins with other business leaders, medical professionals, and veteran entrepreneurs to form the team that will execute the vision.</p>"
+          }
+        },
+        "slide_GMbE6c": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Group_18_2x_0b9dcc82-e5c0-4e66-87d8-7fc2d7b809d8.png",
+            "navigation_label": "2021",
+            "subheading": "2021",
+            "title": "field testing",
+            "content": "<p>Before launching sales, mōmi conducts a field trial with the final product design. Over 10,000 moms volunteer to participate!  Among those selected, many moms report incredible outcomes. Babies who had refused 5, 10, even 24 other bottle nipples successfully accept the mōmi nipple.</p>"
+          }
+        },
+        "slide_CpUq4x": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Hero_WholeBottle_LowAngle_White_1_63239dc0-a25e-44c7-8dff-311d1193d037.jpg",
+            "navigation_label": "2022",
+            "subheading": "2022",
+            "title": "launch!",
+            "content": "<p>More than a decade in the making, the mōmi nipple is finally available to all parents and their babies.</p>"
+          }
+        },
+        "slide_GYTPNd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/2024_next_generation_momi_nipple.webp",
+            "navigation_label": "2024",
+            "subheading": "2024",
+            "title": "next generation",
+            "content": "<p>After months of collaboration with lactation support and other professionals, mōmi introduces the redesigned “babypace® 2” nipple.  Same patented compression shut-off to let baby regulate the flow; now optimized for deeper, more natural latch.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Fc9faR",
+        "slide_rxYGmr",
+        "slide_FK8a8a",
+        "slide_GMbE6c",
+        "slide_CpUq4x",
+        "slide_GYTPNd"
+      ],
+      "settings": {
+        "full_width": true,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#653490"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "media_with_text_ErEbA3",
+    "about_mission_section_9WHTFx",
+    "timeline_MLTqBX"
+  ]
+}

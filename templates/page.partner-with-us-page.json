@@ -1,0 +1,186 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_z3MbKp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Cy6qce": {
+          "type": "heading",
+          "settings": {
+            "text": "partner with us",
+            "heading_tag": "h1",
+            "text_color": "#ffffff",
+            "gradient": ""
+          }
+        },
+        "subheading_QB6cw9": {
+          "type": "subheading",
+          "settings": {
+            "text": "let’s work together to make life better for babies  and those who feed them."
+          }
+        }
+      },
+      "block_order": [
+        "heading_Cy6qce",
+        "subheading_QB6cw9"
+      ],
+      "settings": {
+        "class_name": "partner-with-us-heading",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#653490",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "text_with_icons_FYcmTQ": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_JeYPit": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-percent",
+            "custom_icon": "shopify://shop_images/affiliates.png",
+            "mobile_icon_width": 36,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "affiliates",
+            "content": "<p><a href=\"#\" title=\"#\">learn more</a></p>"
+          }
+        },
+        "item_FaKRM4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/wholesale.png",
+            "mobile_icon_width": 24,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "wholesale",
+            "content": "<p><a href=\"#\" title=\"#\">learn more</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_JeYPit",
+        "item_FaKRM4"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "partner-us-lets-work",
+        "full_width": false,
+        "stack_on_mobile": false,
+        "title": "let’s work together to make life better for babies  and those who feed them.",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_LWmQA4": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_MTeJFD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/affiliates_Section.png",
+            "button_text": "",
+            "btn_link": "",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "affiliates",
+            "content": "<p>We welcome affiliate relationships with influencers, publishers, industry partners, and others who share our passion for making life better for babies and those who feed them!</p><p>Affiliates earn commissions ranging from 1% - 10% on every purchase made through the momi.baby store.</p>",
+            "custom_content": "",
+            "link_text": "Contact Us",
+            "link_url": "mailto:partners@momi.baby",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#653490",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_MTeJFD"
+      ],
+      "settings": {
+        "class_name": "partner-us-affiliates-section",
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "media_with_text_zJzcid": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_BYJhix": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2.0_Bottle_momi.png",
+            "button_text": "",
+            "btn_link": "",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "wholesale",
+            "content": "<p>We partner with select brick & mortar and online retailers to provide our unique and innovative offering to their customers.  Our retail partners range from well established industry peers to individual healthcare practitioners wanting to make mōmi available to families at the point of care.</p><p>To inquire about becoming a mōmi retail partner, email <a href=\"mailto:partners@momi.baby\" target=\"_blank\" title=\"mailto:partners@momi.baby\">partners@momi.baby</a>.</p>",
+            "custom_content": "",
+            "link_text": "become a partner",
+            "link_url": "mailto:partners@momi.baby.",
+            "background": "#653490",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ff0099",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_BYJhix"
+      ],
+      "settings": {
+        "class_name": "partner-us-wholesale-section partner-us-affiliates-section partner-us-affiliates-section-button",
+        "full_width": true,
+        "spacing": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_z3MbKp",
+    "text_with_icons_FYcmTQ",
+    "media_with_text_LWmQA4",
+    "media_with_text_zJzcid"
+  ]
+}

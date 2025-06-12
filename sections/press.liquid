@@ -1,0 +1,399 @@
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  CSS
+  ------------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      --press-items-border: {{ section.settings.logo_item_border.rgb }} / {{ section.settings.logo_item_border.alpha }};
+      --press-max-width: {% if section.settings.content_size == 'small' %}760{% elsif section.settings.content_size == 'medium' %}1000{% elsif section.settings.content_size == 'large' %}1260{% endif %}px;
+    }
+  </style>
+
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  LIQUID
+  ------------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  <div {% render 'section-properties' %}>
+    <div class="section-stack">
+      <div class="press">
+
+   {% if section.settings.video_url2 != blank or section.settings.video_url_Mobile2 != blank %}
+     <div class="PressVideoSection">
+                  <video width="100%" height="20%" class="videoslide videodesktop" playsinline="true" preload="metadata" muted="muted" loop="loop" autoplay>
+                    <source src="{{ section.settings.video_url2 }}" type="video/mp4">
+                  </video>
+                  <video width="100%" height="20%" class="videoslidemobile videoslide" playsinline="true" preload="metadata" muted="muted" loop="loop" autoplay>
+                    <source src="{{ section.settings.video_url_Mobile2 }}" type="video/mp4">
+                  </video>
+     </div>
+                {% endif %}  
+        
+        <press-carousel id="carousel-{{ section.id }}" class="press__list full-bleed text-center sm:unbleed" role="region" autoplay="true">
+          {%- for block in section.blocks -%}
+            <div id="block-{{ section.id }}-{{ block.id }}" class="press__list-item {% comment %}snap-center{% endcomment %} {% if forloop.first %}is-selected{% endif %}" role="group" aria-label="{{ 'general.accessibility.item_nth_of_count' | t: index: forloop.index, count: section.blocks.size }}" {{ block.shopify_attributes }}>
+              {%- if block.settings.show_rating -%}
+                <div class="rating">
+                  <div class="rating__stars" role="img" aria-label="{{ 'general.rating.info' | t: rating_value: block.settings.rating, rating_max: 5 }}">
+                    {%- for i in (1..5) -%}
+                      {%- if i <= block.settings.rating -%}
+                        {%- render 'icon' with 'rating-star', class: 'rating__star' -%}
+                      {%- else -%}
+                        {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--empty' -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              {%- endif -%}
+              {% if block.settings.press_img != blank or block.settings.press_img_mobile != blank %}
+                  <div class="press_img PressDesktopImg {{ block.settings.class_name_image }}">
+                    <img src="{{ block.settings.press_img | img_url: 'master' }}" alt="press"/>
+                    
+                    {% if block.settings.highlight_img != blank %}
+                      <div class="mask_img_box">
+                        <img class="animateImg" src="{{ block.settings.highlight_img | img_url: 'master' }}" alt="highlight"/>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% comment %} <div class="press_img PressMoileImg"><img src="{{ block.settings.press_img_mobile | img_url: 'master' }}"></div> {% endcomment %}
+                {% elsif block.settings.video_url != blank or block.settings.video_url_Mobile != blank  %}
+                  <video width="100%" height="20%" class="videoslide videodesktop {{ block.settings.class_name1 }}" playsinline="true" preload="metadata" muted="muted" loop="loop" autoplay>
+                    <source src="{{ block.settings.video_url }}" type="video/mp4">
+                  </video>
+                  <video width="100%" height="20%" class="videoslidemobile videoslide {{ block.settings.class_name1 }}" playsinline="true" preload="metadata" muted="muted" loop="loop" autoplay>
+                    <source src="{{ block.settings.video_url_Mobile }}" type="video/mp4">
+                  </video>
+                {% endif %}          
+              <div class="sliderContent">
+               {% if block.settings.heading_title != blank or block.settings.heading_title_mobile != blank %}
+                <div class="press-heading d-none d-md-block">{{ block.settings.heading_title }}</div>
+                <div class="press-heading_mobile d-block d-md-none">{{ block.settings.heading_title_mobile }}</div>
+         {% endif %}
+                {% if block.settings.img != blank %}
+                  <div class="icon_img">
+                      <img src="{{ block.settings.img | img_url: 'master' }}" alt="Icon Image">
+                  </div>
+                {% endif %}
+                
+                {%- if block.settings.content != blank -%}
+                  <blockquote class="blockquote h3" reveal-on-scroll="true">
+                    {%- render 'styled-text', content: block.settings.content, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}
+                  </blockquote>
+                {%- endif -%}
+                
+                {%- if block.settings.content_html != blank -%}
+                <div class="blockquote h3 custom_blog-content">{{ block.settings.content_html }}</div>
+                {%- endif -%}
+                {%- if block.settings.logo != blank or block.settings.author != blank -%}
+                  <div class="v-stack gap-2">
+                    {%- if block.settings.logo != blank -%}
+                      {%- liquid
+                        assign loading_strategy = nil
+              
+                        if section.index > 3 or forloop.first == false
+                          assign loading_strategy = 'lazy'
+                        endif
+                      -%}
+  
+                      <div {% render 'surface', class: 'press__logo rounded', background: section.settings.logo_item_background %}>
+                        {%- capture sizes -%}{{ block.settings.logo_width }}px{%- endcapture -%}
+                        {%- capture widths -%}{{ block.settings.logo_width }}, {{ block.settings.logo_width | times: 2 | at_most: block.settings.logo.width }}{%- endcapture -%}
+                        {%- capture max_width -%}--press-image-max-width: {{ block.settings.logo_width }}px{%- endcapture -%}
+                        {{- block.settings.logo | image_url: width: block.settings.logo.width | image_tag: style: max_width, loading: loading_strategy, widths: widths, class: 'press__image', sizes: sizes -}}
+                      </div>
+                    {%- endif -%}
+  
+                      <div class="AutorInfo">
+                      {% if block.settings.img1 != blank %}
+                        <div class="reviewimg"><img src="{{ block.settings.img1 | img_url: 'master' }}"></div>
+                      {% endif %}
+                      {%- if block.settings.author != blank -%}
+                      <div class="authorinfo pl-10">
+                        <div class="">
+                          <p class="press__author text-subdued">{{ block.settings.author }}</p>
+                        </div>
+                        <div>
+                          <p class="authorprofession">{{ block.settings.authorpro }}</p>
+                        </div>
+                      </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+                {% if block.settings.img != blank %}
+
+              {% endif %}
+            </div>
+          {%- endfor -%}
+        </press-carousel>
+
+        {%- if section.blocks.size > 1 -%}
+          <div class="press__controls">
+           {% comment %} <button class="circle-button ring group" is="prev-button" aria-controls="carousel-{{ section.id }}">
+              <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+              <span class="animated-arrow animated-arrow--reverse"></span>
+            </button>
+{% endcomment %}
+            <page-dots aria-controls="carousel-{{ section.id }}" class="custom-page-dots page-dots">
+              {%- for index in (1..section.blocks.size) -%}
+                <button type="button" class="tap-area" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                  <span class="sr-only">{{ 'general.accessibility.go_to_item' | t: index: index }}</span>
+                </button>
+              {%- endfor -%}
+            </page-dots>
+
+         {% comment %}   <button class="circle-button ring group" is="next-button" aria-controls="carousel-{{ section.id }}">
+              <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+              <span class="animated-arrow"></span>
+            </button>
+          {% endcomment %}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Press",
+  "class": "shopify-section--press",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "text",
+      "id": "class_name",
+      "label": "Class Name"
+    
+    },
+                      {
+          "type": "url",
+          "id": "video_url2",
+          "label": "Desktop Header Video Url"
+         
+        },
+                           {
+          "type": "url",
+          "id": "video_url_Mobile2",
+          "label": "Mobile Header Video Url"
+         
+        },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "content_size",
+      "label": "Content size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "fill",
+          "label": "Fill page"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    },
+    {
+      "type": "color",
+      "id": "logo_item_background",
+      "label": "Logo background"
+    },
+    {
+      "type": "color",
+      "id": "logo_item_border",
+      "label": "Logo border"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        {
+        "type": "text",
+        "id": "class_name1",
+        "label": "video Class Name"
+      
+      },
+        {
+        "type": "text",
+        "id": "class_name_image",
+        "label": "Image Class Name"
+      
+      },
+              {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+         
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo",
+          "info": "300 x 90px .jpg recommended"
+        },
+        {
+          "type": "range",
+          "id": "logo_width",
+          "min": 50,
+          "max": 350,
+          "unit": "px",
+          "step": 5,
+          "label": "Logo width",
+          "default": 100
+        },
+                 {
+          "type": "image_picker",
+          "id": "press_img",
+          "label": "Main Image"
+         
+        },
+        {
+          "type": "image_picker",
+          "id": "highlight_img",
+          "label": "High-Light Image"
+        },
+
+                     {
+          "type": "url",
+          "id": "video_url",
+          "label": "Video Url"
+         
+        },
+                           {
+          "type": "url",
+          "id": "video_url_Mobile",
+          "label": "Mobile Video Url"
+         
+        },
+                {
+          "type": "text",
+          "id": "heading_title",
+          "label": "Title"
+        },
+                  {
+          "type": "text",
+          "id": "heading_title_mobile",
+          "label": "Mobile Title"
+        },
+               {
+          "type": "image_picker",
+          "id": "img1",
+          "label": "Author Image"
+         
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author"
+        },
+               {
+          "type": "text",
+          "id": "authorpro",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Quote",
+          "default": "Write some content about what they says about your store."
+        },
+            {
+          "type": "html",
+          "id": "content_html",
+          "label": "Text"
+        
+        },
+        {
+          "type": "checkbox",
+          "id": "show_rating",
+          "label": "Show rating",
+          "default": true
+        },
+        {
+          "type": "range",
+          "min": 0,
+          "max": 5,
+          "id": "rating",
+          "label": "Rating",
+          "default": 4
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Press",
+      "blocks": [
+        {
+          "type": "quote"
+        },
+        {
+          "type": "quote"
+        },
+        {
+          "type": "quote"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

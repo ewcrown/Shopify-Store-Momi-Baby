@@ -1,0 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "section_vertical_spacing": "medium",
+    "section_boxed_horizontal_spacing": "medium",
+    "button_border_radius": 60,
+    "input_border_radius": 8,
+    "block_border_radius": 20,
+    "block_shadow_opacity": 10,
+    "block_shadow_vertical_offset": 18,
+    "icon_style": "duo",
+    "button_style": "fill",
+    "button_hover_effect": "fade",
+    "background": "#ffffff",
+    "text_color": "#653490",
+    "success_color": "#00a341",
+    "warning_color": "#ffb74a",
+    "error_color": "#f83a3a",
+    "header_background": "#ffffff",
+    "header_text_color": "#2b2b2b",
+    "footer_background": "#653490",
+    "footer_text_color": "#ffffff",
+    "primary_button_background": "#ff0099",
+    "primary_button_text_color": "#ffffff",
+    "secondary_button_background": "#ff0099",
+    "secondary_button_text_color": "#ffffff",
+    "product_card_text_color": "#1a1a1a",
+    "product_on_sale_accent": "#ff0099",
+    "product_sold_out_badge_background": "#000000",
+    "product_primary_badge_background": "#803cee",
+    "heading_font": "din_next_n7",
+    "heading_font_size": "large",
+    "heading_text_transform": "normal",
+    "heading_letter_spacing": 0,
+    "text_font": "din_next_n4",
+    "heading_apparition": "none",
+    "color_swatch_style": "round",
+    "color_swatch_config": "Purple:#653590\nPink:#ff0099\nGray:#A2AAAD",
+    "show_quick_buy": true,
+    "show_product_rating": false,
+    "show_sold_out_badge": false,
+    "show_discount": true,
+    "discount_mode": "saving",
+    "product_color_display": "swatch",
+    "product_image_aspect_ratio": "square",
+    "product_info_alignment": "center",
+    "cart_type": "drawer",
+    "cart_icon": "shopping_cart",
+    "cart_empty_button_link": "shopify://collections/all",
+    "cart_show_free_shipping_threshold": false,
+    "social_facebook": "https://www.facebook.com/momi.naturally/",
+    "social_instagram": "https://www.instagram.com/momi.naturally/",
+    "social_youtube": "https://www.google.com/url?q=https://www.youtube.com/@momi.naturally&sa=D&source=docs&ust=1726636822364582&usg=AOvVaw1s9coT82kvq1oTpn9s5GOk",
+    "social_tiktok": "https://www.tiktok.com/@momi.bottle",
+    "favicon": "shopify://shop_images/favicon2.png",
+    "checkout_accent_color": "#f0c417",
+    "checkout_button_color": "#1a1a1a",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "enable_sticky": true,
+          "autoplay": false,
+          "cycle_speed": 6,
+          "text_size": "text-xs",
+          "navigation_mode": "arrows",
+          "scrolling_speed": 20,
+          "background": "",
+          "background_gradient": "",
+          "text_color": ""
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "7570552984445421165": {
+        "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": true,
+        "settings": {}
+      },
+      "10641372206048101839": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": true,
+        "settings": {}
+      },
+      "5057006142565981955": {
+        "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/cart-drawer-embed-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+        "disabled": false,
+        "settings": {
+          "logo_align_drawer": "left",
+          "font_size_drawer": 16,
+          "logo_color_drawer": "blue",
+          "logo_type_drawer": "logo",
+          "public_api_key_drawer": "",
+          "cart_drawer_selector": "",
+          "cart_drawer_total_selector": "",
+          "add_to_cart_selector": "",
+          "adjacent_element_selector": ""
+        }
+      },
+      "11989736685688860011": {
+        "type": "shopify://apps/easy-variant-images/blocks/embed_via/bfecabd5-49af-4d37-8214-f0f4649f4cb3",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Sound": {
+      "section_vertical_spacing": "medium",
+      "button_border_radius": 60,
+      "input_border_radius": 8,
+      "block_border_radius": 24,
+      "block_shadow_opacity": 10,
+      "block_shadow_vertical_offset": 18,
+      "background": "#f0f0f0",
+      "text_color": "#1a1a1a",
+      "header_background": "#f0f0f0",
+      "header_text_color": "#1a1a1a",
+      "footer_background": "#ffffff",
+      "footer_text_color": "#1a1a1a",
+      "primary_button_background": "#1a1a1a",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#f0c417",
+      "secondary_button_text_color": "#1a1a1a",
+      "product_card_text_color": "#1a1a1a",
+      "product_primary_badge_background": "#803cee",
+      "heading_font": "din_next_n7",
+      "heading_font_size": "large",
+      "heading_letter_spacing": -2,
+      "text_font": "din_next_n4",
+      "cart_icon": "shopping_basket",
+      "heading_apparition": "split_fade",
+      "product_color_display": "swatch",
+      "product_info_alignment": "start",
+      "checkout_accent_color": "#f0c417",
+      "checkout_button_color": "#1a1a1a"
+    },
+    "Home": {
+      "section_vertical_spacing": "medium",
+      "section_boxed_horizontal_spacing": "large",
+      "button_hover_effect": "reverse",
+      "background": "#ffffff",
+      "text_color": "#272727",
+      "success_color": "#708a5c",
+      "warning_color": "#e37e16",
+      "error_color": "#aa2826",
+      "header_background": "#ffffff",
+      "header_text_color": "#272727",
+      "footer_background": "#f2f2f2",
+      "footer_text_color": "#272727",
+      "primary_button_background": "#272727",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#3c619e",
+      "secondary_button_text_color": "#ffffff",
+      "product_card_text_color": "#272727",
+      "product_on_sale_accent": "#e34f4f",
+      "product_sold_out_badge_background": "#bebdb9",
+      "product_primary_badge_background": "#3c619e",
+      "heading_font": "futura_n7",
+      "heading_font_size": "large",
+      "heading_text_transform": "normal",
+      "heading_letter_spacing": -1,
+      "text_font": "futura_n4",
+      "cart_icon": "shopping_basket",
+      "heading_apparition": "split_rotation",
+      "color_swatch_style": "rectangle",
+      "product_color_display": "swatch",
+      "cart_type": "drawer",
+      "checkout_body_background_color": "#f2f2f2",
+      "checkout_sidebar_background_color": "#ffffff",
+      "checkout_accent_color": "#3c619e",
+      "checkout_button_color": "#3c619e"
+    },
+    "Shape": {
+      "page_width": 1440,
+      "section_vertical_spacing": "small",
+      "section_boxed_horizontal_spacing": "medium",
+      "button_border_radius": 60,
+      "input_border_radius": 8,
+      "block_border_radius": 20,
+      "icon_stroke_width": 1.5,
+      "button_style": "fill",
+      "button_hover_effect": "reverse",
+      "text_color": "#2a555a",
+      "header_background": "#ffffff",
+      "header_text_color": "#2a555a",
+      "footer_background": "#f7f7f7",
+      "footer_text_color": "#2a555a",
+      "primary_button_background": "#2a555a",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#d9967e",
+      "product_card_text_color": "#2a555a",
+      "cart_icon": "tote_bag",
+      "heading_font": "itc_berkeley_old_style_n4",
+      "heading_font_size": "large",
+      "heading_text_transform": "normal",
+      "heading_letter_spacing": -1,
+      "text_font": "muli_n4",
+      "text_font_size_desktop": 15,
+      "product_color_display": "swatch",
+      "product_info_alignment": "center"
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "@media screen and (max-width: 767px) {.footer-top-menu {min-height: 0px !important; padding-top: 40px; padding-bottom: 40px; } footer {min-height: 0 !important; } #shopify-block-AaVNyQllENU1WdlUyN__affirm_pay_over_time_messaging_product_block_hHPniE .affirm-as-low-as {font-size: 13px !important; } .quantity-selector {height: 28px !important; }}",
+      ".sale-banner {display: none !important;}"
+    ]
+  }
+}

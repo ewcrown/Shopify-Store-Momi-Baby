@@ -1,0 +1,303 @@
+{%- render 'section-spacing-collapsing' -%}
+<link rel="stylesheet" href="{{ 'owl.carousel.min.css' | asset_url }}">
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack">
+    {%- render 'section-header',
+      subheading: section.settings.subheading,
+      heading: section.settings.title,
+      heading_color: section.settings.heading_color,
+      heading_gradient: section.settings.heading_gradient,
+      content: section.settings.content,
+      link_text: section.settings.link_text,
+      link_url: section.settings.link_url
+    -%}
+
+    <div class="blog-posts owl-carousel blogCarousel">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'blog' -%}
+            {%- capture sizes -%}(max-width: 699px) calc(100vw - 40px), (max-width: 999px) calc(100vw / 3 - 64px), calc(min(100vw - 96px, {{ settings.page_width }}px) / {{ block.settings.blog.articles_count | at_most: 3 }}){%- endcapture -%}
+            {%- assign has_tag = false -%}
+            {%- for article in block.settings.blog.articles -%}
+              {%- for tag in article.tags -%}
+                {%- if tag == 'Feature-blog' -%}
+                  {%- assign has_tag = true -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endfor -%}
+            {%- if has_tag -%}
+              {%- for article in block.settings.blog.articles -%}
+                {%- if article.tags contains 'Feature-blog' -%}
+                  {%- render 'blog-post-card',
+                    article: article,
+                    show_excerpt: section.settings.show_excerpt,
+                    show_date: section.settings.show_date,
+                    show_author: section.settings.show_author,
+                    show_comments_count: section.settings.show_comments_count,
+                    show_category: section.settings.show_category,
+                    sizes: sizes,
+                    position: forloop.index
+                  -%}
+                {% endif %}
+              {%- else -%}
+                {%- for i in (1..3) -%}
+                  {%- render 'blog-post-card',
+                    show_excerpt: section.settings.show_excerpt,
+                    show_date: section.settings.show_date,
+                    show_author: section.settings.show_author,
+                    show_comments_count: section.settings.show_comments_count,
+                    show_category: section.settings.show_category,
+                    sizes: sizes
+                  -%}
+                {%- endfor -%}
+              {%- endfor -%}
+            {% endif %}
+
+          {%- when 'article' -%}
+            {%- capture sizes -%}(max-width: 1000px) calc(100vw - 40px), calc(min(100vw - 96px, {{ settings.page_width }}px) * 0.65){%- endcapture -%}
+
+            {%- if block.settings.article != blank -%}
+              {%- render 'blog-post-card',
+                article: block.settings.article,
+                featured: true,
+                background: block.settings.background,
+                text_color: block.settings.text_color,
+                show_excerpt: section.settings.show_excerpt,
+                show_date: section.settings.show_date,
+                show_author: section.settings.show_author,
+                show_comments_count: section.settings.show_comments_count,
+                show_category: section.settings.show_category,
+                sizes: sizes,
+                position: forloop.index
+              -%}
+            {%- else -%}
+              {%- render 'blog-post-card',
+                featured: true,
+                show_excerpt: section.settings.show_excerpt,
+                show_date: section.settings.show_date,
+                show_author: section.settings.show_author,
+                show_comments_count: section.settings.show_comments_count,
+                show_category: section.settings.show_category,
+                sizes: sizes
+              -%}
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
+<script>
+    $('.blogCarousel').owlCarousel({
+      loop:false,
+      dots: true,
+      margin:30,
+      nav:false,
+      responsiveClass:true,
+      responsive:{
+          0:{
+            items:1,
+            margin:0
+          },
+          576:{
+              items:2,
+              margin:10
+          },
+          768:{
+              items:2,
+              margin:20
+            },
+          1025:{
+              items:3
+          }
+      }
+  })
+</script>
+{% schema %}
+{
+  "name": "Blog Slide Section",
+  "class": "shopify-section--blog-posts",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "max_blocks": 1,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show excerpt",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_comments_count",
+      "label": "Show comments count",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_category",
+      "label": "Show category",
+      "info": "Add tag organize blog posts [Learn more](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#add-tags-to-a-blog-post).",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Blog Slide Section"
+    },
+
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text",
+      "default": "View all"
+    },
+    {
+      "type": "text",
+      "id": "class_name",
+      "label": "Class Name"
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "blog",
+      "name": "Blog",
+      "settings": [
+
+
+        {
+          "type": "blog",
+          "id": "blog",
+          "label": "Blog"
+        },
+        {
+          "type": "checkbox",
+          "id": "stack_items",
+          "label": "Stack on mobile",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "article",
+      "name": "Blog post",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "Blog post"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text"
+        },
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Slide Section",
+      "blocks": [
+        {
+          "type": "blog",
+          "settings": {
+            "blog": "news"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Featured blog post",
+      "settings": {
+        "title": "",
+        "link_text": ""
+      },
+      "blocks": [
+        {
+          "type": "article"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

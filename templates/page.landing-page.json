@@ -1,0 +1,314 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_MCiwTn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DKxVGM": {
+          "type": "heading",
+          "settings": {
+            "text": "early bird promotion",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "html_code_rQmc9C": {
+          "type": "html_code",
+          "settings": {
+            "html_code": "We're sorry, the earlybird promotion ended in 2024.  Sign up for our emails to receive news and announcements of our latest deals and offers!"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DKxVGM",
+        "html_code_rQmc9C"
+      ],
+      "settings": {
+        "class_name": "LandingHeroSection",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#653490",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "featured_collection_dabAhg": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "custom_id": "",
+        "class_name": "FeatureCollection HomeFeatureCollection HomeFeatureCollection-1",
+        "collection": "bottles",
+        "products": [
+          "glass-baby-bottle",
+          "bpa-free-plastic-baby-bottle",
+          "replacement-set"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 50,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title1": "buy now using code “earlybird”",
+        "title": "buy now using code “earlybird”",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#eadeee",
+        "background_gradient": "",
+        "text_color": "#653490",
+        "heading_color": "#653490",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "#653490"
+      }
+    },
+    "specification_table_NGicHa": {
+      "type": "specification-table",
+      "blocks": {
+        "row_ppYeqG": {
+          "type": "row",
+          "settings": {
+            "heading": "01",
+            "value": "<p>Make your purchase, using the code “earlybird” at check-out. (A $0.01 discount will be applied to <br/>your order for our internal tracking purposes.)</p>",
+            "custom_table_content": "<div class=\"table-custom-content\">\n<span class=\"custom-content\">earlybird</span><span class=\"custom-content-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"25\" height=\"25\" viewbox=\"0 0 25 25\" fill=\"none\">\n  <path d=\"M21.329 13.4655C21.5 13.0525 21.5 12.5275 21.5 11.4795C21.5 10.4315 21.5 9.90649 21.329 9.49349C21.2159 9.22042 21.0502 8.97231 20.8412 8.76332C20.6322 8.55433 20.3841 8.38857 20.111 8.27549C19.698 8.10449 19.173 8.10449 18.125 8.10449H11.6C10.34 8.10449 9.71 8.10449 9.229 8.34949C8.80526 8.56527 8.46078 8.90975 8.245 9.33349C8 9.81349 8 10.4435 8 11.7045V18.2295C8 19.2775 8 19.8025 8.171 20.2155C8.4 20.7665 8.838 21.2055 9.389 21.4335C9.802 21.6045 10.327 21.6045 11.375 21.6045C12.423 21.6045 12.948 21.6045 13.361 21.4335M21.329 13.4655C21.2159 13.7386 21.0502 13.9867 20.8412 14.1957C20.6322 14.4047 20.3841 14.5704 20.111 14.6835C19.698 14.8545 19.173 14.8545 18.125 14.8545C17.077 14.8545 16.552 14.8545 16.139 15.0255C15.8659 15.1386 15.6178 15.3043 15.4088 15.5133C15.1998 15.7223 15.0341 15.9704 14.921 16.2435C14.75 16.6565 14.75 17.1815 14.75 18.2295C14.75 19.2775 14.75 19.8025 14.579 20.2155C14.4659 20.4886 14.3002 20.7367 14.0912 20.9457C13.8822 21.1547 13.6341 21.3204 13.361 21.4335M21.329 13.4655C20.791 15.3204 19.8015 17.0129 18.449 18.3916C17.0965 19.7703 15.4232 20.7921 13.579 21.3655L13.361 21.4335M17 8.10449V7.20449C17 5.94449 17 5.31449 16.755 4.83349C16.5395 4.40991 16.1954 4.06544 15.772 3.84949C15.29 3.60449 14.66 3.60449 13.4 3.60449H7.1C5.84 3.60449 5.21 3.60449 4.729 3.84949C4.30526 4.06527 3.96078 4.40975 3.745 4.83349C3.5 5.31349 3.5 5.94349 3.5 7.20449V13.5045C3.5 14.7645 3.5 15.3945 3.745 15.8755C3.961 16.2995 4.305 16.6435 4.729 16.8595C5.209 17.1045 5.84 17.1045 7.101 17.1045H8\" stroke=\"#FF0099\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg></span>\n<div class=\"tooltip\" style=\"display: none; position: absolute; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; left: 0; bottom: 110%; z-index: 1;\">Copied</div>\n</div>\n\n<script>\n    const tooltip = document.querySelector('.tooltip');\n    const icon = document.querySelector('.custom-content-icon');\n\n    icon.addEventListener('click', function() {\n        const textToCopy = document.querySelector('.custom-content').innerText;\n        navigator.clipboard.writeText(textToCopy).then(() => {\n            tooltip.innerText = 'Copied'; // Only showing 'Copied'\n            tooltip.style.display = 'block';\n\n            // Hide the tooltip after 2 seconds\n            setTimeout(() => {\n                tooltip.style.display = 'none';\n            }, 2000);\n        }).catch(err => {\n            console.error('Failed to copy text: ', err);\n        });\n    });\n</script>"
+          }
+        },
+        "row_MyUT74": {
+          "type": "row",
+          "settings": {
+            "heading": "02",
+            "value": "<p>Sign up to receive our emails, if you haven’t already.<a href=\"#footer-top-menu\" target=\"_blank\" title=\"#footer-top-menu\"> signup form</a></p>",
+            "custom_table_content": ""
+          }
+        },
+        "row_e7DbDq": {
+          "type": "row",
+          "settings": {
+            "heading": "03",
+            "value": "<p>Follow us on at least one of our social media platforms</p>",
+            "custom_table_content": "<div class=\"table-custom-content\">\n<a href=\"https://www.instagram.com/momi.naturally/\"><span class=\"custom-content-icon\">\n<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M17.3708 2.6665C18.8708 2.6705 19.6321 2.6785 20.2894 2.69717L20.5481 2.7065C20.8468 2.71717 21.1414 2.7305 21.4974 2.7465C22.9161 2.81317 23.8841 3.03717 24.7334 3.3665C25.6134 3.70517 26.3548 4.16384 27.0961 4.90384C27.7744 5.57015 28.299 6.37647 28.6334 7.2665C28.9628 8.11584 29.1868 9.08384 29.2534 10.5038C29.2694 10.8585 29.2828 11.1532 29.2934 11.4532L29.3014 11.7118C29.3214 12.3678 29.3294 13.1292 29.3321 14.6292L29.3334 15.6238V17.3705C29.3367 18.343 29.3265 19.3156 29.3028 20.2878L29.2948 20.5465C29.2841 20.8465 29.2708 21.1412 29.2548 21.4958C29.1881 22.9158 28.9614 23.8825 28.6334 24.7332C28.299 25.6232 27.7744 26.4295 27.0961 27.0958C26.4298 27.7741 25.6235 28.2987 24.7334 28.6332C23.8841 28.9625 22.9161 29.1865 21.4974 29.2532L20.5481 29.2932L20.2894 29.3012C19.6321 29.3198 18.8708 29.3292 17.3708 29.3318L16.3761 29.3332H14.6308C13.6578 29.3366 12.6848 29.3264 11.7121 29.3025L11.4534 29.2945C11.1369 29.2825 10.8205 29.2687 10.5041 29.2532C9.08544 29.1865 8.11744 28.9625 7.26677 28.6332C6.37721 28.2986 5.57136 27.7739 4.90544 27.0958C4.2267 26.4297 3.70159 25.6233 3.36677 24.7332C3.03744 23.8838 2.81344 22.9158 2.74677 21.4958L2.70677 20.5465L2.70011 20.2878C2.67553 19.3156 2.66442 18.3431 2.66677 17.3705V14.6292C2.66308 13.6566 2.67286 12.6841 2.69611 11.7118L2.70544 11.4532C2.71611 11.1532 2.72944 10.8585 2.74544 10.5038C2.81211 9.08384 3.03611 8.11717 3.36544 7.2665C3.70103 6.3761 4.22707 5.56975 4.90677 4.90384C5.57231 4.2259 6.37769 3.70127 7.26677 3.3665C8.11744 3.03717 9.08411 2.81317 10.5041 2.7465C10.8588 2.7305 11.1548 2.71717 11.4534 2.7065L11.7121 2.6985C12.6844 2.67481 13.6569 2.66459 14.6294 2.66784L17.3708 2.6665ZM16.0001 9.33317C14.232 9.33317 12.5363 10.0355 11.2861 11.2858C10.0358 12.536 9.33344 14.2317 9.33344 15.9998C9.33344 17.7679 10.0358 19.4636 11.2861 20.7139C12.5363 21.9641 14.232 22.6665 16.0001 22.6665C17.7682 22.6665 19.4639 21.9641 20.7142 20.7139C21.9644 19.4636 22.6668 17.7679 22.6668 15.9998C22.6668 14.2317 21.9644 12.536 20.7142 11.2858C19.4639 10.0355 17.7682 9.33317 16.0001 9.33317ZM16.0001 11.9998C16.5254 11.9997 17.0456 12.1031 17.5309 12.3041C18.0162 12.505 18.4572 12.7996 18.8287 13.1709C19.2002 13.5423 19.4949 13.9832 19.696 14.4685C19.8971 14.9538 20.0007 15.4739 20.0008 15.9992C20.0009 16.5245 19.8975 17.0446 19.6965 17.53C19.4956 18.0153 19.201 18.4563 18.8297 18.8278C18.4583 19.1993 18.0174 19.494 17.5321 19.6951C17.0469 19.8962 16.5267 19.9997 16.0014 19.9998C14.9406 19.9998 13.9232 19.5784 13.173 18.8283C12.4229 18.0781 12.0014 17.0607 12.0014 15.9998C12.0014 14.939 12.4229 13.9216 13.173 13.1714C13.9232 12.4213 14.9406 11.9998 16.0014 11.9998M23.0014 7.33317C22.5594 7.33317 22.1355 7.50877 21.8229 7.82133C21.5104 8.13389 21.3348 8.55781 21.3348 8.99984C21.3348 9.44186 21.5104 9.86579 21.8229 10.1783C22.1355 10.4909 22.5594 10.6665 23.0014 10.6665C23.4435 10.6665 23.8674 10.4909 24.18 10.1783C24.4925 9.86579 24.6681 9.44186 24.6681 8.99984C24.6681 8.55781 24.4925 8.13389 24.18 7.82133C23.8674 7.50877 23.4435 7.33317 23.0014 7.33317Z\" fill=\"#FF0099\"></path>\n    </svg></span></a><a href=\"https://www.facebook.com/momi.naturally/\"><span class=\"custom-content-icon\">\n  <svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M26.3707 2.66748H5.6291C3.9994 2.66748 2.66602 4.00087 2.66602 5.63056V26.3721C2.66602 28.0033 3.9994 29.3352 5.6291 29.3352H15.9999V18.9644H13.0368V15.2976H15.9999V12.2605C15.9999 9.0544 17.7955 6.80246 21.5794 6.80246L24.2506 6.80542V10.6648H22.4772C21.0045 10.6648 20.4445 11.7701 20.4445 12.7953V15.2991H24.2491L23.4076 18.9644H20.4445V29.3352H26.3707C28.0004 29.3352 29.3338 28.0033 29.3338 26.3721V5.63056C29.3338 4.00087 28.0004 2.66748 26.3707 2.66748Z\" fill=\"#FF0099\"></path>\n  </svg>\n  </span></a><a href=\"https://www.tiktok.com/@momi.bottle\"><span class=\"custom-content-icon\">\n  <svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M15.9998 2.6665C13.3628 2.6665 10.7849 3.44849 8.59224 4.91358C6.39958 6.37866 4.69062 8.46104 3.68145 10.8974C2.67228 13.3337 2.40824 16.0146 2.92271 18.601C3.43718 21.1875 4.70705 23.5632 6.57175 25.4279C8.43645 27.2926 10.8122 28.5625 13.3986 29.077C15.9851 29.5914 18.6659 29.3274 21.1023 28.3182C23.5386 27.3091 25.621 25.6001 27.0861 23.4074C28.5512 21.2148 29.3332 18.6369 29.3332 15.9998C29.3296 12.4647 27.9238 9.07537 25.424 6.57565C22.9243 4.07593 19.535 2.67003 15.9998 2.6665ZM23.9185 12.9505V13.8118C23.9185 13.8778 23.9053 13.943 23.8797 14.0038C23.8541 14.0645 23.8166 14.1195 23.7693 14.1655C23.7221 14.2115 23.6661 14.2475 23.6047 14.2715C23.5433 14.2955 23.4777 14.307 23.4118 14.3052C22.0041 14.2057 20.6572 13.6917 19.5412 12.8278V19.1318C19.5409 19.8295 19.4016 20.5202 19.1314 21.1635C18.8613 21.8067 18.4657 22.3898 17.9678 22.8785C17.4658 23.38 16.8688 23.7763 16.2117 24.0442C15.5547 24.3121 14.8507 24.4461 14.1412 24.4385C12.7143 24.4364 11.3448 23.8766 10.3252 22.8785C9.67636 22.2244 9.20903 21.4126 8.96917 20.523C8.72931 19.6335 8.72517 18.6968 8.95718 17.8052C9.16918 16.9492 9.59718 16.1625 10.2012 15.5212C10.6516 14.9706 11.2194 14.5277 11.863 14.2248C12.5067 13.9219 13.2098 13.7667 13.9212 13.7705H15.0145V16.0412C15.015 16.1071 15.0014 16.1724 14.9747 16.2327C14.9479 16.293 14.9087 16.3469 14.8594 16.3908C14.8102 16.4347 14.7522 16.4676 14.6893 16.4873C14.6264 16.507 14.56 16.5131 14.4945 16.5052C13.8597 16.3145 13.1756 16.3777 12.5866 16.6816C11.9975 16.9854 11.5494 17.5061 11.3367 18.1339C11.124 18.7617 11.1634 19.4475 11.4466 20.0468C11.7297 20.6461 12.2345 21.1121 12.8545 21.3465C13.2145 21.5532 13.6172 21.6745 14.0305 21.7025C14.3505 21.7158 14.6705 21.6758 14.9745 21.5798C15.482 21.4086 15.9234 21.0833 16.2373 20.6493C16.5511 20.2152 16.7216 19.6941 16.7252 19.1585V7.67184C16.7252 7.54476 16.7756 7.42288 16.8653 7.3329C16.955 7.24292 17.0768 7.19219 17.2038 7.19184H19.0905C19.2131 7.19199 19.331 7.23903 19.42 7.32333C19.509 7.40762 19.5624 7.52277 19.5692 7.64517C19.6379 8.23348 19.8248 8.80184 20.1185 9.31619C20.4122 9.83055 20.8068 10.2803 21.2785 10.6385C21.916 11.117 22.6731 11.4104 23.4665 11.4865C23.5853 11.4967 23.6965 11.5495 23.7793 11.6353C23.8622 11.7211 23.9112 11.834 23.9172 11.9532L23.9185 12.9505Z\" fill=\"#FF0099\"></path>\n  </svg>\n  \n      </span></a>\n</div>"
+          }
+        },
+        "row_cyMzxB": {
+          "type": "row",
+          "settings": {
+            "heading": "04",
+            "value": "<p>After receiving your bottle, write an honest review (we’ll send a link by email).</p>",
+            "custom_table_content": ""
+          }
+        },
+        "row_8jVF4M": {
+          "type": "row",
+          "settings": {
+            "heading": "05",
+            "value": "<p>Post at least one photo or video of your “mōmi in action” on at least one of your own social media<br/>accounts - and tag us in it.</p>",
+            "custom_table_content": "<div class=\"table-custom-content\">\n<a href=\"https://www.instagram.com/momi.naturally/\"><span class=\"custom-content-icon\">\n<svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M17.3708 2.6665C18.8708 2.6705 19.6321 2.6785 20.2894 2.69717L20.5481 2.7065C20.8468 2.71717 21.1414 2.7305 21.4974 2.7465C22.9161 2.81317 23.8841 3.03717 24.7334 3.3665C25.6134 3.70517 26.3548 4.16384 27.0961 4.90384C27.7744 5.57015 28.299 6.37647 28.6334 7.2665C28.9628 8.11584 29.1868 9.08384 29.2534 10.5038C29.2694 10.8585 29.2828 11.1532 29.2934 11.4532L29.3014 11.7118C29.3214 12.3678 29.3294 13.1292 29.3321 14.6292L29.3334 15.6238V17.3705C29.3367 18.343 29.3265 19.3156 29.3028 20.2878L29.2948 20.5465C29.2841 20.8465 29.2708 21.1412 29.2548 21.4958C29.1881 22.9158 28.9614 23.8825 28.6334 24.7332C28.299 25.6232 27.7744 26.4295 27.0961 27.0958C26.4298 27.7741 25.6235 28.2987 24.7334 28.6332C23.8841 28.9625 22.9161 29.1865 21.4974 29.2532L20.5481 29.2932L20.2894 29.3012C19.6321 29.3198 18.8708 29.3292 17.3708 29.3318L16.3761 29.3332H14.6308C13.6578 29.3366 12.6848 29.3264 11.7121 29.3025L11.4534 29.2945C11.1369 29.2825 10.8205 29.2687 10.5041 29.2532C9.08544 29.1865 8.11744 28.9625 7.26677 28.6332C6.37721 28.2986 5.57136 27.7739 4.90544 27.0958C4.2267 26.4297 3.70159 25.6233 3.36677 24.7332C3.03744 23.8838 2.81344 22.9158 2.74677 21.4958L2.70677 20.5465L2.70011 20.2878C2.67553 19.3156 2.66442 18.3431 2.66677 17.3705V14.6292C2.66308 13.6566 2.67286 12.6841 2.69611 11.7118L2.70544 11.4532C2.71611 11.1532 2.72944 10.8585 2.74544 10.5038C2.81211 9.08384 3.03611 8.11717 3.36544 7.2665C3.70103 6.3761 4.22707 5.56975 4.90677 4.90384C5.57231 4.2259 6.37769 3.70127 7.26677 3.3665C8.11744 3.03717 9.08411 2.81317 10.5041 2.7465C10.8588 2.7305 11.1548 2.71717 11.4534 2.7065L11.7121 2.6985C12.6844 2.67481 13.6569 2.66459 14.6294 2.66784L17.3708 2.6665ZM16.0001 9.33317C14.232 9.33317 12.5363 10.0355 11.2861 11.2858C10.0358 12.536 9.33344 14.2317 9.33344 15.9998C9.33344 17.7679 10.0358 19.4636 11.2861 20.7139C12.5363 21.9641 14.232 22.6665 16.0001 22.6665C17.7682 22.6665 19.4639 21.9641 20.7142 20.7139C21.9644 19.4636 22.6668 17.7679 22.6668 15.9998C22.6668 14.2317 21.9644 12.536 20.7142 11.2858C19.4639 10.0355 17.7682 9.33317 16.0001 9.33317ZM16.0001 11.9998C16.5254 11.9997 17.0456 12.1031 17.5309 12.3041C18.0162 12.505 18.4572 12.7996 18.8287 13.1709C19.2002 13.5423 19.4949 13.9832 19.696 14.4685C19.8971 14.9538 20.0007 15.4739 20.0008 15.9992C20.0009 16.5245 19.8975 17.0446 19.6965 17.53C19.4956 18.0153 19.201 18.4563 18.8297 18.8278C18.4583 19.1993 18.0174 19.494 17.5321 19.6951C17.0469 19.8962 16.5267 19.9997 16.0014 19.9998C14.9406 19.9998 13.9232 19.5784 13.173 18.8283C12.4229 18.0781 12.0014 17.0607 12.0014 15.9998C12.0014 14.939 12.4229 13.9216 13.173 13.1714C13.9232 12.4213 14.9406 11.9998 16.0014 11.9998M23.0014 7.33317C22.5594 7.33317 22.1355 7.50877 21.8229 7.82133C21.5104 8.13389 21.3348 8.55781 21.3348 8.99984C21.3348 9.44186 21.5104 9.86579 21.8229 10.1783C22.1355 10.4909 22.5594 10.6665 23.0014 10.6665C23.4435 10.6665 23.8674 10.4909 24.18 10.1783C24.4925 9.86579 24.6681 9.44186 24.6681 8.99984C24.6681 8.55781 24.4925 8.13389 24.18 7.82133C23.8674 7.50877 23.4435 7.33317 23.0014 7.33317Z\" fill=\"#FF0099\"></path>\n    </svg></span></a><a href=\"https://www.facebook.com/momi.naturally/\"><span class=\"custom-content-icon\">\n  <svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M26.3707 2.66748H5.6291C3.9994 2.66748 2.66602 4.00087 2.66602 5.63056V26.3721C2.66602 28.0033 3.9994 29.3352 5.6291 29.3352H15.9999V18.9644H13.0368V15.2976H15.9999V12.2605C15.9999 9.0544 17.7955 6.80246 21.5794 6.80246L24.2506 6.80542V10.6648H22.4772C21.0045 10.6648 20.4445 11.7701 20.4445 12.7953V15.2991H24.2491L23.4076 18.9644H20.4445V29.3352H26.3707C28.0004 29.3352 29.3338 28.0033 29.3338 26.3721V5.63056C29.3338 4.00087 28.0004 2.66748 26.3707 2.66748Z\" fill=\"#FF0099\"></path>\n  </svg>\n  </span></a><a href=\"https://www.tiktok.com/@momi.bottle\"><span class=\"custom-content-icon\">\n  <svg width=\"32\" height=\"32\" viewbox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M15.9998 2.6665C13.3628 2.6665 10.7849 3.44849 8.59224 4.91358C6.39958 6.37866 4.69062 8.46104 3.68145 10.8974C2.67228 13.3337 2.40824 16.0146 2.92271 18.601C3.43718 21.1875 4.70705 23.5632 6.57175 25.4279C8.43645 27.2926 10.8122 28.5625 13.3986 29.077C15.9851 29.5914 18.6659 29.3274 21.1023 28.3182C23.5386 27.3091 25.621 25.6001 27.0861 23.4074C28.5512 21.2148 29.3332 18.6369 29.3332 15.9998C29.3296 12.4647 27.9238 9.07537 25.424 6.57565C22.9243 4.07593 19.535 2.67003 15.9998 2.6665ZM23.9185 12.9505V13.8118C23.9185 13.8778 23.9053 13.943 23.8797 14.0038C23.8541 14.0645 23.8166 14.1195 23.7693 14.1655C23.7221 14.2115 23.6661 14.2475 23.6047 14.2715C23.5433 14.2955 23.4777 14.307 23.4118 14.3052C22.0041 14.2057 20.6572 13.6917 19.5412 12.8278V19.1318C19.5409 19.8295 19.4016 20.5202 19.1314 21.1635C18.8613 21.8067 18.4657 22.3898 17.9678 22.8785C17.4658 23.38 16.8688 23.7763 16.2117 24.0442C15.5547 24.3121 14.8507 24.4461 14.1412 24.4385C12.7143 24.4364 11.3448 23.8766 10.3252 22.8785C9.67636 22.2244 9.20903 21.4126 8.96917 20.523C8.72931 19.6335 8.72517 18.6968 8.95718 17.8052C9.16918 16.9492 9.59718 16.1625 10.2012 15.5212C10.6516 14.9706 11.2194 14.5277 11.863 14.2248C12.5067 13.9219 13.2098 13.7667 13.9212 13.7705H15.0145V16.0412C15.015 16.1071 15.0014 16.1724 14.9747 16.2327C14.9479 16.293 14.9087 16.3469 14.8594 16.3908C14.8102 16.4347 14.7522 16.4676 14.6893 16.4873C14.6264 16.507 14.56 16.5131 14.4945 16.5052C13.8597 16.3145 13.1756 16.3777 12.5866 16.6816C11.9975 16.9854 11.5494 17.5061 11.3367 18.1339C11.124 18.7617 11.1634 19.4475 11.4466 20.0468C11.7297 20.6461 12.2345 21.1121 12.8545 21.3465C13.2145 21.5532 13.6172 21.6745 14.0305 21.7025C14.3505 21.7158 14.6705 21.6758 14.9745 21.5798C15.482 21.4086 15.9234 21.0833 16.2373 20.6493C16.5511 20.2152 16.7216 19.6941 16.7252 19.1585V7.67184C16.7252 7.54476 16.7756 7.42288 16.8653 7.3329C16.955 7.24292 17.0768 7.19219 17.2038 7.19184H19.0905C19.2131 7.19199 19.331 7.23903 19.42 7.32333C19.509 7.40762 19.5624 7.52277 19.5692 7.64517C19.6379 8.23348 19.8248 8.80184 20.1185 9.31619C20.4122 9.83055 20.8068 10.2803 21.2785 10.6385C21.916 11.117 22.6731 11.4104 23.4665 11.4865C23.5853 11.4967 23.6965 11.5495 23.7793 11.6353C23.8622 11.7211 23.9112 11.834 23.9172 11.9532L23.9185 12.9505Z\" fill=\"#FF0099\"></path>\n  </svg>\n  \n      </span></a>\n</div>"
+          }
+        },
+        "row_rf6kMi": {
+          "type": "row",
+          "settings": {
+            "heading": "06",
+            "value": "<p>Submit your rebate request using the button below. (You will be asked to upload a photo or video<br/>of your “mōmi in action” that we can use in marketing.)</p><p>That’s it! We’ll process your request and issue your rebate to the payment method you used in making<br/>your purchase.</p>",
+            "custom_table_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_ppYeqG",
+        "row_MyUT74",
+        "row_e7DbDq",
+        "row_cyMzxB",
+        "row_8jVF4M",
+        "row_rf6kMi"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "SpecificationTable",
+        "full_width": true,
+        "subheading": "",
+        "title": "here's how it works:",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 6,
+        "view_all_text": "",
+        "view_less_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "rich_text_w7NBnC": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_PmC8pj": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_hxjbiy": {
+          "type": "heading",
+          "settings": {
+            "text": "Returns",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_6tP6Hb": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Not happy with your mōmi? Not a problem. Return your product for a full refund (up to $100) and save<br/>the hassle of completing the rebate requirements. We’ll even waive our usual $8 refund processing fee.<br/>( Premium shipping options not eligible for refund. )</p>",
+            "mobile_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_PmC8pj",
+        "heading_hxjbiy",
+        "richtext_6tP6Hb"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "SpecificationRichText",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "images_with_text_scrolling_hBRwam": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_iYycqz": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0251_66fa86c9-da4d-496d-8d15-ec91ae07ae42.jpg",
+            "custom_text": "<title></title>\n\n\n<div class=\"custom-text-wrapper\">\n\t<div class=\"custom-text-item\">\n\t\t<div class=\"text-item-title\">\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"39\" height=\"29\" viewbox=\"0 0 39 29\" fill=\"none\">\n            <path d=\"M26.0116 2.85864C23.2928 2.85864 20.8977 4.2275 19.5383 6.37857C18.1789 4.2275 15.7837 2.85864 13.0649 2.85864C8.79249 2.85864 5.29688 6.37857 5.29688 10.6807C5.29688 18.4376 19.5383 26.3248 19.5383 26.3248C19.5383 26.3248 33.7797 18.5028 33.7797 10.6807C33.7797 6.37857 30.2841 2.85864 26.0116 2.85864Z\" fill=\"#FF0099\"></path>\n          </svg>\n\t\t\tyour momi?\n\t\t</div>\n\t\t<div class=\"text-item-button\">\n\t\t\t<a href=\"https://avms5ymvnao.typeform.com/to/bHbObEh8\" target=\"_blank\" class=\"button button--xl\">request your rebate</a>\n\t\t</div>\n\t</div>\n\n\t\t<div class=\"custom-text-item\">\n\t\t<div class=\"text-item-title\">\n\t\t\tnot a fan?\n\t\t</div>\n\t\t<div class=\"text-item-button\">\n\t\t\t<a href=\"https://avms5ymvnao.typeform.com/to/ljcRUn2R\" target=\"_blank\" class=\"button button--xl\">return for refund </a>\n\t\t</div>\n\t</div>\n</div>",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_iYycqz"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "landing-image-with-text",
+        "main-title": "ready for your rebate?",
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_aRJVAV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_LbeB7r": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_A8GpdN": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "terms and conditions",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_F6pikK": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<ol><li>Offer available to new customers only.</li><li>Limit one rebate of up to $50 per customer, email address, shipping address, billing address, and<br/>payment method.</li><li>All requirements, including submission of rebate request form, must be completed within 30 days<br/>of receiving your order.</li><li>Not combinable with other discounts or promotions.</li><li>“earlybird” code cannot be applied retroactively after placing your order.</li><li>Limited to the first 150 customers using the “earlybird” code at checkout.</li><li>Premium shipping options not eligible for shipping rebate (any shipping method other than $6<br/>Economy Shipping). Product rebate is still available if you choose premium shipping.</li><li>You grant Momtech Inc. the right to use your submitted content for marketing purposes.</li></ol><p>     Additional terms and conditions apply - <a href=\"/pages/terms-conditions-1\" title=\"/pages/terms-conditions-1\">read them here</a>. </p>",
+            "mobile_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_LbeB7r",
+        "heading_A8GpdN",
+        "richtext_F6pikK"
+      ],
+      "settings": {
+        "class_name": "TermAndConditions",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "home_video_dcLHCx": {
+      "type": "home-video",
+      "settings": {
+        "class_name": "LandingPageVideo",
+        "home-video-id": "",
+        "title": "how mōmi works",
+        "subtitle": "learn how mōmi can help establish, restore, strengthen and preserve your",
+        "home-video": "https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1&muted=1",
+        "home-mob-video": "https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1&muted=1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_MCiwTn",
+    "featured_collection_dabAhg",
+    "specification_table_NGicHa",
+    "rich_text_w7NBnC",
+    "images_with_text_scrolling_hBRwam",
+    "rich_text_aRJVAV",
+    "home_video_dcLHCx"
+  ]
+}

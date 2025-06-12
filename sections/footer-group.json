@@ -1,0 +1,164 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "free-shipping": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Tell your customers about your shipping offer.</p>"
+          }
+        },
+        "customer-support": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Customer service",
+            "content": "<p>Tell your customers how they can reach you.</p>"
+          }
+        },
+        "discount": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Refer a friend",
+            "content": "<p>Tell your customers about your promotional offers.</p>"
+          }
+        },
+        "payment": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Secure payment",
+            "content": "<p>Tel your customers about your payment methods.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "free-shipping",
+        "customer-support",
+        "discount",
+        "payment"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.above-footer-section {min-height: 0px !important; }}"
+      ],
+      "settings": {
+        "class_name": "above-footer-section",
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer_info_VaiLPf": {
+          "type": "footer_info",
+          "settings": {
+            "logo_img": "shopify://shop_images/momi_logo_white_4x_1.png",
+            "about_content": ""
+          }
+        },
+        "text_whQByd": {
+          "type": "text",
+          "settings": {
+            "title": "address",
+            "content": "<p>2217 matthews township parkway<br/>suite d235 matthews, nc 28105 usa</p>",
+            "enable_follow_on_shop": true
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-menu",
+            "show_menu_title": true,
+            "menu_title": "Menu"
+          }
+        },
+        "links_RHAKt7": {
+          "type": "links",
+          "settings": {
+            "menu": "privacy-menu",
+            "show_menu_title": true,
+            "menu_title": "Links"
+          }
+        },
+        "top_menu_iJKKaL": {
+          "type": "top-menu",
+          "settings": {
+            "top-menu-title": "stay abreast",
+            "top-menu-text1": "our news",
+            "top-menu-url1": "/",
+            "top-menu-text2": "promotions",
+            "top-menu-url2": "/",
+            "top-menu-text3": "special offers",
+            "top-menu-url3": "/"
+          }
+        }
+      },
+      "block_order": [
+        "footer_info_VaiLPf",
+        "text_whQByd",
+        "links",
+        "links_RHAKt7",
+        "top_menu_iJKKaL"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.footer {min-height: 0px !important; padding-bottom: 40px !important; }}"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "show_payment_icons": false,
+        "show_country_selector": true,
+        "show_country_flag": true,
+        "show_country_name": true,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "footer"
+  ]
+}

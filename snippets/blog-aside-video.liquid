@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="{{ 'glightbox.min.css' | asset_url }}">
+<script src="{{ 'glightbox.min.js' | asset_url }}"></script>
+<style>
+  .blog_button .btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:lowercase;
+  }
+
+  
+ .blog-title-main h2{
+font-size: 3rem;
+font-weight: 600;
+line-height: 1.25;
+margin-bottom: 1.25rem;
+ }
+  
+.blog-video-section{
+  margin-bottom:60px;
+  margin-top:30px;
+}
+  .blog_button{
+    margin-top:15px;
+  }
+@media(min-width: 768px) and (max-width: 1400px){
+  .blog-title-main h2{
+    font-size: 2.5rem;
+  }
+}
+@media(max-width:767px){
+   .blog_button .btn{
+     font-size:13px;
+     height:40px;
+   }
+  .blog-title-main h2{
+    font-size: 2.5rem;
+  }
+}
+  
+</style>
+
+
+<div class="blog-video-section">
+  <div class="blog-title-main">
+    <h2>introducing momtech</h2>
+  </div>
+  <div class="blog-video-block-section">
+    <div class="blog-videos-block">
+      <video width="100%" height="20%" playsinline="true" preload="metadata" muted="muted" loop="loop" autoplay>
+        <source src="https://cdn.shopify.com/videos/c/o/v/e0dfc44728254f76ad3cd9a25b6f7073.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="blog_button">
+      <a href="#" class="btn glightbox4 btn" id="learnMoreButton">learn more</a>
+    </div>
+  </div>
+</div>
+
+<!-- Add a modal for the Vimeo video -->
+<div id="vimeoModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1&muted=1&autoplay=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  // GLightbox initialization
+  var lightbox = GLightbox();
+  lightbox.on('open', (target) => {
+    console.log('lightbox opened');
+  });
+
+  // Show the Vimeo modal when the button is clicked
+  const learnMoreButton = document.getElementById('learnMoreButton');
+  const vimeoModal = document.getElementById('vimeoModal');
+  const closeButton = document.querySelector('.close-button');
+
+  learnMoreButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    vimeoModal.style.display = 'block'; // Show the modal
+    const vimeoPlayer = document.getElementById('vimeoPlayer');
+    vimeoPlayer.src += "?autoplay=1"; // Add autoplay parameter
+  });
+
+  // Close the modal
+  closeButton.addEventListener("click", () => {
+    vimeoModal.style.display = 'none'; // Hide the modal
+    const vimeoPlayer = document.getElementById('vimeoPlayer');
+    vimeoPlayer.src = "https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1&muted=1"; // Reset the video to stop playback
+  });
+
+  // Close the modal when clicking outside of it
+  window.addEventListener("click", (event) => {
+    if (event.target === vimeoModal) {
+      vimeoModal.style.display = 'none';
+      const vimeoPlayer = document.getElementById('vimeoPlayer');
+      vimeoPlayer.src = "https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1&muted=1"; // Reset the video to stop playback
+    }
+  });
+</script>
+
+<style>
+  /* Modal styles */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFF;
+  }
+</style>

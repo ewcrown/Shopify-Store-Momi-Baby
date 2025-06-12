@@ -1,0 +1,663 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "home_hero_section_z7EtdW": {
+      "type": "home-hero-section",
+      "custom_css": [
+        ".heroImageWrapper {border-radius: 10px; /* Adjust the value as needed */ overflow: hidden; /* Ensures the iframe content stays within the rounded corners */ box-shadow: 2px 2px 20px #0000009e; /* Optional shadow for styling */}"
+      ],
+      "settings": {
+        "class_name": "",
+        "tab1": "Establish",
+        "tab2": "Restore",
+        "tab3": "Strengthen",
+        "tab4": "Preserve",
+        "subtext": "your breastfeeding journey",
+        "btn_text": "shop now",
+        "btn_link": "shopify://collections/shop-all"
+      }
+    },
+    "home_video_kxmmnK": {
+      "type": "home-video",
+      "custom_css": [
+        "@media screen and (max-width: 767px) {#how-it-works {min-height: 0 !important; }}"
+      ],
+      "settings": {
+        "class_name": "home-video-section",
+        "home-video-id": "how-it-works",
+        "title": "the bottle that works like a mom®",
+        "subtitle": "see how mōmi works like nature to support breastfeeding and healthy oral mechanics",
+        "home-video": "https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1&muted=1",
+        "home-mob-video": "https://player.vimeo.com/video/943318006?h=9c153446c9&autoplay=1&muted=1"
+      }
+    },
+    "recommended_products_BPpetf": {
+      "type": "recommended-products",
+      "settings": {
+        "custom_id": "",
+        "class_name": "",
+        "collection": "",
+        "products": [
+          "momi-breast-like-bottle-set-4oz-purple",
+          "momi-breast-like-bottle-set-4oz-gray",
+          "momi-breast-like-bottle-2-sets-9oz-10oz-purple",
+          "momi-breast-like-bottle-sets-9oz-10oz-gray",
+          "momi-replacement-bottle",
+          "essentials-bundle",
+          "on-the-go-bundle",
+          "starter-bundle",
+          "ultimate-gift-bundle"
+        ],
+        "products_count": 10,
+        "products_per_row_mobile": 2,
+        "products_per_row_desktop": 3,
+        "stack_products": true,
+        "title1": "new arrivals!",
+        "subtitle": "",
+        "link_url": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "17347255192347ce0f": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_pdDJGQ": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_pdDJGQ"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "press_MWqeUA": {
+      "type": "press",
+      "blocks": {
+        "quote_Hbb6Wk": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/IMG_6962.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Morgan Tempel",
+            "authorpro": "RN, BSN, IBCLC",
+            "content": "\"Moms are getting the mōmi to continue breastfeeding and protect it.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 0
+          }
+        },
+        "quote_qJVA7W": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0446.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Joanne Rogers",
+            "authorpro": "SLP, CLC",
+            "content": "\"The mōmi nipple is the most breast-like nipple in terms of function and shape.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_T7PEpC": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0565.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Meg Alden",
+            "authorpro": "MD, faap",
+            "content": "\"It's truly the bottle that works like mom.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_xy7Faa": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0578.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Mara Heiden",
+            "authorpro": "IBCLC",
+            "content": "\"For those moms that want to both bottle and breastfeed, mōmi protects the breastfeeding relationship.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_MhWqjK": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0223.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Mary Enger",
+            "authorpro": "RN, BSN, IBCLC",
+            "content": "\"I like the new mōmi because I want congruence in how babies use their mouths on the bottle and the breast\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_CFTVWN": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/tbp-section_1.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Morgan Tempel",
+            "authorpro": "RN, BSN, IBCLC",
+            "content": "“Our moms purchase mōmi because they're wanting to introduce their breastfed baby to a bottle while protecting their breastfeeding dynamic... It becomes part of their breastfeeding journey.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_WDHNep": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/UGC_2023.05.10_-_Kesha_L_2.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Joanne Rogers",
+            "authorpro": "SLP, CLC",
+            "content": "\"The fact that there is a bottle out there that does function like the breast... it's a game changer.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_qkbj9e": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0362.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Jessika Martin",
+            "authorpro": "DDS",
+            "content": "“In supporting a baby’s transition to the breast after nicu, we switched to the mōmi as a stepping stone to get baby used to doing the same motion and routine as baby would do with the breast.”",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_6NpPUq": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/UGC_2023.04.24_Kimberly_D.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Mary Enger",
+            "authorpro": "RN, BSN, IBCLC",
+            "content": "\"A big plus of breastfeeding that isn't emphasized much is how it helps baby's oral facial structure and development. Babies need that and the mōmi can help with that in a different way than what other bottles can.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_bWyBRh": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/UGC_2023.04.05_Charlotte_SH.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "Trusted by professionals",
+            "heading_title_mobile": "Trusted by professionals",
+            "author": "Jessika Martin",
+            "authorpro": "DDS",
+            "content": "\"mōmi is something new and different that you've never seen, something that's designed completely different than any other bottle that's out there.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_Hbb6Wk",
+        "quote_qJVA7W",
+        "quote_T7PEpC",
+        "quote_xy7Faa",
+        "quote_MhWqjK",
+        "quote_CFTVWN",
+        "quote_WDHNep",
+        "quote_qkbj9e",
+        "quote_6NpPUq",
+        "quote_bWyBRh"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.TrustedByProfession {padding-top: 40px; padding-bottom: 40px; } .press__list {max-height: 460px !important; }}"
+      ],
+      "settings": {
+        "class_name": "BlogSlider TrustedByProfession",
+        "video_url2": "",
+        "video_url_Mobile2": "",
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#eadeee",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "press_9yEBw8": {
+      "type": "press",
+      "blocks": {
+        "quote_QWVDPz": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/9f9cd14bde59474f92235f91a03500b0.mp4",
+            "video_url_Mobile": "https://cdn.shopify.com/videos/c/o/v/9f9cd14bde59474f92235f91a03500b0.mp4",
+            "heading_title": "soft and squeezy",
+            "heading_title_mobile": "soft and squeezy",
+            "author": "",
+            "authorpro": "like natural tissue, to reduce nipple preference and bottle refusal",
+            "content": "like natural tissue, to reduce nipple preference and bottle refusal",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_eNiKyr": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Screenshot_2024-10-30_at_4.38.38_PM.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "soft and squeezy",
+            "heading_title_mobile": "soft and squeezy",
+            "author": "",
+            "authorpro": "like natural tissue, to reduce nipple preference and bottle refusal",
+            "content": "like natural tissue, to reduce nipple preference and bottle refusal",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_zctLNH": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/2.0_bottle_assembly_still_-_mobile.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "easy as 1-2-3",
+            "heading_title_mobile": "easy as 1-2-3",
+            "author": "",
+            "authorpro": "no complicated parts to clean and assemble",
+            "content": "no complicated parts to clean and assemble",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_Qwfxne": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/e0dfc44728254f76ad3cd9a25b6f7073.mp4",
+            "video_url_Mobile": "https://cdn.shopify.com/videos/c/o/v/e0dfc44728254f76ad3cd9a25b6f7073.mp4",
+            "heading_title": "pacing built in",
+            "heading_title_mobile": "pacing built in",
+            "author": "",
+            "authorpro": "patented babypace(r) technology lets baby regulate the flow.",
+            "content": "",
+            "content_html": "patented babypace<sup>®</sup> technology lets baby regulate the flow.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_N4yrJW": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Screenshot_2024-10-30_at_4.38.51_PM.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "pacing built in",
+            "heading_title_mobile": "pacing built in",
+            "author": "",
+            "authorpro": "patented babypace(r) technology lets baby regulate the flow.",
+            "content": "",
+            "content_html": "patented babypace<sup>®</sup> technology lets baby regulate the flow.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_g8e37X": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "nipple_wrapper",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/nipple.png",
+            "highlight_img": "shopify://shop_images/nipple.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "anti colic vent",
+            "heading_title_mobile": "anti colic vent",
+            "author": "",
+            "authorpro": "helps reduce gassiness and regurgitation",
+            "content": "helps reduce gassiness and regurgitation",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_J4j3FW": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/36a3d5edfee840f496c50d65d54318d0.mp4",
+            "video_url_Mobile": "https://cdn.shopify.com/videos/c/o/v/36a3d5edfee840f496c50d65d54318d0.mp4",
+            "heading_title": "medical grade silicone",
+            "heading_title_mobile": "medical grade silicone",
+            "author": "",
+            "authorpro": "",
+            "content": "tested and certified free of BPA, lead, phthalates, and other harmful chemicals",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_LGnUnz": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Screenshot_2024-10-30_at_4.39.04_PM.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "medical grade silicone",
+            "heading_title_mobile": "medical grade silicone",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "tested and certified free of BPA, lead, phthalates, and other harmful chemicals",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_QWVDPz",
+        "quote_eNiKyr",
+        "quote_zctLNH",
+        "quote_Qwfxne",
+        "quote_N4yrJW",
+        "quote_g8e37X",
+        "quote_J4j3FW",
+        "quote_LGnUnz"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.PressSlider {min-height: 0 !important; padding-bottom: 40px; }}"
+      ],
+      "settings": {
+        "class_name": "BlogSlider PressSlider SliderSoft",
+        "video_url2": "",
+        "video_url_Mobile2": "",
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "blog_slide_section_wTdCdY": {
+      "type": "blog-slide-section",
+      "blocks": {
+        "blog_g3ECMx": {
+          "type": "blog",
+          "settings": {
+            "blog": "momtech",
+            "stack_items": true
+          }
+        }
+      },
+      "block_order": [
+        "blog_g3ECMx"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.blogSlideSection {min-height: 0px !important; padding-top: 40px; padding-bottom: 40px; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_excerpt": true,
+        "show_date": true,
+        "show_author": true,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "",
+        "title": "from our blog",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "class_name": "blogSlideSection",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "faq_KrUKzc": {
+      "type": "faq",
+      "blocks": {
+        "item_f4j7Nj": {
+          "type": "item",
+          "settings": {
+            "title": "flow rates",
+            "content": "<ul><li></li></ul>",
+            "custom-html": "<p><a href=\"https://momi.baby/blogs/momtech/flow-rate\">Visit our blog for a complete guide on mōmi flow rates.</a>\n</p><p><br><span style=\"color:#ff0099;\">Important: <br>Before using the nipple for the first time, clean it with the included cleaning tool, passing the tip of the tool through the opening of the nipple duct 5 - 10 times.  This not only cleans the duct, but also establishes the nipple's correct flow rate.  Watch the demo video <a href=\"https://www.youtube.com/watch?v=L0SxQwt_KNQ\">here</a>.</span></p>\n<p> </p>\n<p><b>Level 1</b> is recommended for:\n</p><ul>\n  <li>late pre-term and full-term newborns </li>\n  <li>exclusively breastfed babies up to 3 months old who are being introduced to a bottle for the first time (unless they are accustomed to nursing with a strong letdown) </li>\n  <li>babies who have established feeding skills with other brands’ level 0 (preemie, etc.)</li>\n</ul>\n\n<p> </p><p><b>Level 2</b> is recommended for:\n</p><ul>\n  <li>exclusively breastfed babies older than 3 months</li>\n  <li>exclusively breastfed babies under 3 months who have adapted to a heavy let-down</li>\n  <li>babies who have established feeding skills with other brands’ level 1 or equivalent (slow flow, etc.)</li>\n  <li>babies who have previously adapted to mōmi’s Level 1 and who have graduated to needing a faster flow rate, typically 3 months or older </li> </ul>\n\n<p> </p><p><b>Level 3</b> is recommended for:</p><ul>\n  <li>\nbabies who have established feeding skills with other brands’ level 2 or equivalent (medium flow, etc.), typically 6 months or older</li>\n  <li>babies who have previously adapted to mōmi’s Level 2 and who have graduated to needing a faster flow rate, typically 6 months or older</li>\n</ul>"
+          }
+        },
+        "item_nmXieY": {
+          "type": "item",
+          "settings": {
+            "title": "cleaning and assembly",
+            "content": "<p>Cleaning is easy with the purple mōmi cleaning tool, included with each bottle set and replacement bundle.  The cleaning tool is inserted through the nipple’s central duct with warm soapy water.  See <a href=\"https://momi.baby/blogs/momtech/momi-getting-started\" title=\"https://momi.baby/blogs/momtech/momi-getting-started\">blog post</a> for how-to with pictures.</p><p>And assembly is as easy as 1-2-3 - just insert the nipple into the collar, and screw the collar onto the bottle.  Just three parts - no complicated pieces to clean and assemble!</p>",
+            "custom-html": ""
+          }
+        },
+        "item_pmVntC": {
+          "type": "item",
+          "settings": {
+            "title": "mōmi bottle compatibility",
+            "content": "<p>Write content to answer common questions your customers may have about your products, shipping policies, etc.</p>",
+            "custom-html": "<p>mōmi's stretchy silicone requires a mōmi brand collar of the same generation as the nipple. (For more details about compatibility between gen 1 and gen 2, visit <a href=\"/pages/faq#gen2\">our faq </a>.)</p> \n\n<p>However, if you have baby bottles at home that you'd like to use with a mōmi nipple, our collar is compatible with Phillips Avent (plastic), Spectra, Maymom and Chico Duo. Customers using mōmi with other bottle bases often purchase <a href=\"/products/replacement-set\">replacement set(s) </a>, which contain everything you need to convert to mōmi using a compatible base.</p>"
+          }
+        },
+        "item_tXtLHp": {
+          "type": "item",
+          "settings": {
+            "title": "mōmi + breastfeeding",
+            "content": "<p>Write content to answer common questions your customers may have about your products, shipping policies, etc.</p>",
+            "custom-html": "<p>Our breast-like baby bottles with patented babypace® 2 technology <a href=\"/blogs/momtech/how-to-introduce-a-bottle-to-a-breastfed-baby\">support your baby’s feeding journey from day one</a>, helping maintain <a href=\"/blogs/momtech/momi-for-breastfeeding\">natural feeding patterns while promoting a healthy latch</a>.</p>"
+          }
+        },
+        "item_pN47Ci": {
+          "type": "item",
+          "settings": {
+            "title": "mōmi + bottle refusal",
+            "content": "<p>Write content to answer common questions your customers may have about your products, shipping policies, etc.</p>",
+            "custom-html": "<p>Our innovative bottle nipple design with skin-soft silicone mimics the natural feel and function of mom’s breast, making it an ideal solution for <a href=\"/blogs/momtech/breastfed-baby-refusing-a-bottle-try-these-tactics\">babies who reject conventional bottles</a>. With mōmi bottles, babies can feed using their instinctive suck-swallow-breathe pattern, making our bottle a solution for parents of <a href=\"/blogs/momtech/breastfed-baby-not-taking-bottle\">bottle-refusing babies</a>.</p>"
+          }
+        },
+        "item_6rGiW6": {
+          "type": "item",
+          "settings": {
+            "title": "product safety",
+            "content": "<p>Nothing is more important to us than your baby’s safety. That’s why we have invested in ensuring that our products meet or exceed regulatory standards encompassing food contact, chemical composition, bite and tear resistance, and other aspects of safety. </p><p>We work with leading global safety testing labs to certify that each component of our products is safe. Our products are free of BPA, lead, phthalates, and cadmium. They exceed the mechanical strength requirements of the Consumer Product Safety Improvement Act for children up to 36 months old.  They even meet the chemical and mechanical strength requirements of Europe’s rigorous EN14350 regulation.</p><p>The ink on our glass bottles is now tested for lead separately from the glass.  Our third party testing lab has found no detectable level of lead in the ink or the glass.</p><p>See the <a href=\"/pages/faq#safety\" title=\"/pages/faq#safety\">product safety section</a> of our faq for important information on safe use of our products.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_iCeaCR": {
+          "type": "item",
+          "settings": {
+            "title": "returns",
+            "content": "<p>We accept returns and exchanges of new, unopened, unused, resalable products for 30 days after the original order date, subject to a 10% restocking fee.  Shipping charges are nonrefundable.  Customer is responsible for return shipping costs.  We will provide a shipping label using our discounted shipping rates.</p><p>To help ensure the safety of every baby, we never sell products that have been opened or previously used, therefore we cannot accept returns of products that have been opened or whose packaging seal has been removed.  </p><p>From time to time we may offer \"happiness guarantee\" promotions.  The details of such promotions are provided at the time of such promotions.  </p><p>Products sold under certain promotions such as close-out sales or deeply discounted offers may not be eligible for return.  Please read the terms and conditions of any such promotion to determine return eligibility.  Products sold under our \"2 for $35\" promotion beginning in March 2025 are not eligible for return or the happiness guarantee program.</p><p>In all cases we will replace products that are damaged or defective if we are notified within 30 days of order placement.  </p><p>Additional terms and conditions apply.  See the <a href=\"/pages/faq#purchasing\" title=\"/pages/faq#purchasing\">purchasing section</a> of our faq for more details.</p>",
+            "custom-html": "<p>We accept returns and exchanges of new, unopened, unused, resalable products for 30 days after the original order date, subject to a 10% restocking fee.  Shipping charges are nonrefundable.  Customer is responsible for return shipping costs.  We will provide a shipping label using our discounted shipping rates.\n</p><p>\nTo help ensure the safety of every baby, we never sell products that have been opened or previously used, therefore we cannot accept returns of products that have been opened or whose packaging seal has been removed. \n</p><p>From time to time we may offer \"happiness guarantee\" promotions.  The details of such promotions are provided at the time of such promotions.  Products sold under certain promotions such as close-out sales or deeply discounted offers may not be eligible for return.  Please read the terms and conditions of any such promotion to determine return eligibility.  </p><p>Products sold under our \"2 for $35\" promotion beginning in March 2025 are not eligible for return or the happiness guarantee program; all sales are final.</p><p>In all cases we will replace products that are damaged or defective if we are notified within 30 days of order placement.  </p><p>Additional terms and conditions apply.  See the <a href=\"https://momi-baby.myshopify.com/pages/faq#purchasing\">purchasing section</a> of our faq for more details.</p>"
+          }
+        },
+        "item_xj6wKM": {
+          "type": "item",
+          "settings": {
+            "title": "shipping",
+            "content": "<p>We offer free shipping on purchases over $99.  For purchases below that amount, economy shipping is always a flat $7.99.</p><p>We also offer UPS Ground, Second Day Air, and Next Day Air options where available.  If these options do not appear at check-out, then either they are not available to your address, or UPS has determined that a less expensive option will get the product to you at least as fast as the more expensive option.  (UPS Ground is often as fast as Second Day Air, for example).</p><p>Please note that delivery times are estimated from the time of carrier pickup and exclude weekends and holidays. Momtech cannot be responsible for delays caused by incorrect or incomplete address information, or caused by the carrier, whether due to weather, other natural causes, high demand periods, or otherwise.  We can only guarantee that the order will ship using the shipping method selected at check-out.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_f4j7Nj",
+        "item_nmXieY",
+        "item_pmVntC",
+        "item_tXtLHp",
+        "item_pN47Ci",
+        "item_6rGiW6",
+        "item_iCeaCR",
+        "item_xj6wKM"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.HomefaqSection {min-height: 0px !important; padding-top: 40px; padding-bottom: 40px; }}"
+      ],
+      "settings": {
+        "id1": "",
+        "full_width": false,
+        "subheading": "",
+        "title": "common questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "more",
+        "button_url": "shopify://pages/faq",
+        "text_position": "center",
+        "class_name": "HomeFaq HomefaqSection",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "home_hero_section_z7EtdW",
+    "home_video_kxmmnK",
+    "recommended_products_BPpetf",
+    "17347255192347ce0f",
+    "press_MWqeUA",
+    "press_9yEBw8",
+    "blog_slide_section_wTdCdY",
+    "faq_KrUKzc"
+  ]
+}

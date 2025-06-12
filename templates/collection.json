@@ -1,0 +1,273 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_main_search_DWNp4w": {
+      "type": "custom-main-search",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_article_category": true,
+        "search_menu": "",
+        "search_menu_show_title": true
+      }
+    },
+    "collection_filter_MeDwGL": {
+      "type": "collection-filter",
+      "blocks": {
+        "filter_nnrXe8": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "bottles",
+            "btn_link": "shopify://collections/bottles"
+          }
+        },
+        "filter_TPbLtU": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "bundles",
+            "btn_link": "shopify://collections/bundles"
+          }
+        },
+        "filter_9x6tBh": {
+          "type": "filter",
+          "settings": {
+            "class_name": "BabyPeaceButton",
+            "btn_text": "babypace® nipples",
+            "btn_link": "shopify://collections/babypace-nipples"
+          }
+        },
+        "filter_7Kk7jK": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "accessories",
+            "btn_link": "shopify://collections/accessories"
+          }
+        },
+        "filter_RpkF3w": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "gen 1",
+            "btn_link": "shopify://collections/gen-1"
+          }
+        },
+        "filter_9dUNk3": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "gift cards",
+            "btn_link": "shopify://collections/gift-cards"
+          }
+        },
+        "filter_m6GrWV": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "all",
+            "btn_link": "shopify://collections/shop-all"
+          }
+        }
+      },
+      "block_order": [
+        "filter_nnrXe8",
+        "filter_TPbLtU",
+        "filter_9x6tBh",
+        "filter_7Kk7jK",
+        "filter_RpkF3w",
+        "filter_9dUNk3",
+        "filter_m6GrWV"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name1": ""
+      }
+    },
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h1",
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "products_per_page": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "filter_layout": "sidebar",
+        "show_sort_by": false,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": false,
+        "open_first_filter_group": false
+      }
+    },
+    "featured_collection_Gzd6LK": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "custom_id": "",
+        "class_name": "FeatureCollection FatureCollectionSection",
+        "collection": "bottles",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title1": "",
+        "title": "bottles",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_ARFwzV": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "custom_id": "",
+        "class_name": "FeatureCollection FatureCollectionSection",
+        "collection": "accessories",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title1": "",
+        "title": "accessories",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "collection_filter_7meX3C": {
+      "type": "collection-filter",
+      "blocks": {
+        "filter_yjPFFJ": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "bottles",
+            "btn_link": "shopify://collections/bottles"
+          }
+        },
+        "filter_niwGpM": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "bundles",
+            "btn_link": "shopify://collections/bundles"
+          }
+        },
+        "filter_WXcNYy": {
+          "type": "filter",
+          "settings": {
+            "class_name": "BabyPeaceButton",
+            "btn_text": "babypace® nipples",
+            "btn_link": "shopify://collections/babypace-nipples"
+          }
+        },
+        "filter_AgezTQ": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "accessories",
+            "btn_link": "shopify://collections/accessories"
+          }
+        },
+        "filter_RYfRAJ": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "class_name": "",
+            "btn_text": "gen 1",
+            "btn_link": "shopify://collections/gen-1"
+          }
+        },
+        "filter_iLGVJm": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "gift cards",
+            "btn_link": "shopify://collections/gift-cards"
+          }
+        },
+        "filter_tBQDHm": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "all",
+            "btn_link": "shopify://collections/shop-all"
+          }
+        }
+      },
+      "block_order": [
+        "filter_yjPFFJ",
+        "filter_niwGpM",
+        "filter_WXcNYy",
+        "filter_AgezTQ",
+        "filter_RYfRAJ",
+        "filter_iLGVJm",
+        "filter_tBQDHm"
+      ],
+      "settings": {
+        "class_name1": "BottomCollectionFilter"
+      }
+    }
+  },
+  "order": [
+    "custom_main_search_DWNp4w",
+    "collection_filter_MeDwGL",
+    "banner",
+    "main",
+    "featured_collection_Gzd6LK",
+    "featured_collection_ARFwzV",
+    "collection_filter_7meX3C"
+  ]
+}

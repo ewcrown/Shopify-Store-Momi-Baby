@@ -1,0 +1,862 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_NjeMGw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YNrP4b": {
+          "type": "heading",
+          "settings": {
+            "text": "frequently asked questions",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_YNrP4b"
+      ],
+      "settings": {
+        "class_name": "FaqBanner",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#653490",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "collection_filter_e7iMgY": {
+      "type": "collection-filter",
+      "blocks": {
+        "filter_t7DqDU": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "purchasing",
+            "btn_link": "#purchasing"
+          }
+        },
+        "filter_grwCME": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "shipping",
+            "btn_link": "#shipping"
+          }
+        },
+        "filter_LhwMaM": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "class_name": "",
+            "btn_text": "mom2mom referral program",
+            "btn_link": "#mom2momreferralprogram"
+          }
+        },
+        "filter_Q6K3Dc": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "using the mōmi bottle",
+            "btn_link": "#usingmomi"
+          }
+        },
+        "filter_QUtfhC": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "class_name": "",
+            "btn_text": "new improved flow rates (october 2023)",
+            "btn_link": "#newimprovedflowrates(october 2023)"
+          }
+        },
+        "filter_h67w99": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "product safety",
+            "btn_link": "#safety"
+          }
+        },
+        "filter_dXGt87": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "other common questions",
+            "btn_link": "#other"
+          }
+        },
+        "filter_pRgn8T": {
+          "type": "filter",
+          "settings": {
+            "class_name": "",
+            "btn_text": "gen 2",
+            "btn_link": "#gen2"
+          }
+        }
+      },
+      "block_order": [
+        "filter_t7DqDU",
+        "filter_grwCME",
+        "filter_LhwMaM",
+        "filter_Q6K3Dc",
+        "filter_QUtfhC",
+        "filter_h67w99",
+        "filter_dXGt87",
+        "filter_pRgn8T"
+      ],
+      "settings": {
+        "class_name1": ""
+      }
+    },
+    "faq_Qn9hTm": {
+      "type": "faq",
+      "blocks": {
+        "item_T3tKA6": {
+          "type": "item",
+          "settings": {
+            "title": "does mōmi guarantee its products?",
+            "content": "<p>Our products are guaranteed to be free of defects in material and workmanship for thirty days from the date of purchase when used as recommended. If your product is defective, we will replace it at our expense. At our option, we may issue a refund instead.</p><p>The mōmi nipple’s soft silicone is not intended to be used as a teething toy. Allowing a baby to gnaw or chew on the nipple excessively may cause the nipple to wear out sooner than expected. Wear and tear caused by excessive gnawing and chewing is not covered by our warranty.</p><p>Our warranty applies only to new products purchased directly from our website or from another authorized reseller.  We cannot guarantee the authenticity, safety, or performance of products purchased used or from unauthorized sellers.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_cbXnfy": {
+          "type": "item",
+          "settings": {
+            "title": "does mōmi offer financing or payment plans?",
+            "content": "<p>We are pleased to offer payment plans on the purchase of eligible items from our store through our partnerships with Paypal and Affirm. Look for the Paypal and Affirm icons at checkout to divide your purchase into 4 interest-free payments. </p><p>Visit <a href=\"https://www.affirm.com/how-it-works\" title=\"https://www.affirm.com/how-it-works\">Affirm</a> for full payment terms and disclosure requirements.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_b8Q6bL": {
+          "type": "item",
+          "settings": {
+            "title": "what is mōmi’s return policy?",
+            "content": "<ul><li>We accept returns and exchanges of new, unopened, unused, resalable products for 30 days after the original order date, subject to a 10% restocking fee.  Contact care@momi.baby if you wish to initiate a return.  </li><li>Shipping charges are nonrefundable.  Customer is responsible for return shipping costs, but we will provide a return shipping label at a discounted shipping rate.  </li><li>To help ensure the safety of every baby, we never ship products that have been opened or previously used, therefore we cannot accept returns of products that have been opened or whose packaging seal has been removed or appears tampered with.  All returned products will be inspected upon receipt prior to any refund being processed. Items that cannot be resold as new will not be refunded or shipped back to the customer.</li><li>From time to time we may offer \"happiness guarantee\" promotions.  The details of such promotions are provided at the time of such promotions.  </li><li>Products sold under certain promotions such as close-out sales or deeply discounted offers may not be eligible for return.  Please read the terms and conditions of any such promotion to determine return eligibility.  Products sold under our \"2 for $35\" promotion beginning in March 2025 are not eligible for return or for the happiness guarantee program.</li><li>In all cases we will replace products that are damaged or defective, or were shipped in error, if we are notified within 30 days of order placement.   We will cover the shipping costs for those returns.</li></ul>",
+            "custom-html": ""
+          }
+        },
+        "item_qfRNTd": {
+          "type": "item",
+          "settings": {
+            "title": "my order arrived damaged.  what do i do next?",
+            "content": "<p>We take extra care to ensure all packages leave our facility in tip-top shape but know that damage can occur in transit from time to time. If your order arrives damaged, please reach out to our support team at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a> so we can assist. <br/></p>",
+            "custom-html": ""
+          }
+        },
+        "item_q9r4TT": {
+          "type": "item",
+          "settings": {
+            "title": "i believe my mōmi bottle (or nipple) is defective.  what do i do next?",
+            "content": "<p>We’re sorry you’re having trouble! The mōmi nipple involves quite a bit of complex engineering, and on rare occasions a defective one may slip through our rigorous inspection process.<br/><br/>If you believe your mōmi product may be defective, please stop using it immediately to avoid any potential safety risk to your baby. Then email us the details at <a href=\"mailto:care@momi.baby\">care@momi.baby</a>. If possible, attach a photo showing the defect. We’ll work with you from there to replace any defective parts at no cost to you. At our option, we may choose to issue a refund instead of a replacement. We may require that you return the defective part (at our expense).<br/><br/>Here are some potential signs of defects that we’re aware of<br/></p><ul><li>Nipple collapses during feeding. This can be a sign that baby needs a faster flow rate, but may also occur if the vent in the nipple isn’t functioning properly to allow air back into the bottle. A vacuum forms in the bottle, eventually causing the nipple to collapse as if being sucked into the bottle. </li><li>Milk or formula drips from the anticolic vent. The vent is designed to let air in while preventing liquid from spilling out. If milk is leaking from anywhere except the central duct, please let us know.</li><li>Milk duct is malformed. The narrow milk duct that runs through the nipple’s tip should be straight and centered. A slight angle is normal and should not create any problems. If the duct is significantly off-center or has bubbles or bulged areas, that may indicate a defect.</li></ul><p><br/>Small bubbles in the tip of the nipple are normal and don’t cause a problem as long as they’re not connected to the milk duct.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_q7tbPG": {
+          "type": "item",
+          "settings": {
+            "title": "what if my baby won’t accept the mōmi bottle?",
+            "content": "<p>We want you, and most importantly your baby, to love the mōmi bottle. If you or your baby is having difficulty with the mōmi bottle, our experienced team would love to help you troubleshoot by email, phone, or chat. For us, it’s not just about customer support, it’s about supporting moms.<br/><br/>Please reach out to us at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a>, by voicemail or text to 980-400-6455, or by chat here on our website.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_6kVf4p": {
+          "type": "item",
+          "settings": {
+            "title": "how can i leave a review about the mōmi bottle?",
+            "content": "<p>We would love to hear from you! You will receive a review request by email following your purchase. If you do not receive this email, please reach out to us at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a> or by voicemail or text to 980-400-6455 so we may send you a new one.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_ydThCL": {
+          "type": "item",
+          "settings": {
+            "title": "i have a question that’s not covered here.  how can I contact you?",
+            "content": "<p>Please reach out to us at <a href=\"mailto:care@momi.baby\">care@momi.baby</a>, by chat on our website, or by voicemail or text to 980-400-6455. We usually respond within 24 hours.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_T3tKA6",
+        "item_cbXnfy",
+        "item_b8Q6bL",
+        "item_qfRNTd",
+        "item_q9r4TT",
+        "item_q7tbPG",
+        "item_6kVf4p",
+        "item_ydThCL"
+      ],
+      "settings": {
+        "id1": "purchasing",
+        "full_width": true,
+        "subheading": "",
+        "title": "purchasing",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_yx9iji": {
+      "type": "faq",
+      "blocks": {
+        "item_B4afFq": {
+          "type": "item",
+          "settings": {
+            "title": "does mōmi offer free shipping?",
+            "content": "<p>Yes, we offer free shipping on purchases of at least $99. We may also occasionally offer free shipping on special purchases.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_mJjKma": {
+          "type": "item",
+          "settings": {
+            "title": "when will my order ship?",
+            "content": "<p>We understand you're eager for your order to arrive! That's why we work to fulfill orders as quickly as possible when we receive them. Most orders are fulfilled within one business day. In times of peak demand it may take more than one business day.  Our fulfillment center is closed on weekends and holidays.</p><p>When your order is fulfilled, we'll send you an email that includes a tracking number. Note that for orders shipped by Economy, it may take 1-2 business days for the carrier to scan the package into the system.</p><p>Please note that delivery times are estimated from the time of carrier pickup and exclude weekends and holidays.</p><p>Momtech cannot be responsible for delays caused by incorrect or incomplete address information, or caused by the carrier, whether due to weather, other natural causes, high demand periods, or otherwise.  We can only guarantee that the order will ship using the shipping method selected at check-out.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_c96RyB": {
+          "type": "item",
+          "settings": {
+            "title": "what are my shipping options?",
+            "content": "<p>When you checkout, you'll see shipping costs for each of the following options, based on where you're located and the contents of your order. You can choose:</p><ul><li>Economy ($7.99 flat fee, or free for orders over $99) - typically arrives within 5-8 business days after carrier pick-up. Please note that packages shipped Economy may not register tracking information for 1-2 days.</li><li>UPS Ground - typically delivers one to five business days from pickup date, though delivery time is not guaranteed.  90% are delivered in three days or less.</li><li>UPS Second Day Air - typically delivers within two business days from pickup date (not including weekends and holidays).</li><li>UPS Next Day Air - most packages are delivered by 8 pm the day following carrier pickup (not including weekends and holidays).</li></ul><p>Please note that delivery times are estimated from the time of carrier pickup, and exclude weekends and holidays. Delivery times are estimates only (provided to us by the carriers).  </p><p>Momtech cannot be responsible for delays caused by incorrect or incomplete address information, or caused by the carrier, whether due to weather, other natural causes, high demand periods, or otherwise.  We can only guarantee that the order will ship using the shipping method selected at check-out.<br/><br/>UPS orders placed by 10AM Eastern Time on business days generally ship the same day. UPS orders placed after 10AM, or on weekends or holidays, generally go out the next business day. Economy-shipped orders may take 1- 2 business days for carrier pickup.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_EGCgqK": {
+          "type": "item",
+          "settings": {
+            "title": "what does shipping protection cover?",
+            "content": "<p>mōmi’s fulfillment team is carefully packaging orders, but breakage or loss can sometimes happen after we deliver packages to a shipping carrier. If you purchase shipping protection for your order, we will cover the cost of replacing your items if your order should be damaged or lost en route to you. </p><p>Shipping protection applies to the products within an order, and does not guarantee a delivery date. We can only guarantee delivery to the address you provide at checkout, and reserve the right not to honor multiple claims made by the same customer or to the same shipping address.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_KfXWLB": {
+          "type": "item",
+          "settings": {
+            "title": "what if i didn’t receive my order?",
+            "content": "<p>Once your order has shipped, you will be notified with a shipping confirmation email which contains tracking information for your order. You may reference this email to track your order until delivery.<br/><br/>If you believe your order may have been lost, stolen, or damaged in transit, please reach out to our support team at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a> so we can assist.<br/><br/>We will fully cover the cost of a replacement if your order is damaged, lost or stolen on its way to you if you pay for shipping protection at checkout.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_B4afFq",
+        "item_mJjKma",
+        "item_c96RyB",
+        "item_EGCgqK",
+        "item_KfXWLB"
+      ],
+      "settings": {
+        "id1": "shipping",
+        "full_width": true,
+        "subheading": "",
+        "title": "shipping",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_4NhLf6": {
+      "type": "faq",
+      "blocks": {
+        "item_XeP7ki": {
+          "type": "item",
+          "settings": {
+            "title": "how does the referral program work?",
+            "content": "<p>Every person who makes a purchase from our store can join the program as a referrer. After signing up for the program you will receive a dedicated, custom link to share with your friends and network by email or social media posts. Any new customer you refer who then uses that link to complete a purchase of at least $25 from our store (excluding shipping charges and sales tax) can receive $5 off their first purchase. As the referrer, you then receive a coupon code worth $5 off your next purchase of at least $25 at our store.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_R6qpr8": {
+          "type": "item",
+          "settings": {
+            "title": "can i get credit for referring myself as a customer?",
+            "content": "<p>No, you must already have made a purchase in our store to become a referrer, and the people you refer by sharing your personal link must be new customers making their first purchase in our store to receive the discount.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_kXnfNP": {
+          "type": "item",
+          "settings": {
+            "title": "is there a limit to how many referral credits i can receive?",
+            "content": "<p>You may receive up to $200 in referral credits per calendar year.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_p8yMNx": {
+          "type": "item",
+          "settings": {
+            "title": "can i let my friend use my referral credits?",
+            "content": "<p>Only you can use your referral credits. They can’t be transferred or sold to other people.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_rgreYK": {
+          "type": "item",
+          "settings": {
+            "title": "where can i find more details about the referral program?",
+            "content": "<p>For more information please refer to the mom2mom Referral Program Terms and Conditions at https://momi.baby/terms-conditions.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_XeP7ki",
+        "item_R6qpr8",
+        "item_kXnfNP",
+        "item_p8yMNx",
+        "item_rgreYK"
+      ],
+      "disabled": true,
+      "settings": {
+        "id1": "mom2momreferralprogram",
+        "full_width": true,
+        "subheading": "",
+        "title": "mom2mom referral program",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_mbH86F": {
+      "type": "faq",
+      "blocks": {
+        "item_6B76QC": {
+          "type": "item",
+          "settings": {
+            "title": "how should I introduce the mōmi bottle to my baby?",
+            "content": "<p>We’ve worked closely with lactation consultants and professionals to develop the mōmi bottle, and we’ve learned a lot about feeding babies on the way. Please check out our blog for helpful tips! (“<a href=\"https://momi.baby/blogs/momtech/how-to-introduce-a-bottle-to-a-breastfed-baby\" title=\"https://momi.baby/blogs/momtech/how-to-introduce-a-bottle-to-a-breastfed-baby\">How to Introduce the mōmi Bottle to a Breastfed Baby</a>” is a great place to start, but you can search all of our feeding content with the “feeding” filter.) It sometimes takes four or five tries (or even more!) for a baby to accept a new bottle. Don’t be discouraged! And we’d love to help you troubleshoot if you run into issues with bottle introduction. Please reach out to us by email at care@momi.baby, by voicemail or text to 980-400-6455, or by chat on our website. We’ll do our very best to respond within 24 hours.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_aR7VHq": {
+          "type": "item",
+          "settings": {
+            "title": "is it normal for milk to drip or stream from the nipple?",
+            "content": "<p>This can happen when warm milk heats the air inside the bottle, causing it to become pressurized. This can happen with most bottle brands.  If this is interfering with feeding, consider not warming the milk to as high a temperature. </p>",
+            "custom-html": ""
+          }
+        },
+        "item_fbkGyp": {
+          "type": "item",
+          "settings": {
+            "title": "what if my baby chews or gnaws on the nipple?",
+            "content": "<p>Some chewing or gnawing is normal when mōmi is first introduced to your baby, as babies explore the world through their mouths and they’re learning that this is a source of food. Once feeding is established, it’s important not to allow the baby to use the nipple as a pacifier or teething toy. Excessive chewing or gnawing on the nipple can cause it to wear out more quickly and can even create a safety hazard. Please see the specific safety guidelines under the “product safety” section below.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_tT78k4": {
+          "type": "item",
+          "settings": {
+            "title": "do i need to pace feed with the mōmi bottle?",
+            "content": "<p>The mōmi bottle’s built-in, patented babypace® technology allows baby to regulate the flow and pace of a feeding like in nursing. No pacing needed! Your baby will be a more active participant with this bottle, which supports their healthy oral development. (Wondering what paced feeding is all about? <a href=\"https://momi.baby/blogs/momtech/all-you-need-to-know-about-paced-bottle-feeding\" title=\"https://momi.baby/blogs/momtech/all-you-need-to-know-about-paced-bottle-feeding\">Here’s everything you need to know</a>.) </p>",
+            "custom-html": ""
+          }
+        },
+        "item_YRNegV": {
+          "type": "item",
+          "settings": {
+            "title": "what’s the best way to sanitize the mōmi bottle and nipple?",
+            "content": "<p>We’ve compiled <a href=\"https://momi.baby/blogs/momtech/everything-you-need-to-know-about-cleaning-sanitizing-and-safely-storing-baby-bottles\" title=\"https://momi.baby/blogs/momtech/everything-you-need-to-know-about-cleaning-sanitizing-and-safely-storing-baby-bottles\"><span style=\"text-decoration:underline\">expert advice on washing and sanitizing baby bottles</span></a> on our blog. </p><p>For extra germ removal, we recommend sterilizing your bottle components (including nipples) daily.<br/><br/></p><p>Excessive exposure to UV, such as from a UV sterilizer or direct sunlight, may cause the silicone to decay more rapidly. For this reason, boiling is our preferred method of sterilization.<br/><br/>To sterilize by boiling:<br/>Fill a large, clean pot with enough water to cover the bottle components.</p><ul><li>Submerge the freshly washed bottle in the water upside down, making sure there aren’t any air bubbles at the bottom.</li><li>Bring the water to a boil.</li><li>Set a timer, and boil the bottle for five minutes.</li><li>Turn the heat off and remove the bottle using tongs.</li></ul><p>Place it on a clean, dry dishcloth and allow it to air dry.</p><p>Note: The Centers for Disease Control and Prevention (CDC) guidelines indicate that daily sterilization may not be necessary for healthy babies older than three months. Since exposure to excessive heat and UV rays can shorten the life of silicone products, you may consider less frequent sterilization if your baby is healthy and older than three months. For more information, <a href=\"https://www.cdc.gov/healthywater/hygiene/healthychildcare/infantfeeding/cleansanitize.html\"><span style=\"text-decoration:underline\">read the CDC’s guidance here</span></a>.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_kVR4ze": {
+          "type": "item",
+          "settings": {
+            "title": "how do i clean the mōmi nipple after use?",
+            "content": "<p>We recommend washing bottle components in hot sudsy water after each use.  mōmi comes with a unique cleaning tool that’s specifically designed to clean the central duct of the mōmi nipple. (Nothing should be inserted in the anticolic vent on the side of the nipple, as this can cause leaks.) Please avoid using other objects to clean the inside of the mōmi nipple as they could potentially damage the soft silicone. Wire or straw-cleaning brushes should never be used to clean your mōmi. To extend the life of your mōmi nipple, soaking is not recommended, as over time this can “cloud” or discolor the silicone. </p><p>*If you have other questions about washing, sanitizing and storing baby bottles, our blog has answers. Read “<a href=\"https://momi.baby/blogs/momtech/everything-you-need-to-know-about-cleaning-sanitizing-and-safely-storing-baby-bottles\" title=\"https://momi.baby/blogs/momtech/everything-you-need-to-know-about-cleaning-sanitizing-and-safely-storing-baby-bottles\">Everything You Need to Know About Cleaning, Sanitizing and Safely Storing Baby Bottles</a>.”</p>",
+            "custom-html": ""
+          }
+        },
+        "item_Kbd3Qt": {
+          "type": "item",
+          "settings": {
+            "title": "how can I tell which flow rate is right for my baby?",
+            "content": "<p>The mōmi babypace® nipple is available in three flow rates. </p><p><br/><strong>Important: <br/>Before using the nipple for the first time, clean it with the included cleaning tool, passing the tip of the tool through the opening of the nipple duct 5 - 10 times.  This not only cleans the duct, but also establishes the nipple's correct flow rate.  Watch a brief demo </strong><a href=\"https://www.youtube.com/watch?v=L0SxQwt_KNQ\" target=\"_blank\" title=\"how to use the momi nipple cleaning tool\"><strong>here.<br/></strong></a><strong><br/>Level 1</strong> is recommended for:</p><ul><li>late pre-term and full-term newborns</li><li>exclusively breastfed babies up to 3 months old who are being introduced to a bottle for the first time (unless they are accustomed to nursing with a strong letdown)</li><li>babies who have established feeding skills with other brands’ level 0 (preemie, etc.)</li><li>The Level 1 flow rate measures 11.3 mL/min with a .03 coefficient of variation (“cv”).</li></ul><p></p><p><strong>Level 2</strong> is recommended for:</p><ul><li>exclusively breastfed babies older than 3 months</li><li>exclusively breastfed babies under 3 months who have adapted to a heavy let-down</li><li>babies who have established feeding skills with other brands’ level 1 or equivalent (slow flow, etc.)</li><li>babies who have previously adapted to mōmi’s Level 1 and who have graduated to needing a faster flow rate, typically 3 months or older</li><li>Level 2 has a flow rate of 20.8 mL/min with a .04 cv.</li></ul><p><strong>Level 3</strong> is recommended for:</p><ul><li>babies who have established feeding skills with other brands’ level 2 or equivalent (medium flow, etc.), typically 6 months or older</li><li>babies who have previously adapted to mōmi’s Level 2 and who have graduated to needing a faster flow rate, typically 6 months or older</li><li>Level 3 has a flow rate of 40.0 mL/min with a .09 cv.</li></ul><p><br/>Remember that mōmi requires the baby to work for food in a way that most conventional nipples do not, so a baby who has already become accustomed to a conventional nipple may become frustrated if the selected mōmi flow rate is too slow.</p><p><br/>Every baby is unique, and sometimes exceptions to these guidelines are appropriate.  We encourage you to work with a lactation support professional if your baby is facing feeding challenges. </p>",
+            "custom-html": ""
+          }
+        },
+        "item_RTDiXe": {
+          "type": "item",
+          "settings": {
+            "title": "how can I tell what flow rate my mōmi nipple is?",
+            "content": "<p>sa</p>",
+            "custom-html": "<p>Each mōmi nipple is marked with a number near the base, just to the left of the word “naturally”.</p><br>\n<img src=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/image.png?v=1726125225\">"
+          }
+        },
+        "item_RxNFdD": {
+          "type": "item",
+          "settings": {
+            "title": "does the mōmi bottle work for breast milk and formula?",
+            "content": "<p>Yes, the mōmi bottle can be used to feed breast milk, formula or even a mixture of both (which is even recommended when you first introduce formula). We know that every baby’s feeding journey is different!</p>",
+            "custom-html": ""
+          }
+        },
+        "item_FUbtrW": {
+          "type": "item",
+          "settings": {
+            "title": "how do you recommend warming milk for the mōmi bottle?",
+            "content": "<ul><li>Warm breast milk by placing the container of breast milk into a separate container or pot of warm water for a few minutes or by running warm (not hot) tap water over the container for a few minutes.</li><li>Do not heat breast milk directly on the stove or in the microwave.</li><li>Test the temperature of the breast milk before feeding it to your baby by putting a few drops on your wrist. It should feel warm, not hot.</li><li>Swirl the breast milk to mix the fat, which may have separated.</li><li>If your baby did not finish the bottle, the leftover breast milk can still be used within 2 hours after the baby is finished feeding. After 2 hours, leftover breast milk should be discarded.</li><li>Check out our blog for more expert advice on heating, using and storing breast milk and formula: “<a href=\"https://momi.baby/blogs/momtech/how-to-safely-store-breast-milk-and-formula-according-to-the-cdc\" title=\"https://momi.baby/blogs/momtech/how-to-safely-store-breast-milk-and-formula-according-to-the-cdc\"><span style=\"text-decoration:underline\">How to Safely Store Breast Milk and Formula According to the CDC</span></a>.” </li></ul>",
+            "custom-html": ""
+          }
+        },
+        "item_V9GpDM": {
+          "type": "item",
+          "settings": {
+            "title": "how do you recommend warming formula for the mōmi bottle?",
+            "content": "<ul><li>You do not need to warm infant formula before feeding. If you do decide to warm the formula, place the bottle with prepared formula under warm running water or into a bowl of warm water for a few minutes.</li><li>Avoid getting water into the bottle or nipple. This could contaminate the prepared formula.</li><li>Test the temperature of the formula before feeding it to your baby by putting a few drops on the inside of your wrist. It should feel warm, not hot.</li><li>Never warm infant formula in a microwave. Microwaving creates hot spots, which can burn your baby’s mouth.</li><li><a href=\"https://momi.baby/blogs/momtech/how-to-safely-store-breast-milk-and-formula-according-to-the-cdc\" title=\"https://momi.baby/blogs/momtech/how-to-safely-store-breast-milk-and-formula-according-to-the-cdc\"><span style=\"text-decoration:underline\">Read the CDC’s recommendations on safely using and storing formula</span></a>.</li></ul>",
+            "custom-html": ""
+          }
+        },
+        "item_9zGT9P": {
+          "type": "item",
+          "settings": {
+            "title": "what if my mōmi nipple is leaking from the anticolic vent?",
+            "content": "<p>This could indicate a defect. Please contact us by email at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a>, by voicemail or text to 980-400-6455, or by chat here on our website. If possible, send us a photo of what you’re seeing.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_Q7gF9a": {
+          "type": "item",
+          "settings": {
+            "title": "what if my mōmi nipple “caves in” when baby is drinking from it?",
+            "content": "<p>This could indicate that your baby needs a faster flow rate, or in rare cases indicate a defect. Please contact us by email at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a>, by voicemail or text to 980-400-6455, or by chat here on our website. If possible, send us a photo or video of what you’re seeing.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_KhGiYM": {
+          "type": "item",
+          "settings": {
+            "title": "what if no milk seems to be coming out when my baby is trying to drink?",
+            "content": "<p>First, please be sure that you have used your purple cleaning tool in the central duct of the nipple. If you have done this already and there is still no milk flow, it could indicate a defect. Please contact us by email at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a>, by voicemail or text to 980-400-6455, or by chat here on our website.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_6B76QC",
+        "item_aR7VHq",
+        "item_fbkGyp",
+        "item_tT78k4",
+        "item_YRNegV",
+        "item_kVR4ze",
+        "item_Kbd3Qt",
+        "item_RTDiXe",
+        "item_RxNFdD",
+        "item_FUbtrW",
+        "item_V9GpDM",
+        "item_9zGT9P",
+        "item_Q7gF9a",
+        "item_KhGiYM"
+      ],
+      "settings": {
+        "id1": "usingmomi",
+        "full_width": true,
+        "subheading": "",
+        "title": "using the mōmi bottle",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_PiR3KV": {
+      "type": "faq",
+      "blocks": {
+        "item_DFV8qV": {
+          "type": "item",
+          "settings": {
+            "title": "what's new about the new improved flow rate nipples?",
+            "content": "<p>Our original slow and medium flow nipples had a faster flow rate than the flow rates of other major brands. We reduced the flow rate of the new versions significantly so they are now consistent with other brands.</p><p>Also, some of the original nipples were excessively drippy. We've significantly reduced the drippiness of the new version.</p><p>At this time, the slow and medium flow nipples have been modified.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_ATRftf": {
+          "type": "item",
+          "settings": {
+            "title": "how do i know which version i received?",
+            "content": "<p>All orders placed directly on our store after 3PM Eastern Time on Friday, October 20 ship with the new, improved slow flow nipples (assuming the order included slow flow nipples). If you placed an order after 3PM on Friday, November 17, you received the new, improved medium nipples.</p><p>All orders placed on Amazon included the original version.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_YzXwmp": {
+          "type": "item",
+          "settings": {
+            "title": "i ordered on amazon. what flow rate did i receive?",
+            "content": "<p>All customers who placed orders on Amazon received the original flow rate. The new improved flow rate nipples are available only directly from the momi.baby store.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_iXgtyB": {
+          "type": "item",
+          "settings": {
+            "title": "the original version worked well for my baby. can i purchase more of the original version?",
+            "content": "<p>Yes! We saved a supply of the original version to have for customers who want to purchase more of what is already working for them. Contact <a href=\"mailto:care@momi.baby\">care@momi.baby</a>for assistance in ordering an original version.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_DFV8qV",
+        "item_ATRftf",
+        "item_YzXwmp",
+        "item_iXgtyB"
+      ],
+      "disabled": true,
+      "settings": {
+        "id1": "newimprovedflowrates(october 2023)",
+        "full_width": true,
+        "subheading": "",
+        "title": "new improved flow rates (october 2023)",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_Aw8WLn": {
+      "type": "faq",
+      "blocks": {
+        "item_GAXVJp": {
+          "type": "item",
+          "settings": {
+            "title": "what safety guidelines should i follow when using the mōmi bottle?",
+            "content": "<p>mōmi products certified to meet or exceed the U.S. regulatory requirements for infant safety. Even so, failure to follow the safety guidelines can shorten the life of the product, and can potentially result in a safety hazard. The soft silicone used in the mōmi nipple makes it more susceptible to damage when not used properly. Please read carefully and observe the safety instructions included with your product. These include the following:</p><ul><li>Do not use the nipple as a teething toy or pacifier. Using your mōmi nipple only for feeding will allow it to last much longer.</li><li>The soft silicone material is not designed to withstand excessive biting and gnawing.</li><li>Inspect the nipple and all bottle components before each use.</li><li>Discard immediately if the nipple has any signs of damage, puncture, cracking, or tearing.</li><li>Use only the mōmi cleaning tool in the nipple’s central duct, and never use a wire brush to clean the nipple. Wire brushes can damage the soft silicone interior of the nipple, causing a safety hazard.</li><li>Since silicone can break down over time, replace nipples after three months of regular use. </li></ul><p>Other important safety guidelines:</p><ul><li>Sterilize nipple and bottle components before first use. </li><li>Always check food temperature before feeding.</li><li>To avoid strangulation risk, do not attach cords, laces, or loose clothing to bottle or nipple.</li><li>Always discard any breast milk or formula that remains at the end of a feed.</li><li>Always use this product with adult supervision.</li><li>This is not a toy. Keep all components not in use out of the reach of children.</li><li>Do not allow children to play with small parts or walk/run while using bottles or nipples.</li><li>Remove the bottle from your baby’s mouth when the baby is not feeding.</li><li>Do not let baby take bottle to bed or self-feed for long periods of time.</li><li>Continuous and prolonged sipping of fluids will cause tooth decay.</li><li>Do not place in a heated oven.</li><li>Do not microwave. Liquid inside can heat unevenly or overheat and burn baby’s mouth even if outside of the bottle feels cool.</li><li>When warming breast milk or formula, stir thoroughly to eliminate hot or cold spots, test temperature frequently by placing a few drops on your tongue or back of your hand.</li><li>To prevent possible choking hazard, test strength of nipple regularly by pulling hard on it. Inspect carefully, especially when baby develops teeth, and replace nipple immediately if it shows any sign of wear or damage such as cracking or change of shape.</li><li>Do not leave nipple in direct sunlight or heat or leave in disinfectant (sterilizing solution) for longer than recommended as this may weaken the nipple.</li><li>To ensure the bottle functions correctly and to prevent leakage, make sure all the parts are correctly assembled, remove any debris or residue that may collect around the rim of the bottle before assembly and avoid over-tightening the collar.</li><li>Contact your physician should you have any feeding problems or questions.</li></ul><p><a href=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/2.0_product_safety_brochure-English_Spanish.pdf?v=1727180102\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/2.0_product_safety_brochure-English_Spanish.pdf?v=1727180102\">Check out our full product review guide</a></p>",
+            "custom-html": ""
+          }
+        },
+        "item_anfBhK": {
+          "type": "item",
+          "settings": {
+            "title": "is the mōmi bottle bpa-free?",
+            "content": "<p>Yes, all of our products are BPA free.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_6XCEag": {
+          "type": "item",
+          "settings": {
+            "title": "does the mōmi bottle meet regulatory safety requirements?",
+            "content": "<p>Our products are rigorously tested and independently certified for compliance with applicable safety regulations. This includes testing for physical/mechanical strength and chemical content.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_VfEzQB": {
+          "type": "item",
+          "settings": {
+            "title": "where are mōmi products manufactured?",
+            "content": "<p>Our silicone nipples are made in Canada. Our plastic components are made in the U.S. and China by manufacturers with many years’ experience making baby bottles for some of America’s leading brands. Our glass bottles are made with borosilicate glass by a leading Chinese manufacturer, and have been certified to be lead-free (including the ink) and compliant with U.S. regulatory standards.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_ECFQpK": {
+          "type": "item",
+          "settings": {
+            "title": "what if my mōmi nipple is beginning to split or crack?",
+            "content": "<p>Discontinue use immediately and replace with a new nipple.<br/><br/>All silicone products wear out over time. Biting and gnawing, exposure to UV from sunlight or sterilizers, and use of abrasive cleaners are just a few factors that can accelerate the aging of the mōmi nipple. The mōmi nipple is designed to last at least three months under normal use conditions.<br/><br/>If you believe your mōmi nipple has a manufacturing defect, contact us by email at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a>, by voicemail or text to 980-400-6455, or by chat here on our website. If possible, send us a photo of what you’re seeing.<br/></p>",
+            "custom-html": ""
+          }
+        },
+        "item_q6hit4": {
+          "type": "item",
+          "settings": {
+            "title": "what if my baby’s chewing has begun to cut into the nipple?",
+            "content": "<p>Discontinue use immediately and replace with a new nipple.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_DqfAkJ": {
+          "type": "item",
+          "settings": {
+            "title": "what if my mōmi nipple has a small bubble in the tip?",
+            "content": "<p>Small bubbles within the solid silicone tip can occur normally in the manufacturing process, and are not a defect. Large bubbles, particularly those that connect with the milk duct, may indicate a manufacturing defect.</p><p>If you believe your mōmi nipple has a manufacturing defect, contact us by email at <a href=\"mailto:care@momi.baby\" title=\"mailto:care@momi.baby\">care@momi.baby</a>, by voicemail or text to 980-400-6455, or by chat here on our website. If possible, send us a photo of what you’re seeing.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_xaPF8J": {
+          "type": "item",
+          "settings": {
+            "title": "how often should i replace the mōmi nipple?",
+            "content": "<p>We recommend replacing the mōmi nipple after three months of normal use. If a baby with teeth has chewed or gnawed on the nipple excessively, or if the nipple has been exposed to excessive UV radiation such as from sunlight or a sterilizer, more frequent replacement may be necessary.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_GAXVJp",
+        "item_anfBhK",
+        "item_6XCEag",
+        "item_VfEzQB",
+        "item_ECFQpK",
+        "item_q6hit4",
+        "item_DqfAkJ",
+        "item_xaPF8J"
+      ],
+      "settings": {
+        "id1": "safety",
+        "full_width": true,
+        "subheading": "",
+        "title": "product safety",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_LBHKFi": {
+      "type": "faq",
+      "blocks": {
+        "item_9pePmB": {
+          "type": "item",
+          "settings": {
+            "title": "why does the mōmi nipple have a single duct?",
+            "content": "<p>When it comes to ensuring that babies can transition from breast to bottle in the most seamless way possible, we experimented to identify the most important factor. We discovered that the baby’s ability to control the flow of milk by compressing the nipple with its tongue was the most important factor to be considered in mōmi’s nipple design.</p><p>Our nipple is solid with a single duct that allows your baby to stop the flow of milk through compression with the tongue, just as if they were breastfeeding. Hollow nipples can squirt milk out at exactly the time the baby is trying to stop the flow with the tongue, which requires babies to learn a new way of eating in order to drink from a bottle. This can result in nipple preference, bottle refusal, and regurgitation.</p><p>The single duct also makes the nipple easier to clean, making it more sanitary for baby and more practical for parents. Hooray!</p>",
+            "custom-html": ""
+          }
+        },
+        "item_m3iDgw": {
+          "type": "item",
+          "settings": {
+            "title": "is the mōmi bottle an “anti-colic” bottle?",
+            "content": "<p>The mōmi nipple has a vent in the base designed to let air into the bottle during feeding, reducing the amount of air the baby takes in with the food. This is designed to reduce colic.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_67FQqw": {
+          "type": "item",
+          "settings": {
+            "title": "what if my baby needs a larger bottle?",
+            "content": "<p>mōmi is proud to offer a larger bottle size, with a 9 oz option in lead-free glass, or 10 oz in BPA-free plastic.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_BcNdjY": {
+          "type": "item",
+          "settings": {
+            "title": "the mōmi bottle doesn’t fit in my bottle warmer. what can i do?",
+            "content": "<p>While mōmi's 5 oz bottles have a wider, bell shape that may not fit into a standard bottle warmer, they work nicely in warmers designed to hold two bottles. Reach out to our care team at care@momi.baby for more specifics! </p><p>mōmi's 4 oz and 9/10 oz bottles have a circular base, fitting in conventional single-bottle warmers.</p><p>The mōmi nipple and bottle collar are compatible with brand-name and generic standard wide-mouth bottles, including Philips Avent plastic, Chicco Duo, and Maymom, among others. Standard-shaped bottles from these manufacturers can allow you to use your mōmi nipple with a standard bottle warmer. (Please note:  we cannot ensure compatibility of the mōmi nipple with the use of a collar from another brand.)</p>",
+            "custom-html": ""
+          }
+        },
+        "item_N7qDTP": {
+          "type": "item",
+          "settings": {
+            "title": "is mōmi compatible with other bottles?",
+            "content": "<p>The mōmi nipple and bottle collar are compatible with brand-name and generic standard wide-mouth bottles, including Philips Avent plastic, Chicco Duo and Maymom, among others.</p><p>One cost-effective option we’ve tested is the 9-ounce Maymom Wide-Mouth Milk Storage Collection Bottle with Travel Cap and Sealing Ring, available from Amazon.</p><p>Use of the mōmi nipple does require a mōmi  collar. Another another brand's collar may result in leaking or inhibit the function of the anticolic vent. If you need the nipple, cleaning tool, collar and clear cap to use mōmi on another bottle, shop our <a href=\"/products/replacement-set\" title=\"mōmi replacement set\">replacement bundles</a>. </p><p>Note: Avent is a registered trademark of Koninklijke Philips N.V. Chicco is a registered trademark of Artsana S.p.A. Maymom is a registered trademark of Maymom LLC. Momtech Inc. is not affiliated with any of these companies, nor do they endorse Momtech’s products and compatibility claims. Momtech makes no warranty regarding the quality, safety, or suitability of these companies’ products.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_nzehM4": {
+          "type": "item",
+          "settings": {
+            "title": "is the mōmi nipple compatible with breast pumps?",
+            "content": "<p>Absolutely! Our plastic bottle bases are compatible with Spectra pumps and other pump systems that use standard wide-mouth bottles. We also carry a <a href=\"https://momi.baby/products/medela-pump-adaptor\" title=\"https://momi.baby/products/medela-pump-adaptor\"><strong>medela breast pump adapter</strong></a> to allow mōmi plastic bottle bases to connect to Medela breast pumps.</p><p>Note: Spectra is a registered trademark of Mother’s Milk, Inc. Medela is a registered trademark of Medela Holding AG, Switzerland. Momtech Inc. is not affiliated with any of these companies, nor do they endorse Momtech’s products and compatibility claims. Momtech makes no warranty regarding the quality, safety, or suitability of these companies’ products.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_9pePmB",
+        "item_m3iDgw",
+        "item_67FQqw",
+        "item_BcNdjY",
+        "item_N7qDTP",
+        "item_nzehM4"
+      ],
+      "settings": {
+        "id1": "other",
+        "full_width": true,
+        "subheading": "",
+        "title": "other common questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "faq_r7KfHN": {
+      "type": "faq",
+      "blocks": {
+        "item_BVz8dr": {
+          "type": "item",
+          "settings": {
+            "title": "what’s new about the bottle?",
+            "content": "<p> </p>",
+            "custom-html": "<p>The new nipple is longer, and shaped optimally to help babies to achieve a healthy, natural latch.  It’s also now soft and stretchy throughout, not just in the tip. We also redesigned the collar and clear cap to fit the new nipple.  (See more below on compatibility.)</p><br>\n<img src=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/image_124.png?v=1726123882\">"
+          }
+        },
+        "item_WtjFtB": {
+          "type": "item",
+          "settings": {
+            "title": "i have original mōmi bottles. can i use them with the new nipples?",
+            "content": "<p>Yes! Our glass and plastic bottles are both compatible with the new babypace® 2 nipple, used alongside gen 2 collars and clear nipple caps.  <a href=\"/products/momi-byob-replacement\" title=\"mōmi gen 2 replacement set\">The babypace® 2 replacement set</a>, which includes the new nipple, collar, and cap, is a great way to use your gen 1 bottles with the new nipple design.</p>",
+            "custom-html": ""
+          }
+        },
+        "item_QqiMtt": {
+          "type": "item",
+          "settings": {
+            "title": "what’s compatible?",
+            "content": "<p> </p>",
+            "custom-html": "<ul>\n<li>bottles:  all of our bottles are compatible with both gen 1 and gen 2.</li>\n<li>cleaning tools:  gen 1 and gen 2 use the same cleaning tool.</li>\nwhat’s not compatible?\n<li>nipples + collars + clear nipple caps.  These are not interchangeable between generations.  Attempting to mix these parts between generations can cause problems - like leaks, poor fit, or caps becoming stuck to collars.  Think of the nipple + collar + cap as a complete set that can’t be mixed and matched between the two generations.</li>\nhow do I tell them apart?\n<li>nipples:  The babypace® 2 nipple is taller and has a large numerical flow rate indicator molded into the base.  The Gen 1 nipple is shorter and has a small “s”, “m” , or “f” flow rate indicator molded into the base.<br><br>\n<img src=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/4_img.png?v=1727421148\"><br>\n</li> \n\n<li>caps:  The gen 2 clear nipple cap is taller than the gen 1, to fit the taller nipple. [include side by side photos]</li>\n<li>collars:  This is the tricky one. There are three ways to tell them apart.\n<ul class=\"sublistbullte\">\n<li>\nThe gen 1 collar has a “dimple” in the top surface (concealed by the nipple when it’s attached).  The gen 2 collar doesn’t have this dimple.<br><br>\n<img src=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/2_img.png?v=1727421147\">\n</li>\n<li>The notches on the bottom surface of gen 1 are rectangular and spaced further apart than the rounded notches of the gen 2 collar.<br><br>\n<img src=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/3_img.png?v=1727421147\"><br>\n</li>\n</ul>\n\n</li>\n<li>The gen 1 collar has an extra ridge inside where it makes contact with the nipple (highlighted by the arrow in the photo).</li>\n<li>The Gen 2 collar doesn’t have that ridge.<br><br>\n<img src=\"https://cdn.shopify.com/s/files/1/0539/1004/4843/files/1_img.png?v=1727421147\">\n</li>\n</ul>"
+          }
+        }
+      },
+      "block_order": [
+        "item_BVz8dr",
+        "item_WtjFtB",
+        "item_QqiMtt"
+      ],
+      "settings": {
+        "id1": "gen2",
+        "full_width": true,
+        "subheading": "",
+        "title": "gen 2",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "class_name": "HomeFaq FaqBanner",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_NjeMGw",
+    "collection_filter_e7iMgY",
+    "faq_Qn9hTm",
+    "faq_yx9iji",
+    "faq_4NhLf6",
+    "faq_mbH86F",
+    "faq_PiR3KV",
+    "faq_Aw8WLn",
+    "faq_LBHKFi",
+    "faq_r7KfHN"
+  ]
+}

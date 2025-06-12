@@ -1,0 +1,281 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "klaviyo_reviews_average_rating_6Ht8zx": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "affirm_pay_over_time_messaging_product_block_hHPniE": {
+          "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
+          "settings": {
+            "logo_align": "left",
+            "font_size": 12,
+            "logo_color": "blue",
+            "logo_type": "logo",
+            "public_api_key": "",
+            "price_selector": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_6QjVgz": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<a class=\"button\" style=\"margin-bottom: 10px; width: 300px\"\nhref=\"javascript&colon; bl.addToRegistry({\nimages: '{{ product.featured_image.src | img_url: \"800x\" }}',\nprice: '{{ product.price | money_without_currency }}',\ntitle: '{{ product.title }}',\nurl: '{{ shop.url }}{{ product.url }}'\n});\">Add to ❤ Baby list</a>"
+          }
+        },
+        "button_9CN4TE": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "Add to ❤ Baby list",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "#ffffff",
+            "text_color": "#ff0099"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true
+          }
+        },
+        "collapsible_text_PDrTWC": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "flow rates",
+            "tab-title": "",
+            "liquid": "",
+            "content": "{{ product.metafields.custom.flow_rate | metafield_tag }}<p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_6TRiHh": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "common questions",
+            "tab-title": "",
+            "liquid": "",
+            "content": "{{ product.metafields.custom[\"common_question-1\"] | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_text_gkmyKf": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Reviews",
+            "tab-title": "<div class=\"klaviyo-star-rating-widget\" data-id=\"{{product.id}}\" data-product-title=\"{{product.title}}\" data-product-type=\"{{product.type}}\"></div>",
+            "liquid": "<div id=\"klaviyo-reviews-all\" data-id=\"{{product.id}}\"></div>",
+            "content": "<p> </p>",
+            "page": ""
+          }
+        },
+        "associated_products_tMQTKU": {
+          "type": "associated_products",
+          "settings": {
+            "title": "you may like...",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "klaviyo_reviews_average_rating_6Ht8zx",
+        "badges",
+        "rating",
+        "price",
+        "payment_terms",
+        "separator",
+        "variant_picker",
+        "quantity_selector",
+        "affirm_pay_over_time_messaging_product_block_hHPniE",
+        "buy_buttons",
+        "liquid_6QjVgz",
+        "button_9CN4TE",
+        "description",
+        "collapsible_text_PDrTWC",
+        "collapsible_text_6TRiHh",
+        "collapsible_text_gkmyKf",
+        "associated_products_tMQTKU"
+      ],
+      "custom_css": [
+        ".button-content {height: 6rem !important;}",
+        "[data-id=\"affirm_pay_over_time_messaging_product_block_hHPniE\"] {font-family: \"Open Sans\", sans-serif !important; font-size: 16px !important; /* Adjust to your desired size */ text-align: left !important; color: #653490 !important; /* Purple theme color */}",
+        ".affirm-as-low-as {font-family: \"Open Sans\", sans-serif !important; font-size: 16px !important; /* Match size as needed */ color: #653490 !important; /* Purple theme color */ text-align: left !important; /* Ensure inner text is also left-aligned */}"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_N4Gxzi": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_x737gA": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_HrJQxG": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_f49a9r": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_x737gA",
+        "heading_HrJQxG",
+        "richtext_f49a9r"
+      ],
+      "settings": {
+        "class_name": "",
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0343.jpg",
+        "mobile_image": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0291_2.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "rgba(0,0,0,0)",
+        "overlay_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "image_with_text_overlay_N4Gxzi"
+  ]
+}

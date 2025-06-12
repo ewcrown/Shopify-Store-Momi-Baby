@@ -1,0 +1,219 @@
+{%- unless section.settings.full_width -%}
+  {%- render 'section-spacing-collapsing' -%}
+{%- endunless -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.full_width -%}
+      --section-outer-spacing-block: 0;
+    {%- endif -%}
+
+    --content-over-media-overlay: {{ section.settings.overlay_color.rgb }} / {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+
+    {%- if section.settings.allow_transparent_header -%}
+      margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
+    {%- endif -%}
+  }
+
+  {%- unless section.settings.full_width -%}
+    #shopify-section-{{ section.id }}:first-child .section[allow-transparent-header] {
+      padding-block-start: max(var(--section-inner-max-spacing-block), var(--header-height));
+    }
+  {%- endunless -%}
+
+  .home-video-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #653490;
+  }
+  .home-video-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 52svw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+  .home-video-inner .video-title{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .home-video-inner .video-subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-transform: lowercase;
+    text-align: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+  .home-video-wrapper{
+    padding-top: 56.25%;
+    position:relative;
+  }
+  
+  @media(min-width: 768px){
+    .mobVideo{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1600px) and (min-width: 1450px) {
+    .home-video-inner{
+          max-width: 58svw;
+
+    }
+  } 
+  @media(max-width: 1399.98px) {
+    .home-video-inner {
+      max-width: 500px;
+    }
+  }
+  @media(max-width: 1024px) {
+  .home-video-inner .video-subtitle {
+    font-size: 16px;
+  }
+}
+  @media (max-width: 767.98px) {
+  .home-video-inner .video-title {
+    font-size: 3rem;
+  }
+    .home-video-wrapper {
+      padding-top: 99.75%;
+    }
+    .home-video-inner {
+      max-width: 330px;
+    }
+    .desktopVideo{
+      display: none;
+    }
+}
+</style>
+
+<div {% render 'section-properties' %} id="{{ section.settings.home-video-id }}">
+  <div class="home-video-inner">
+      {% if section.settings.home-mob-video != blank %}
+      {% comment %}  <div class="home-video-wrapper mobVideo">
+          <iframe src="{{ section.settings.home-mob-video }}?autoplay=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="medical animation - square (hre)"></iframe>
+          <!-- <iframe src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="medical animation 2.0 mobile"></iframe> -->
+        </div>{% endcomment %}
+        <div class="home-video-wrapper mobVideo">
+  <!-- <iframe 
+    src="?autoplay=0" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+    title="medical animation - square (hre)">
+  </iframe> -->
+
+
+          <iframe 
+  src="{{ section.settings.home-mob-video }}" 
+ 
+  allow="autoplay; fullscreen" 
+  style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+  muted
+></iframe>
+          
+</div>
+
+      {% endif %}
+      {% if section.settings.home-video != blank %}
+     {% comment %}  <div class="home-video-wrapper desktopVideo">
+          <iframe src="{{ section.settings.home-video }}?autoplay=1&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="medical animation 2.0 desktop"></iframe>
+          <!-- <iframe src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="medical animation 2.0 desktop"></iframe> -->
+        </div>{% endcomment %}
+<div class="home-video-wrapper desktopVideo">
+  <iframe 
+  src="{{ section.settings.home-video }}" 
+  allow="autoplay; fullscreen" 
+  style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+  muted
+></iframe>
+  
+  <!-- <iframe 
+    src="?autoplay=0&controls=1" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+    title="medical animation 2.0 desktop">
+  </iframe> -->
+</div>
+
+
+      {% endif %}
+    {% if section.settings.title != blank or section.settings.subtitle != blank  %}
+    <div class="video-bottom-content">
+       {% if section.settings.title != blank %}
+      <div class="video-title">
+        {{ section.settings.title }}
+      </div>
+      {% endif %}
+       {% if section.settings.subtitle != blank  %}
+          <div class="video-subtitle">
+             {{ section.settings.subtitle }}
+          </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+
+{% schema %}
+{
+  "name": "Home Video",
+  "class": "shopify-section--home-video",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "class_name",
+      "label": "Class name"
+    },
+    {
+      "type": "text",
+      "id": "home-video-id",
+      "label": "Section ID"
+    },
+        {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+        {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "url",
+      "id": "home-video",
+      "label": "Video URL" 
+    },
+    {
+      "type": "url",
+      "id": "home-mob-video",
+      "label": "Mobile Video URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Video"
+    }
+  ]
+}
+{% endschema %}

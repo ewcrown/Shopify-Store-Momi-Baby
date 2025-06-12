@@ -1,0 +1,36 @@
+{% comment %}
+
+<div class="section-header text-center" style="margin-top:5%;">
+            <h2>reviews</h2>
+          </div>
+{% endcomment %}
+          {% for product in collections.all.products limit: 1 %}
+<div class="yotpo yotpo-main-widget"
+	data-product-id="{{ product.id }}"
+	data-name="{{ product.title | escape }}"
+	data-url="{{ shop.url }}{{ product.url }}"
+	data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+	data-price="{{ variant.price | money_without_currency }}"
+	data-currency="{{ shop.currency }}"
+	data-description="{{ product.description | escape }}">
+</div>
+{% endfor %}
+
+{% schema %}
+{
+"name": "Yotpo Reviews Widget",
+"settings": [],
+"presets": [
+{
+"name": "Yotpo Reviews Widget",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

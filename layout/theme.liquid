@@ -1,0 +1,306 @@
+{%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing this theme as much as we did for
+    developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you
+    hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including
+    all events, dependencies...) in the "documentation.txt" file, located in the Assets folder.
+  ------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<!doctype html>
+
+<html lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0"
+    >
+    <meta name="theme-color" content="{{ settings.header_background }}">
+
+    <title>
+      {% if page_title == blank -%}
+        {{- shop.name -}}
+      {%- else -%}
+        {{- page_title -}}
+        {%- if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif -%}
+      {%- endif %}
+    </title>
+<script  src="https://navidium-static-assets.s3.amazonaws.com/navidium-widgets/js/nvd-js-asset.js"></script>
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- comment -%} Noindex specific pages {%- endcomment -%}
+    {% if handle contains 'collections/all' or
+      handle contains '/products/momi-breast-like-bottle-single-glass-or-plastic' or
+      handle contains 'products/momi-breast-like-bottle-single-plastic' or 
+      handle contains 'products/glass-baby-bottle-single' %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 96 }}">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
+    {%- endif -%}
+
+    {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+
+    {%- unless settings.heading_font.system? -%}
+      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- unless settings.text_font.system? -%}
+      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- render 'social-meta-tags' -%}
+    {%- render 'microdata-schema' -%}
+    {%- render 'css-variables' -%}
+    {%- render 'js-variables' -%}
+    <script>
+      if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
+        const importMapPolyfill = document.createElement('script');
+        importMapPolyfill.async = true;
+        importMapPolyfill.src = "{{ 'es-module-shims.min.js' | asset_url }}";
+
+        document.head.appendChild(importMapPolyfill);
+      }
+    </script>
+
+    <script type="importmap">
+      {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
+      {
+        "imports": {
+          "vendor": "{{ 'vendor.min.js' | asset_url }}",
+          "theme": "{{ 'theme.js' | asset_url }}",
+          "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
+        }
+      }
+    </script>
+
+    <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
+    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+    <script type="text/javascript" src="{{ 'custom.js' | asset_url }}" />
+   <script type="text/javascript"  src="{{ 'affirmShopify.js' | asset_url }}" />
+
+    {{ content_for_header }}
+
+    {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+   <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'custom-1.css' | asset_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-352031114"/>
+      <script> 
+         window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} 
+        gtag('js', new Date()); gtag('config', 'AW-352031114');
+    </script>
+     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P3J726V');</script>
+  <!-- End Google Tag Manager -->
+  
+
+  <!-- YOTPO JAVASCRIPT | theme.liquid  -->
+  <script type="text/javascript">
+      (function e(){ 
+          var e=document.createElement("script");
+          e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/6VRA1XCOgCDk0TlvjMRK7nohJznu0BJwR6Z02WN6/widget.js";
+          var t=document.getElementsByTagName("script")[0];
+          t.parentNode.insertBefore(e,t)
+      })();
+  </script>
+  <!-- END | YOTPO JAVASCRIPT -->
+
+  <!-- Microsoft Clarity Heatmapping | theme.liquid  -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "n8ax6icr18");
+</script>
+
+ 
+<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/KqN47Y44R14osOfZUrv1aQ" async></script>
+
+
+<!-- Disable Affirm pop-up iframe (Hal added 11/6/2024) -->    
+<style>.affirm-iframe-widget {
+    display: none ;
+}
+
+</style>
+
+  </head>
+
+  <body
+    id="{% if template =="index" %}template--{{ template }}{% endif %}{% unless template =="index" %}{{page.handle}}{% endunless %}"
+    class="template--{{ collection.template_suffix }}  template--{{ template }} template--{{ page.template_suffix }} {% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}"
+  >
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3J726V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {%- render 'shadow-dom-templates' -%}
+
+    <a href="#main" class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+    {%- if request.page_type != 'password' -%}
+      {%- sections 'header-group' -%}
+      {%- section 'announcement-bar' -%}
+
+      {%- sections 'overlay-group' -%}
+
+   {%- if settings.cart_type == 'popover' -%}
+        <cart-notification-drawer open-from="bottom" class="quick-buy-drawer drawer"></cart-notification-drawer>
+      {%- endif -%}
+  
+    {%- endif -%}
+    
+
+    {%- if request.page_type == 'customers/account'
+      or request.page_type == 'customers/order'
+      or request.page_type == 'customers/addresses'
+    -%}
+      {%- section 'account-banner' -%}
+    {%- endif -%}
+
+    <main role="main" id="main" class="anchor">
+      <div class="container">
+        {% if template contains 'product' %}
+          {% render 'breadcrumbs' %}
+        {% endif %}
+      </div>
+      {{ content_for_layout }}
+<script>
+  // Check if the current URL contains '/pages/shop'
+if (window.location.pathname === '/pages/shop') {
+  // Redirect to the "All Collection" page
+  window.location.href = '/collections/shop-all';
+}
+</script>
+      {%- comment -%}
+        IMPLEMENTATION NOTE: due to the very complex logic of margin/padding collapsing in Impact, the footer group is
+        added into the main element to ensure that dynamic sections added into the footer group are properly laid out.
+      {%- endcomment -%}
+      {%- if request.page_type != 'password' -%}
+        {%- sections 'footer-group' -%}
+      {%- endif -%}
+    </main>
+
+    {% comment %}
+    {% if template contains 'index' or handle == 'professionals' %}
+      <div class="dots-navigation"></div>
+    {% endif %}
+    <script>
+  // section scroll dot js start
+  const dotsContainer = document.querySelector('.dots-navigation');
+  const sections = document.querySelectorAll('#main .shopify-section');
+  const sectionContainer = document.getElementById('main');
+  
+  sections.forEach((section, index) => {
+    const dot = document.createElement('span');
+    dot.classList.add('section-dot');
+    dot.dataset.index = index;
+    dot.addEventListener('click', () => {
+      sections[index].scrollIntoView({ behavior: 'smooth' });
+      document.querySelectorAll('.section-dot').forEach(dot => dot.classList.remove('active'));
+      dot.classList.add('active');
+    });
+    dotsContainer.appendChild(dot);
+  });
+  
+  function updateActiveDot() {
+    let currentIndex = 0;
+    const scrollPosition = window.scrollY + (window.innerHeight / 2);
+  
+    sections.forEach((section, index) => {
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+      const sectionBottom = sectionTop + section.offsetHeight;
+      
+    
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        currentIndex = index;
+      }
+    });
+  
+    document.querySelectorAll('.section-dot').forEach(dot => dot.classList.remove('active'));
+    const activeDot = document.querySelector(`.section-dot[data-index="${currentIndex}"]`);
+    if (activeDot) {
+      activeDot.classList.add('active');
+    }
+  }
+  
+  window.addEventListener('scroll', updateActiveDot);
+  sectionContainer.addEventListener('scroll', updateActiveDot);
+    </script>
+    {% endcomment %}
+
+    <script>
+      const video = document.getElementById("video1");
+      const circlePlayButton = document.getElementById("circle-play-b1");
+
+       function togglePlay() {
+      if (video?.paused || video?.ended) {
+      video.play();
+      } else {
+      video.pause();
+      }
+      }
+
+      if(circlePlayButton){
+        circlePlayButton?.addEventListener("click", togglePlay);
+        video.addEventListener("playing", function () {
+        circlePlayButton.style.opacity = 0;
+        });
+        video.addEventListener("pause", function () {
+        circlePlayButton.style.opacity = 1;
+        });
+      }
+
+      
+
+      const videoPlayButtons = document.getElementsByClassName('circle-play-btn');
+
+      function selectAndTogglePlay(e){
+        const videoId = e.target.attributes['data-video-id']?.value;
+        if(videoId){
+          const video = document.getElementById(videoId);
+                if (video.paused || video.ended) {
+                    video.play();
+                } else {
+                      video.pause();
+                }
+        }
+
+      }
+
+      for(btn of videoPlayButtons){
+        btn.addEventListener("click", selectAndTogglePlay);
+        const videoId = btn.attributes['data-video-id']?.value;
+        if(videoId){
+          const video = document.getElementById(videoId);
+          video.addEventListener("playing", function () {
+              btn.style.opacity = 0;
+           });
+          video.addEventListener("pause", function () {
+            btn.style.opacity = 1;
+          });
+        }
+      }
+
+     
+    </script>
+    {% render 'navidium-scripts' %}
+{% render 'rebuy-smartcart-extensions' %}
+<div data-rebuy-id="110313"></div>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+{%- render 'section-spacing-collapsing' -%}
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<style>
+  {%- assign section_background = section.settings.background | default: settings.background -%}
+  {%- assign card_background = section.settings.product_card_background | default: settings.product_card_background -%}
+  {%- assign card_blends = false -%}
+
+  {%- unless section_background != 'rgba(0,0,0,0)' and card_background != 'rgba(0,0,0,0)' and section_background != card_background -%}
+    {%- assign card_blends = true -%}
+  {%- endunless -%}
+
+  #shopify-section-{{ section.id }} {
+    background-color: #eadeee;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  #shopify-section-{{ section.id }} .swiper-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  #shopify-section-{{ section.id }} .swiper-wrapper {
+    display: flex;
+  }
+
+  #shopify-section-{{ section.id }} .swiper-slide {
+    flex-shrink: 0;
+    width: calc(100% / {{ section.settings.products_per_row_mobile }} - 10px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} .swiper-slide {
+      width: calc(100% / {{ section.settings.products_per_row_desktop }} - 10px);
+    }
+  }
+
+  #shopify-section-{{ section.id }} .swiper-button-next,
+  #shopify-section-{{ section.id }} .swiper-button-prev {
+    color: rgb(255, 0, 153);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background: rgba(255,255,255, 0.8);
+    border-radius: 50%;
+    border: solid 2px rgb(255, 0, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+    #shopify-section-{{ section.id }} .swiper-button-next::after,
+  #shopify-section-{{ section.id }} .swiper-button-prev::after {
+    font-size: 24px !important;
+  }
+
+  #shopify-section-{{ section.id }} .product-card__swatch-list {
+    display: none !important;
+  }
+
+  #shopify-section-{{ section.id }} .product-card__info {
+    min-height: 140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  #shopify-section-{{ section.id }} .section-blends {
+    min-height: 0 !important;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #shopify-section-{{section.id}} .product-card__title {
+    font-family: Comfortaa, sans-serif;
+    font-size: 16px;
+    color: rgb(101, 52, 144);
+    text-align: left;
+    text-transform: lowercase;
+  }
+
+  #shopify-section-{{section.id}} .v-stack, #shopify-section-{{section.id}} .price-list, #shopify-section-{{section.id}} .klaviyo-star-rating-widget {
+    justify-content: flex-start !important;
+    width: 100%;
+    text-align: left;
+  }
+
+  #shopify-section-{{section.id}} .price-list, #shopify-section-{{section.id}} .text-subdued {
+    font-family: Comfortaa, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+  #shopify-section-{{section.id}} .custom_heading {
+    font-family: Comfortaa !important;
+    color: #653490;
+    font-size: 4rem !important;
+    font-weight: 600 !important;
+    line-height: 1em !important;
+    text-transform: lowercase !important;
+    text-align: center!important;
+  }
+
+  #shopify-section-{{section.id}} .custom-subheading {
+    font-family: Comfortaa !important;
+    color: #653490;
+    font-size: 3rem !important;
+    font-weight: 600 !important;
+    line-height: 1.2em !important;
+    text-transform: lowercase !important;
+    padding-bottom: 20px !important;
+    text-align: center!important;
+  }
+  #shopify-section-{{section.id}} .product-card__figure img {
+    height: 200px !important;
+  }
+
+  #shopify-section-{{section.id}} .button {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25em;
+    text-transform: lowercase;
+    width: 100%;
+    max-width: 260px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #shopify-section-{{section.id}} .noni_viewall {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+</style>
+<div {% render 'section-properties' %} id="{{ section.settings.custom_id }}">
+  <div class="section-stack">
+    {%- assign link_url = section.settings.link_url | default: section.settings.collection.url -%}
+    {% if section.settings.title1 != blank %}
+      <div class="h2 custom_heading">{{ section.settings.title1 }}</div>
+    {% else %}
+      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: link_url -%}
+    {% endif %}
+
+    {% if section.settings.subtitle != blank %}
+      <div class="custom-subheading">{{ section.settings.subtitle }}</div>
+    {% else %}
+      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: link_url -%}
+    {% endif %}
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {%- assign products = section.settings.products | default: section.settings.collection.products -%}
+        {%- for product in products limit: section.settings.products_count -%}
+          <div class="swiper-slide new-product-card">
+            {%- render 'product-card', product: product, stacked: section.settings.stack_products, position: forloop.index, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+          </div>
+        {%- else -%}
+          {%- for i in (1..section.settings.products_count) -%}
+            <div class="swiper-slide">
+              {%- capture placeholder_image -%}product-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
+{%- render 'product-card-placeholder', stacked: section.settings.stack_products, placeholder_image: placeholder_image, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, text_alignment: settings.product_info_alignment -%}
+            </div>
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="noni_viewall">
+      <a class="button button--xl" href="/collections/shop-all">Shop All</a>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-container', {
+      slidesPerView: {{ section.settings.products_per_row_mobile }},
+      spaceBetween: 15,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        700: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        900: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1340: {
+          slidesPerView: {{ section.settings.products_per_row_desktop }},
+          spaceBetween: 20,
+        },
+      },
+    });
+  });
+</script>
+
+
+{% schema %}
+{
+  "name": "Recommended Products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_id",
+      "label": "Custom ID"
+    },
+    {    
+      "type": "text",
+      "id": "class_name",
+      "label": "Class Name"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Products",
+      "info": "Overrides collection when selected."
+    },
+    {
+      "type": "range",
+      "id": "products_count",
+      "min": 2,
+      "max": 50,
+      "label": "Products to show",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "products_per_row_mobile",
+      "min": 1,
+      "max": 3,
+      "label": "Products per slide (mobile)",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "products_per_row_desktop",
+      "min": 2,
+      "max": 5,
+      "label": "Products per slide (desktop)",
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_products",
+      "label": "Stack products",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "title1",
+      "label": "Main Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "color",
+      "id": "product_card_background",
+      "label": "Product Card Background"
+    },
+    {
+      "type": "color",
+      "id": "product_card_text_color",
+      "label": "Product Card Text Color"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recommended Products"
+    }
+  ]
+}
+{% endschema %}

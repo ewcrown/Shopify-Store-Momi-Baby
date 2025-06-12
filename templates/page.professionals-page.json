@@ -1,0 +1,1035 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "content_width": "60ch"
+      }
+    },
+    "media_with_text_gyFrhN": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_NUXtUC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/basic_side_view-white-nipple-1.png",
+            "button_text": "",
+            "btn_link": "",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "thank you",
+            "content": "",
+            "custom_content": "to the lactation support and other professionals who helped redesign the mōmi babypace<sup>®</sup>  nipple to support breastfeeding.",
+            "link_text": "",
+            "link_url": "",
+            "background": "#eadeee",
+            "background_gradient": "",
+            "text_color": "#653490",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_NUXtUC"
+      ],
+      "custom_css": [
+        ".animated-image-wrapper img {width: 100%; height: auto; object-fit: contain;}",
+        ".media-with-text__media {display: flex; flex-direction: column; align-items: center; justify-content: center; height: auto; max-height: 100vh; overflow-y: auto;}",
+        ".media-with-text__content p,.media-with-text__content h2 {font-size: calc(16px + 1vw); text-align: center;}",
+        "@media (max-width: 767px) {.media-with-text__media {padding: 10px; } .animated-image-wrapper img {max-height: 60vh; } .ProfessionalBanner {min-height: 0 !important; }}"
+      ],
+      "settings": {
+        "class_name": "ProfessionalBanner",
+        "full_width": true,
+        "spacing": "small"
+      }
+    },
+    "tab_slider_fVMiWK": {
+      "type": "tab-slider",
+      "blocks": {
+        "text_xGkKJK": {
+          "type": "Text",
+          "settings": {
+            "subtitle": "",
+            "active_tab": true,
+            "tabitem": "",
+            "subtitle2": "",
+            "subtext": "",
+            "custom-text": "<div class=\"custom-text-wrapper\">\n                  <div class=\"subtitle\">\n                  read how professionals use mōmi to help\n                  </div>\n<div class=\"content-wrapper\">\n<ul>\n<li>establish</li>\n<li>restore</li>\n<li>strengthen</li>\n<li>preserve</li>\n</ul>\n</div>\n                         <div class=\"subtitle\">\n                         breastfeeding\n                  </div>\n                  </div>"
+          }
+        },
+        "text_iCYBL4": {
+          "type": "Text",
+          "settings": {
+            "subtitle": "",
+            "active_tab": false,
+            "tabitem": "establish",
+            "subtitle2": "",
+            "subtext": "<p>Sometimes successful breastfeeding doesn’t happen right away. There can be unexpected milk supply issues, physical challenges or delivery complications.</p><p>In these situations, the baby can use mōmi to learn the oral mechanics of nursing, then translate that skill to the breast when the time is right.</p>",
+            "custom-text": ""
+          }
+        },
+        "text_kTy3mX": {
+          "type": "Text",
+          "settings": {
+            "bg-image": "shopify://shop_images/medium-shot-mother-with-cute-newborn_1.png",
+            "subtitle": "professionals use mōmi to help",
+            "active_tab": false,
+            "tabitem": "restore",
+            "subtitle2": "breastfeeding",
+            "subtext": "<p>Babies can lose interest in breastfeeding after a conventional bottle has been introduced.</p><p>Transitioning the baby first from the conventional nipple to mōmi, then from mōmi back to breast, has proven effective with many babies for restoring a breastfeeding relationship.</p>",
+            "custom-text": ""
+          }
+        },
+        "text_VLgRzb": {
+          "type": "Text",
+          "settings": {
+            "bg-image": "shopify://shop_images/medium-shot-mother-with-cute-newborn_1.png",
+            "subtitle": "professionals use mōmi to help",
+            "active_tab": false,
+            "tabitem": "strengthen",
+            "subtitle2": "breastfeeding",
+            "subtext": "<p>The mōmi nipple requires the baby to use natural oral mechanics during feeding, not work-arounds. It doesn’t allow the baby to extract milk by squeezing the tip like conventional nipples do.</p><p>When baby is struggling with sub-optimal oral mechanics at the breast, mōmi can be a tool to help overcome those patterns.</p><p>mōmi can also be a great tool for learning new, healthy oral mechanics after tethers have been released.</p>",
+            "custom-text": ""
+          }
+        },
+        "text_VpcRUd": {
+          "type": "Text",
+          "settings": {
+            "bg-image": "shopify://shop_images/medium-shot-mother-with-cute-newborn_1.png",
+            "subtitle": "professionals use mōmi to help",
+            "active_tab": false,
+            "tabitem": "preserve",
+            "subtitle2": "breastfeeding",
+            "subtext": "<p>mōmi was designed to require both equivalent effort and similar function to breastfeeding. </p><p>This helps prevent the baby from developing a preference for either nipple over the other.</p><p>Many have found this eases the transition from breast to bottle to breast, and can help extend the breastfeeding relationship after the bottle has been introduced.</p>",
+            "custom-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_xGkKJK",
+        "text_iCYBL4",
+        "text_kTy3mX",
+        "text_VLgRzb",
+        "text_VpcRUd"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.customTabSlider {min-height: 0 !important; padding-top: 40px; padding-bottom: 40px; }}"
+      ],
+      "settings": {
+        "class_name": "customTabSlider"
+      }
+    },
+    "press_REm6hN": {
+      "type": "press",
+      "blocks": {
+        "quote_gGjRfT": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<p>Sometimes successful breastfeeding doesn’t happen right away. There can be unexpected milk supply issues, physical challenges or delivery complications.</p><br>\n<p>In these situations, the baby can use mōmi to learn the oral mechanics of nursing, then translate that skill to the breast when the time is right.</p>",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_6XPejh": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<p>Babies can lose interest in breastfeeding after a conventional bottle has been introduced.</p><br>\n<p>Transitioning the baby first from the conventional nipple to mōmi, then from mōmi back to breast, has proven effective with many babies for restoring a breastfeeding relationship.</p>",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_qfRPnP": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<p>The mōmi nipple requires the baby to use natural oral mechanics during feeding, not work-arounds.  It doesn’t allow the baby to extract milk by squeezing the tip like conventional nipples do.</p><br>\n<p>When baby is struggling with sub-optimal oral mechanics at the breast, mōmi can be a tool to help overcome those patterns.</p><br>\n<p>mōmi can also be a great tool for learning new, healthy oral mechanics after tethers have been released.</p>",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_xrwe8j": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<p>mōmi was designed to require both equivalent effort and similar function to breastfeeding.</p>\n<br>\n<p>This helps prevent the baby from developing a preference for either nipple over the other.</p>\n<br>\n<p>Many have found this eases the transition from breast to bottle to breast, and can help extend the breastfeeding relationship after the bottle has been introduced.</p>",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_gGjRfT",
+        "quote_6XPejh",
+        "quote_qfRPnP",
+        "quote_xrwe8j"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "class_name": "BlogSlider PressSlider",
+        "video_url2": "",
+        "video_url_Mobile2": "",
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "custom_video_LyJRcQ": {
+      "type": "custom-video",
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.video-section-main {min-height: 0px !important; padding-bottom: 40px !important; padding-top: 40px; }}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "how it works",
+        "content": "see how the mōmi babypace® 2 nipple helps establish, restore, strengthen and preserve              breastfeeding"
+      }
+    },
+    "rich_text_CTqriD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J6jQYY": {
+          "type": "heading",
+          "settings": {
+            "text": "how it works",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_RLtrpA": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>see how the mōmi babypace 2 nipple helps establish, restore, strengthen and preserve breastfeeding</p>",
+            "mobile_text": ""
+          }
+        },
+        "button_zBa9ba": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "watch video",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_J6jQYY",
+        "richtext_RLtrpA",
+        "button_zBa9ba"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "howWorkSection",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_dQkYVn": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_wVUbnP": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_3NNQma": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_FwGBd7": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_wVUbnP",
+        "heading_3NNQma",
+        "richtext_FwGBd7"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "",
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/IMG_4042_1.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "press_KnHya6": {
+      "type": "press",
+      "blocks": {
+        "quote_crP8qc": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "ProfessionalPros",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/UGC_2023.03_-_Nicci_S_wide_latch.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "-Joanne Rogers",
+            "authorpro": "SLP, CLC",
+            "content": "\"Moms have a learning curve, too – and if babies are struggling at the breast, a strong letdown or anatomical differences can make it even more challenging. this bottle is a tool that I can use to teach parents, while at the same time baby strengthens the skills they’ll need to transfer milk effectively from the breast.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_hrRebk": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/tbp-section_1.png",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "-Mara Heiden",
+            "authorpro": "IBCLC ",
+            "content": "\"I recommend mōmi because it can be a stepping stone to get back to the breast.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_QYdgJ6": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/UGC_2023.04.24_Kimberly_D.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "- Jessika Martin,",
+            "authorpro": "DDS",
+            "content": "“After a frenectomy, we use mōmi as part of the suck training therapy... it helps increase the baby's efficiency and organization during breastfeeding.”",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_pUKTPt": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0223.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "-Shannon Usher",
+            "authorpro": "MSOT, OTR/L, CNT, NTMTC",
+            "content": "“The things that I've loved about the mōmi nipple:  the facilitation of lip flange, utilization of intra oral pressure for milk expression and the amount of peristalsis and cupping required.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_7CAAHB": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0578.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "-Mara Heiden",
+            "authorpro": "IBCLC",
+            "content": "\"Introducing the mōmi bottle as part of suck training therapy has really done wonders... it has increased the result of the baby being more efficient and organized on the breast.\"",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_ncLpWJ": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0565.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "- Jessika Martin",
+            "authorpro": "DDS",
+            "content": "\"If you are not engaging your muscles while feeding, you often aren't creating the growth trajectory that would be favorable for the rest of your life when it comes to feeding and airway support. so I like the mōmi for those reasons.”",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_pJ9g6w": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0446.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "- Amanda Vargas",
+            "authorpro": "MOT, OTR/L, SCFES, CBS",
+            "content": "“The latch on this design is significantly better than the 1.0 version. Baby latched easily, lips were flanged and the stretch from the nipple made sucking easy.”",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_EDbX9r": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "img": "shopify://shop_images/1f49151004c207fcd82c8bfdbdffddf1.svg",
+            "logo_width": 100,
+            "press_img": "shopify://shop_images/Momi_2024.06.19_Lifestyle_0362.jpg",
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "designed with professionals",
+            "heading_title_mobile": "designed with professionals",
+            "author": "- Jessika Martin",
+            "authorpro": "DDS",
+            "content": "\"The mōmi bottle design requires the tongue to move in such a way that you would when you're breastfeeding... it helps create a good growth and development profile.”",
+            "content_html": "",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_crP8qc",
+        "quote_hrRebk",
+        "quote_QYdgJ6",
+        "quote_pUKTPt",
+        "quote_7CAAHB",
+        "quote_ncLpWJ",
+        "quote_pJ9g6w",
+        "quote_EDbX9r"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.PressSlider {min-height: 0px !important; padding-top: 40px; padding-bottom: 40px; }}"
+      ],
+      "settings": {
+        "class_name": "BlogSlider PressSlider ProsSying DesignedProfessional",
+        "video_url2": "",
+        "video_url_Mobile2": "",
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "contact_bWtt3h": {
+      "type": "contact",
+      "blocks": {
+        "text_VmecPe": {
+          "type": "text",
+          "settings": {
+            "title": "address",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "text_NBE64F": {
+          "type": "text",
+          "settings": {
+            "title": "phone number",
+            "use_long_text": false,
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "text_VmecPe",
+        "text_NBE64F"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "contact-from-section",
+        "full_width": true,
+        "subheading": "",
+        "title": "request a sample",
+        "content": "<p>we gladly provide samples to certified professionals</p>",
+        "text_position": "center",
+        "contact_form_size": "small",
+        "background": "#eadeee",
+        "background_gradient": "",
+        "text_color": "#653490",
+        "heading_color": "#653490",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "custom_html_XRHNdt": {
+      "type": "custom-html",
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.CustomForm {padding-top: 40px; padding-bottom: 40px; min-height: 0px !important; }}"
+      ],
+      "settings": {
+        "class_name": "CustomForm",
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div id=\"request-sample\" data-tf-live=\"01HWXJNQQZ851R3M6QE8JP7JK0\"></div><script src=\"//embed.typeform.com/next/embed.js\"></script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "video_4meM7X": {
+      "type": "video",
+      "blocks": {
+        "play_XVifRg": {
+          "type": "play",
+          "disabled": true,
+          "settings": {}
+        },
+        "heading_tMemKR": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_XVifRg",
+        "heading_tMemKR"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "",
+        "title": "",
+        "subtitle": "",
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "video_size": "auto",
+        "video": "shopify://files/videos/-e1a8-4039-82b5-056e3a27020c.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "press_r7g6yE": {
+      "type": "press",
+      "blocks": {
+        "quote_mY9ee8": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<div class=\"WeProfessionals\">\n    <div class=\"WeProfessionalTitle\">\n        <h2>we<span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"39\" height=\"29\" viewbox=\"0 0 39 29\" fill=\"none\">\n            <path d=\"M26.0116 2.85864C23.2928 2.85864 20.8977 4.2275 19.5383 6.37857C18.1789 4.2275 15.7837 2.85864 13.0649 2.85864C8.79249 2.85864 5.29688 6.37857 5.29688 10.6807C5.29688 18.4376 19.5383 26.3248 19.5383 26.3248C19.5383 26.3248 33.7797 18.5028 33.7797 10.6807C33.7797 6.37857 30.2841 2.85864 26.0116 2.85864Z\" fill=\"#FF0099\"></path>\n          </svg></span>professionals</h2>\n    </div>\n    <div class=\"WeProfessionalPera\">\n        <p>We are your partners in the mission of supporting babies and those who feed them.</p>\n        <p>Swipe to learn more about how we support professionals through,</p>\n    </div>\n<div class=\"WeProfessionalList\">\n          <ul>\n              <li>sampling</li>\n              <li>product discounts for families</li>\n              <li>client referral network</li>\n              <li>bulk and wholesale discounts</li>\n          </ul>\n      </div>\n</div>",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_gYaT8M": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<div class=\"WeProfessionals\">\n    <div class=\"WeProfessionalTitle\">\n        <h2>sampling</h2>\n    </div>\n    <div class=\"WeProfessionalPera\">\n        <p>Many of our professional partners like to let families “try before they buy”.  They keep a sample or two on hand for parent trialing (thoroughly sterilizing between uses, of course).</p>\n        <p>We’ll happily keep you supplied with samples for this purpose as long as mōmi remains an active tool in your toolkit for helping babies and the people who feed them.</p>\n        <p>When you need to refresh your samples just email <a href=\"mailto:partners@momi.baby.\">partners@momi.baby.</a></p>\n    </div>\n\n</div>",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_JCnFzC": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<div class=\"WeProfessionals\">\n    <div class=\"WeProfessionalTitle\">\n        <h2>product discounts</h2>\n    </div>\n    <div class=\"WeProfessionalPera\">\n        <p>We know that mōmi is a significant investment for many families.  As a way of supporting our professional partners who use mōmi in their work with families, we make our very best product discounts to families available exclusively through professionals.</p>\n        <p>We provide discount coupons and codes you can share with your families, good for 20% off their first mōmi purchase.  You can use these with in-person and virtual consults alike.</p>\n        <p>Email partners@momi.baby to request discount codes for use with your families.</p>\n    </div>\n\n</div>",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_NNPkXJ": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<div class=\"WeProfessionals\">\n    <div class=\"WeProfessionalTitle\">\n        <h2>client referral network</h2>\n    </div>\n    <div class=\"WeProfessionalPera\">\n        <p>We’ve learned that parents have a much higher success rate with mōmi when supported by a professional.  We are building a database of professionals experienced in working with mōmi to whom we can refer parents seeking help.</p>\n        <p>Contact partners@momi.baby if you’d like to be included in the upcoming directory.  The directory will include professionals who offer in-person consults and also those offering virtual visits, so geography is not a limitation.</p>\n    </div>\n\n</div>",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_3W9t8J": {
+          "type": "quote",
+          "settings": {
+            "class_name1": "",
+            "class_name_image": "",
+            "logo_width": 100,
+            "video_url": "",
+            "video_url_Mobile": "",
+            "heading_title": "",
+            "heading_title_mobile": "",
+            "author": "",
+            "authorpro": "",
+            "content": "",
+            "content_html": "<div class=\"WeProfessionals\">\n    <div class=\"WeProfessionalTitle\">\n        <h2>bulk and wholesale</h2>\n    </div>\n    <div class=\"WeProfessionalPera\">\n        <p>We offer bulk and wholesale discounts to professionals and others involved in helping babies be fed.</p>\n        <p>This includes:</p>\n        <div class=\"innerlist\">\n        <ul>\n            <li>Healthcare systems making bulk purchases for use in speech language pathology and lactation support</li>\n            <li>Private practitioners who wish to include a complementary bottle as part of their overall service offering to families</li>\n            <li>Clinics that make retail product offerings available to families</li>\n        </ul>\n    </div>\n        <p style=\"margin-top: 10px;\">Email <a href=\"mailto:partners@momi.baby\">partners@momi.baby</a> to ask about our bulk and wholesale discounts.</p>\n    </div>\n</div>",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_mY9ee8",
+        "quote_gYaT8M",
+        "quote_JCnFzC",
+        "quote_NNPkXJ",
+        "quote_3W9t8J"
+      ],
+      "disabled": true,
+      "settings": {
+        "class_name": "BlogSlider PressSlider WeProfessionals VideoBlogSlider align-left",
+        "video_url2": "https://cdn.shopify.com/videos/c/o/v/a7a75f86c0d342a88df7dd7f1b06a162.mp4",
+        "video_url_Mobile2": "https://cdn.shopify.com/videos/c/o/v/e5cd389d1147433d9b77f9d91eb3394a.mp4",
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "image_link_blocks_K6rTEk": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_UNgwyw": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Meg_Alden.png",
+            "stretch_image": true,
+            "link_text": "Meg Alden",
+            "link_url": "",
+            "client_profession": "MD, FAAP",
+            "subtitle": "Chief Medical Officer",
+            "background": "",
+            "text_color": "#653490",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_WY9egV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Caroline_Brown_fd679df8-de6a-40a2-9aef-041ce5340b51.png",
+            "stretch_image": true,
+            "link_text": "Caroline T. Brown",
+            "link_url": "",
+            "client_profession": "MD, FAAP, IBCLC",
+            "subtitle": "Advisor",
+            "background": "",
+            "text_color": "#653490",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_jf9kzU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Ashley_Main_80f28ed5-b824-4d0e-b6e1-761d5f61a898.png",
+            "stretch_image": true,
+            "link_text": "Ashley E Wofford Leong",
+            "link_url": "",
+            "client_profession": "MD, MPH, IBCLC",
+            "subtitle": "Advisor",
+            "background": "",
+            "text_color": "#653490",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_jEKAV8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Jessika_Martin.png",
+            "stretch_image": true,
+            "link_text": "Jessika Martin",
+            "link_url": "",
+            "client_profession": "DDS",
+            "subtitle": "Advisor",
+            "background": "",
+            "text_color": "#653490",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_mTW4Cq": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/image_16.png",
+            "stretch_image": true,
+            "link_text": "Jane Cooper",
+            "link_url": "",
+            "client_profession": "",
+            "subtitle": "Lorem Ipsum Lorem",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_QApN4T": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/image_16.png",
+            "stretch_image": true,
+            "link_text": "Jane Cooper",
+            "link_url": "",
+            "client_profession": "",
+            "subtitle": "Lorem Ipsum Lorem",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_UNgwyw",
+        "item_WY9egV",
+        "item_jf9kzU",
+        "item_jEKAV8",
+        "item_mTW4Cq",
+        "item_QApN4T"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.advisor-section {min-height: 0px !important; }}"
+      ],
+      "settings": {
+        "custom_class": "advisor-section",
+        "full_width": true,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "clinical team",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#eadeee",
+        "background_gradient": "",
+        "text_color": "#653490",
+        "heading_color": "#653490",
+        "heading_gradient": ""
+      }
+    },
+    "faq_wbDzHJ": {
+      "type": "faq",
+      "blocks": {
+        "item_wMXAx7": {
+          "type": "item",
+          "settings": {
+            "title": "flow rates",
+            "content": "<p> </p>",
+            "custom-html": "<p>The mōmi babypace<sup>®</sup> nipple is available in three flow rates. </p><p><br>\n<span style=\"color:#ff0099;\">Important: <br>Before using the nipple for the first time, clean it with the included cleaning tool, passing the tip of the tool through the opening of the nipple duct 5 - 10 times.  This not only cleans the duct, but also establishes the nipple's correct flow rate.  Watch the demo video <a href=\"https://www.youtube.com/watch?v=L0SxQwt_KNQ\">here</a>.</span></p><p><br>\n</p><ul>\n<p><b>Level 1</b> is recommended for:\n</p>\n<ul>\n  <li>late pre-term and full-term newborns </li>\n  <li>exclusively breastfed babies up to 3 months old who are being introduced to a bottle for the first time (unless they are accustomed to nursing with a strong letdown) </li>\n  <li>babies who have established feeding skills with other brands’ level 0 (preemie, etc.)</li>\n<li>The Level 1 flow rate measures 11.3 mL/min with a .03 coefficient of variation (“cv”).</li>\n</ul>\n\n<p> </p>\n<p><b>Level 2</b> is recommended for:\n</p>\n<ul>\n  <li>exclusively breastfed babies older than 3 months</li>\n  <li>exclusively breastfed babies under 3 months who have adapted to a heavy let-down</li>\n  <li>babies who have established feeding skills with other brands’ level 1 or equivalent (slow flow, etc.)</li>\n<li>babies who have previously adapted to mōmi’s Level 1 and who have graduated to needing a faster flow rate, typically 3 months or older</li>  \n<li>Level 2 has a flow rate of 20.8 mL/min with a .04 cv.</li> \n</ul>\n\n<p> </p>\n<p><b>Level 3</b> is recommended for:</p>\n<ul>\n  <li>\nbabies who have established feeding skills with other brands’ level 2 or equivalent (medium flow, etc.), typically 6 months or older</li>\n  <li>babies who have previously adapted to mōmi’s Level 2 and who have graduated to needing a faster flow rate, typically 6 months or older</li>\n<li>Level 3 has a flow rate of 40.0 mL/min with a .09 cv.</li> \n</ul>\n</ul>\n<p></p>\n<p></p>\n<p><br>Note : flow rate measured after use of duct cleaning tool to reflect real-world use environment.</p>\n<p></p>\n<p>Even though mōmi flow rates measured on a mL/min basis correspond to the flow rates of other leading brands, babies who have become accustomed to the oral mechanics of conventional hollow compression nipples tend to do better with a faster flow rate mōmi nipple to avoid frustration while learning to transfer breastfeeding oral mechanics to bottle feeding.</p>"
+          }
+        },
+        "item_NjHXty": {
+          "type": "item",
+          "settings": {
+            "title": "what’s new with babypace<sup>®</sup> 2",
+            "content": "<p>After launching the original mōmi babypace® nipple in early 2023, we did a lot of listening.  Many professionals (IBCLCs, SLPs, OTs, and others) found it as a useful tool in their work with helping families feed their babies.  And many gave us good ideas on how to make the mōmi nipple better.</p><p>We collaborated closely with a group of professionals over the course of many months in the development of our new design.  Our collaboration group included both professionals who were advocates and champions of the original design, and those who had chosen not to use the original design.  The primary changes are:</p><ul><li>Geometry.  Reshaped to encourage a deeper, more natural latch</li><li>Softness.  The original design was soft only in the tip and had a harder silicone base.  The new design is soft and stretchy throughout.</li><li>Flow rates. With a focus on precision, beginning with a Level 1 flow rate optimized for most breastfed babies at the point of initial bottle introduction.  We also offer a Level 2 for older babies with well established feeding skills.  We are working on additional flow rates to address a wider range of needs.</li><li>Vents.  The original design suffered from occasional vent failure - either leaking, or not activating to allow air into the bottle.  The vent system has been redesigned for reliable, consistent performance.</li><li>Drip.  The original design dripped more than most conventional bottle nipples of comparable flow rates.  We reengineered the duct to reduce dripping to a minimum, especially with the slower flow rates.</li></ul><p>We made other improvements and tweaks to the system (the cap is now more easily removed, the graduation markings are more precise, etc.) and we will continue to improve and expand our offerings.</p><p>We have also been able to reduce our manufacturing costs, which allows us to reduce retail prices on our multi-bottle sets, and to offer 20% discounts on all products through professionals to the families they serve.</p><p><strong>What hasn’t changed:</strong>  mōmi’s patented compression shutoff, which requires the baby to use both similar effort and similar function to that used in breastfeeding.  It’s this unique feature that, according to many lactation professionals who use mōmi with their families, enables mōmi uniquely to help establish, restore, strengthen, and preserve breastfeeding.</p>",
+            "custom-html": "<p>After launching the original mōmi babypace<sup>®</sup> nipple in early 2023, we did a lot of listening.  Many professionals (IBCLCs, SLPs, OTs, and others) found it as a useful tool in their work with helping families feed their babies.  And many gave us good ideas on how to make the mōmi nipple better.<br><br>We collaborated closely with a group of professionals over the course of many months in the development of our new design.  Our collaboration group included both professionals who were advocates and champions of the original design, and those who had chosen not to use the original design.  The primary changes are:</p><ul>\n<li>Geometry.  Reshaped to encourage a deeper, more natural latch.</li>\n<li>Softness.  The original design was soft only in the tip and had a harder silicone base.  The new design is soft and stretchy throughout.</li>\n<li>Flow rates. With a focus on precision, beginning with a Level 1 flow rate optimized for most breastfed babies at the point of initial bottle introduction.  We also offer a Level 2 for older babies with well established feeding skills.  We are working on additional flow rates to address a wider range of needs.</li>\n<li>Vents.  The original design suffered from occasional vent failure - either leaking, or not activating to allow air into the bottle.  The vent system has been redesigned for reliable, consistent performance.</li>\n<li>Drip.  The original design dripped more than most conventional bottle nipples of comparable flow rates.We reengineered the duct to reduce dripping to a minimum, especially with the slower flow rates.</li>\n</ul><br><p>We made other improvements and tweaks to the system (the cap is now more easily removed, the graduation markings are more precise, etc.) and we will continue to improve and expand our offerings.</p><p>We have also been able to reduce our manufacturing costs, which allows us to reduce retail prices on our multi-bottle sets.</p><p><b>What hasn’t changed:</b> mōmi’s patented compression shutoff, which requires the baby to use both similar effort and similar function to that used in breastfeeding.  It’s this unique feature that, according to many lactation professionals who use mōmi with their families, enables mōmi uniquely to help establish, restore, strengthen, and preserve breastfeeding.</p><p></p>"
+          }
+        },
+        "item_cBUcqE": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>",
+            "custom-html": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_wMXAx7",
+        "item_NjHXty",
+        "item_cBUcqE"
+      ],
+      "settings": {
+        "id1": "",
+        "full_width": true,
+        "subheading": "",
+        "title": "common questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "more",
+        "button_url": "shopify://pages/faq",
+        "text_position": "center",
+        "class_name": "HomeFaq ProfessionalFaq",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "tabs_3FPMeA": {
+      "type": "tabs",
+      "blocks": {
+        "tab_rTRbNM": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 1",
+            "content": "<p>Use this text to share information about your brand with your customers.</p>",
+            "page": ""
+          }
+        },
+        "tab_PjQGAQ": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 2",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>",
+            "page": ""
+          }
+        },
+        "tab_hyaAgj": {
+          "type": "tab",
+          "settings": {
+            "title": "Tab 3",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_rTRbNM",
+        "tab_PjQGAQ",
+        "tab_hyaAgj"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "subheading": "Subheading",
+        "title": "Heading",
+        "text_alignment": "center",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "blog_slide_section_GNCDzJ": {
+      "type": "blog-slide-section",
+      "blocks": {
+        "blog_pr7BXh": {
+          "type": "blog",
+          "settings": {
+            "blog": "momtech",
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_pr7BXh"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.blogSlideSection {min-height: 0px !important; padding-top: 40px; padding-bottom: 40px; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": true,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "from our blog",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "class_name": "blogSlideSection",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "media_with_text_gyFrhN",
+    "tab_slider_fVMiWK",
+    "press_REm6hN",
+    "custom_video_LyJRcQ",
+    "rich_text_CTqriD",
+    "image_with_text_overlay_dQkYVn",
+    "press_KnHya6",
+    "contact_bWtt3h",
+    "custom_html_XRHNdt",
+    "video_4meM7X",
+    "press_r7g6yE",
+    "image_link_blocks_K6rTEk",
+    "faq_wbDzHJ",
+    "tabs_3FPMeA",
+    "blog_slide_section_GNCDzJ"
+  ]
+}

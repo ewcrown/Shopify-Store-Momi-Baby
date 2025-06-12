@@ -1,0 +1,825 @@
+{% comment %} {%- render 'section-spacing-collapsing' -%} 
+<link rel="stylesheet" href="{{ 'glightbox.min.css' | asset_url }}">
+<script src="{{ 'glightbox.min.js' | asset_url }}"></script>
+<style>
+  .custom-video-wrapper{
+    height: 100%;
+  }
+    .custom-video-wrapper .video {
+     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .custom-video-overlay{
+      /* background-color: #FF0099; */
+      opacity: 0.1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+    }
+      .bgvideo-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        object-fit: cover;
+        opacity: 0.1;
+      }
+    .video-sm-wrapper {
+      overflow: hidden;
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      position: relative;
+    }
+  .content-with-video-wrapper{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
+}
+  .custom-video-wrapper .video img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+    .over-video-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+    .HowItWork{
+      text-align:center;
+      padding-top:3rem;
+      padding-bottom:3rem;
+      margin:0 auto;
+      width: calc(100% - 380px);
+      margin-right: 30px;
+    }
+    .HowItTitle h2{
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-transform: lowercase;
+    }
+    .HowitInfo p{
+
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6em;
+  text-transform: lowercase;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+      .ButtonWraper .button{
+    display: flex;
+      align-items: center;
+      max-width: 280px;
+      justify-content: center;
+      height: 60px;
+            margin-left: auto;
+      margin-right: auto;
+
+      }
+     .ButtonWraper .button .BtnText{
+
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 0.8em;
+  text-transform: lowercase;
+       padding-left:10px;
+     }
+    .ButtonWraper {
+      margin-top:20px;
+    }
+    .video-section-main{
+      background-color:#fff;
+       height:100%;
+      position: relative;
+    }
+        .HowItWork{
+        height:100%;
+        }
+    .ProsSying,.VideoBlogSlider{
+       background-color:#fff;
+    }
+  .MobileVideoHowITWork{
+    display:none!important;
+  }
+  .background_img11{
+    width:100%;
+    height:100%;
+  }
+     .mobile_background_img11{
+       display:none;
+       width:100%;
+       height:100%;
+     }
+    @media(max-width:1259px){
+      .HowItTitle h2{
+        font-size:34px;
+      }
+        .ButtonWraper .button{
+
+      height:50px;
+    }
+      
+      .HowItWork{
+        height:100%;
+        max-width:100%;
+      }
+    }
+    @media(min-width: 768px) and (max-width: 1399.98px){
+      .video {
+        height: 100%;
+      }
+      .video-sm-wrapper{
+        height: 250px;
+        width: 250px;
+      }
+      .HowitInfo p {
+        padding-top: 0;
+      }
+      .ButtonWraper {
+        margin-top: 10px;
+      }
+    }
+  @media(max-width:767px){
+   .MobileVideoHowITWork{
+     display:block!important;
+   }
+        .video-section-main .HowItWork {
+        background: transparent;
+        max-width: 100% !important;
+    }
+  .video-sm-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 280px;
+    width: 280px;
+  }
+  .HowItWork {
+    width: 100%;
+    margin-right: 0;
+    order: 1;
+  }
+    /* .video-sm-wrapper{
+      border-radius:0;
+      width:100%;
+      height:100%;
+    } */
+    .ButtonWraper .button{
+      max-width:190px;
+      height:40px;
+    }
+    .ButtonWraper .button .BtnText{
+  font-size:14px;
+    }
+    .video {
+      height: 100%;
+    }
+    .HowitInfo p {
+        font-size: 14px;
+    }
+       .HowItTitle h2{
+        font-size:24px;
+      }
+    .DesktopVideoHowITWork{
+      display:none!important;
+    }
+      .button.MobileVideoHowITWork{
+    display:flex!important;
+      
+  }
+ .glightbox-container .plyr__video-wrapper {
+    padding-bottom: 100%;
+}
+ .background_img11{
+   display:none;
+ }
+    .mobile_background_img11{
+      display:block;
+    }
+  }
+  button.gprev.gbtn.disabled {
+    display: none;
+}
+</style>
+<div class="section video-section-main">
+  <div class="custom-video-wrapper">
+    <div class="video">
+   {% comment %}   <video
+        class="bgvideo-item"
+        poster="https://www.dropbox.com/s/0l29vxe0e7f2vyx/poster1.jpg?raw=1"
+        muted
+        loop
+        autoplay
+        preload="none"
+      >
+        <source src="https://cdn.shopify.com/videos/c/o/v/143d84e5a2104b9f8875df40a763f287.mp4" type="video/mp4">
+        <!-- <source src="https://www.dropbox.com/s/o8bvewnznadkpey/video1.webm?raw=1" type='video/webm' /> -->
+      </video>{% endcomment %}
+
+      <img src="https://cdn.shopify.com/s/files/1/0539/1004/4843/files/Group_35689.png?v=1725430415" class="background_img11">
+      <img src="https://cdn.shopify.com/s/files/1/0539/1004/4843/files/Frame_35730.png?v=1725431564" class="mobile_background_img11">
+
+      <div class="custom-video-overlay"></div>
+
+      <div class="content-with-video-wrapper">
+        <div class="HowItWork">
+          {% if section.settings.title != blank %}
+          <div class="HowItTitle">
+            <!-- <h2>how it works</h2> -->
+            <h2>{{ section.settings.title }}</h2>
+          </div>
+          {% endif %}
+          {% if section.settings.content != blank %}
+          <div class="HowitInfo">
+            <!-- <p>
+              see how the mōmi babypace<sup>®</sup> 2 nipple helps establish, restore, strengthen and preserve
+              breastfeeding
+            </p> -->
+               <p>
+             {{ section.settings.content }}
+            </p>
+          </div>
+          {% endif %}
+          {% comment %}
+          <div class="ButtonWraper DesktopVideoHowITWork">
+   
+        
+            <a
+              href="https://momi.baby/cdn/shop/videos/c/vp/22b3e704e9b84856b90f4ff98c793c75/22b3e704e9b84856b90f4ff98c793c75.HD-1080p-2.5Mbps-33535534.mp4?v=0"
+              class="button glightbox4"
+            >
+            
+              <span class="BtnText">watch updated video</span>
+            </a> 
+                
+          </div>
+          {% endcomment %}
+
+<div class="ButtonWrapper DesktopVideoHowITWork">
+    <a href="#" id="openVideo" class="button button--xl">
+        <span class="BtnText">Watch Updated Video</span>
+    </a>
+
+
+<!-- Lightbox Container -->
+<div id="videoLightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+    <iframe id="vimeoPlayer" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="width: 80%; height: 80%;" title="Medical Animation"></iframe>
+    <button onclick="closeLightbox()" style="position: absolute; top: 20px; right: 20px; color: white; font-size: 20px;">✕</button>
+</div>
+          <!-- <div class="ButtonWraper MobileVideoHowITWork" >
+           
+                <a
+              href="https://momi.baby/cdn/shop/videos/c/vp/22b3e704e9b84856b90f4ff98c793c75/22b3e704e9b84856b90f4ff98c793c75.HD-1080p-2.5Mbps-33535534.mp4?v=0"
+              class="button glightboxsa"
+            >
+             <span class="BtnText">watch updated video</span>
+            </a>
+          </div> -->
+
+</div>
+          
+        </div>
+        <div class="video-sm-wrapper">
+          <video
+            class="over-video-item"
+            poster="https://www.dropbox.com/s/0l29vxe0e7f2vyx/poster1.jpg?raw=1"
+            muted
+            loop
+            autoplay
+            preload="none"
+            playsinline
+          >
+            <source src="https://cdn.shopify.com/videos/c/o/v/e0dfc44728254f76ad3cd9a25b6f7073.mp4" type="video/mp4">
+            <!-- <source src="https://www.dropbox.com/s/o8bvewnznadkpey/video1.webm?raw=1" type='video/webm' /> -->
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var lightbox = GLightbox();
+    lightbox.on('open', (target) => {
+        console.log('lightbox opened');
+    });
+  
+    var lightboxVideo = GLightbox({
+        selector: '.glightbox3'
+    });
+    var lightboxInlineIframe = GLightbox({
+        selector: '.glightbox4'
+    });
+   var lightboxInlineIframe = GLightbox({
+        selector: '.glightboxsa'
+    });
+  
+  let btn = document.querySelector('.ButtonWraper');
+btn.addEventListener("click",()=>{
+    
+         const nextButton = document.querySelector('.gnext').style.display="none";
+   
+   
+});
+//   document.addEventListener('touchstart', function(e) {
+//     e.preventDefault();
+// }, { passive: false });
+
+
+</script>
+
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+    document.getElementById('openVideo').addEventListener('click', function(event) {
+        event.preventDefault();
+        const lightbox = document.getElementById('videoLightbox');
+        const iframe = document.getElementById('vimeoPlayer');
+        
+        // URLs for desktop and mobile
+        const desktopVideoUrl = "https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1";
+        const mobileVideoUrl = "https://player.vimeo.com/video/943318006?h=9c153446c9&autoplay=1";
+        
+        // Detect device type
+        const isMobile = window.innerWidth <= 768;
+        const videoUrl = isMobile ? mobileVideoUrl : desktopVideoUrl;
+        
+        // Set video URL with autoplay and mute options
+        iframe.src = videoUrl;
+        lightbox.style.display = 'flex';
+
+        // Initialize Vimeo Player and set volume to mute
+        const player = new Vimeo.Player(iframe);
+        player.setVolume(0); // Mute the video
+    });
+
+    // Close the lightbox and stop the video
+    function closeLightbox() {
+        const lightbox = document.getElementById('videoLightbox');
+        const iframe = document.getElementById('vimeoPlayer');
+        iframe.src = ""; // Reset iframe source to stop the video
+        lightbox.style.display = 'none';
+    }
+</script>
+{% endcomment %}
+
+
+
+
+{% comment %} {%- render 'section-spacing-collapsing' -%} {% endcomment %}
+<link rel="stylesheet" href="{{ 'glightbox.min.css' | asset_url }}">
+<script src="{{ 'glightbox.min.js' | asset_url }}"></script>
+<style>
+  
+  .ButtonWrapper .button .BtnText{
+  font-size:16px;
+    text-transform: lowercase;
+    }
+  .custom-video-wrapper{
+    height: 100%;
+  }
+    .custom-video-wrapper .video {
+     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .custom-video-overlay{
+      /* background-color: #FF0099; */
+      opacity: 0.1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+    }
+      .bgvideo-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        object-fit: cover;
+        opacity: 0.1;
+      }
+    .video-sm-wrapper {
+      overflow: hidden;
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      position: relative;
+    }
+  .content-with-video-wrapper{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
+}
+  .custom-video-wrapper .video img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+    .over-video-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+    .HowItWork{
+      text-align:center;
+      padding-top:3rem;
+      padding-bottom:3rem;
+      margin:0 auto;
+      width: calc(100% - 380px);
+      margin-right: 30px;
+    }
+    .HowItTitle h2{
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-transform: lowercase;
+    }
+    .HowitInfo p{
+
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6em;
+  text-transform: lowercase;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+      .ButtonWraper .button{
+    display: flex;
+      align-items: center;
+      max-width: 280px;
+      justify-content: center;
+      height: 60px;
+            margin-left: auto;
+      margin-right: auto;
+
+      }
+     .ButtonWraper .button .BtnText{
+
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 0.8em;
+  text-transform: lowercase;
+       padding-left:10px;
+     }
+    .ButtonWraper {
+      margin-top:20px;
+    }
+    .video-section-main{
+      background-color:#fff;
+       height:100%;
+      position: relative;
+    }
+        .HowItWork{
+        height:100%;
+        }
+    .ProsSying,.VideoBlogSlider{
+       background-color:#fff;
+    }
+  .MobileVideoHowITWork{
+    display:none!important;
+  }
+  .background_img11{
+    width:100%;
+    height:100%;
+  }
+     .mobile_background_img11{
+       display:none;
+       width:100%;
+       height:100%;
+     }
+  .glightbox-open{
+    z-index: 999;
+  }
+  body:has(.glightbox-open){
+    overflow: hidden;
+  }
+  body:has(.glightbox-open) header.shopify-section--header{
+    display: none;
+  }
+    @media(max-width:1259px){
+      .HowItTitle h2{
+        font-size:34px;
+      }
+        .ButtonWraper .button{
+
+      height:50px;
+    }
+       .ButtonWraper .button .BtnText{
+  font-size:16px;
+    }
+      .HowItWork{
+        height:100%;
+        max-width:100%;
+      }
+    }
+    @media(min-width: 768px) and (max-width: 1399.98px){
+      .video {
+        height: 100%;
+      }
+      .video-sm-wrapper{
+        height: 250px;
+        width: 250px;
+      }
+      .HowitInfo p {
+        padding-top: 0;
+      }
+      .ButtonWraper {
+        margin-top: 10px;
+      }
+    }
+  @media(max-width:767px){
+   .MobileVideoHowITWork{
+     display:block!important;
+   }
+        .video-section-main .HowItWork {
+        background: transparent;
+        max-width: 100% !important;
+    }
+  .video-sm-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 280px;
+    width: 280px;
+  }
+  .HowItWork {
+    width: 100%;
+    margin-right: 0;
+    order: 1;
+  }
+    /* .video-sm-wrapper{
+      border-radius:0;
+      width:100%;
+      height:100%;
+    } */
+    .ButtonWraper .button{
+      max-width:190px;
+      height:40px;
+    }
+    .ButtonWraper .button .BtnText{
+  font-size:14px;
+    }
+    .video {
+      height: 100%;
+    }
+    .HowitInfo p {
+        font-size: 14px;
+    }
+       .HowItTitle h2{
+        font-size:24px;
+      }
+    /* .DesktopVideoHowITWork{
+      display:none!important;
+    } */
+      .button.MobileVideoHowITWork{
+    display:flex!important;
+      
+  }
+ .glightbox-container .plyr__video-wrapper {
+    padding-bottom: 100%;
+}
+ .background_img11{
+   display:none;
+ }
+    .mobile_background_img11{
+      display:block;
+    }
+  }
+  button.gprev.gbtn.disabled {
+    display: none;
+}
+</style>
+<div class="section video-section-main">
+  <div class="custom-video-wrapper">
+    <div class="video">
+   {% comment %}   <video
+        class="bgvideo-item"
+        poster="https://www.dropbox.com/s/0l29vxe0e7f2vyx/poster1.jpg?raw=1"
+        muted
+        loop
+        autoplay
+        preload="none"
+      >
+        <source src="https://cdn.shopify.com/videos/c/o/v/143d84e5a2104b9f8875df40a763f287.mp4" type="video/mp4">
+        <!-- <source src="https://www.dropbox.com/s/o8bvewnznadkpey/video1.webm?raw=1" type='video/webm' /> -->
+      </video>{% endcomment %}
+
+      <img src="https://cdn.shopify.com/s/files/1/0539/1004/4843/files/Group_35689.png?v=1725430415" class="background_img11">
+      <img src="https://cdn.shopify.com/s/files/1/0539/1004/4843/files/Frame_35730.png?v=1725431564" class="mobile_background_img11">
+
+      <div class="custom-video-overlay"></div>
+
+      <div class="content-with-video-wrapper">
+        <div class="HowItWork">
+          {% if section.settings.title != blank %}
+          <div class="HowItTitle">
+            <!-- <h2>how it works</h2> -->
+            <h2>{{ section.settings.title }}</h2>
+          </div>
+          {% endif %}
+          {% if section.settings.content != blank %}
+          <div class="HowitInfo">
+            <!-- <p>
+              see how the mōmi babypace<sup>®</sup> 2 nipple helps establish, restore, strengthen and preserve
+              breastfeeding
+            </p> -->
+               <p>
+             {{ section.settings.content }}
+            </p>
+          </div>
+          {% endif %}
+          {% comment %}
+          <div class="ButtonWraper DesktopVideoHowITWork">
+   
+        
+            <a
+              href="https://momi.baby/cdn/shop/videos/c/vp/22b3e704e9b84856b90f4ff98c793c75/22b3e704e9b84856b90f4ff98c793c75.HD-1080p-2.5Mbps-33535534.mp4?v=0"
+              class="button glightbox4"
+            >
+            
+              <span class="BtnText">watch updated video</span>
+            </a> 
+                
+          </div>
+          {% endcomment %}
+
+<div class="ButtonWrapper DesktopVideoHowITWork">
+    <a href="#" id="openVideo" class="button button--xl">
+        <span class="BtnText">Watch Updated Video</span>
+    </a>
+
+
+<!-- Lightbox Container -->
+<div id="videoLightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+    <iframe id="vimeoPlayer" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="width: 80%; height: 80%;" title="Medical Animation"></iframe>
+    <button onclick="closeLightbox()" style="position: absolute; top: 20px; right: 20px; color: white; font-size: 20px;">✕</button>
+</div>
+          <!-- <div class="ButtonWraper MobileVideoHowITWork" >
+           
+                <a
+              href="https://momi.baby/cdn/shop/videos/c/vp/22b3e704e9b84856b90f4ff98c793c75/22b3e704e9b84856b90f4ff98c793c75.HD-1080p-2.5Mbps-33535534.mp4?v=0"
+              class="button glightboxsa"
+            >
+             <span class="BtnText">watch updated video</span>
+            </a>
+          </div> -->
+
+</div>
+          
+        </div>
+        <div class="video-sm-wrapper">
+          <video
+            class="over-video-item"
+            poster="https://www.dropbox.com/s/0l29vxe0e7f2vyx/poster1.jpg?raw=1"
+            muted
+            loop
+            autoplay
+            preload="none"
+            playsinline
+          >
+            <source src="https://cdn.shopify.com/videos/c/o/v/e0dfc44728254f76ad3cd9a25b6f7073.mp4" type="video/mp4">
+            <!-- <source src="https://www.dropbox.com/s/o8bvewnznadkpey/video1.webm?raw=1" type='video/webm' /> -->
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var lightbox = GLightbox();
+    lightbox.on('open', (target) => {
+        console.log('lightbox opened');
+    });
+  
+    var lightboxVideo = GLightbox({
+        selector: '.glightbox3'
+    });
+    var lightboxInlineIframe = GLightbox({
+        selector: '.glightbox4'
+    });
+   var lightboxInlineIframe = GLightbox({
+        selector: '.glightboxsa'
+    });
+  
+  let btn = document.querySelector('.ButtonWraper');
+btn.addEventListener("click",()=>{
+    
+         const nextButton = document.querySelector('.gnext').style.display="none";
+   
+   
+});
+//   document.addEventListener('touchstart', function(e) {
+//     e.preventDefault();
+// }, { passive: false });
+
+
+</script>
+
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+    document.getElementById('openVideo').addEventListener('click', function(event) {
+        event.preventDefault();
+     document.getElementById('videoLightbox').classList.add('glightbox-open');
+        const lightbox = document.getElementById('videoLightbox');
+        const iframe = document.getElementById('vimeoPlayer');
+        
+        // URLs for desktop and mobile
+        const desktopVideoUrl = "https://player.vimeo.com/video/942394340?h=be46250883&autoplay=1";
+        const mobileVideoUrl = "https://player.vimeo.com/video/943318006?h=9c153446c9&autoplay=1";
+        
+        // Detect device type
+        const isMobile = window.innerWidth <= 768;
+        const videoUrl = isMobile ? mobileVideoUrl : desktopVideoUrl;
+        
+        // Set video URL with autoplay and mute options
+        iframe.src = videoUrl;
+        lightbox.style.display = 'flex';
+
+        // Initialize Vimeo Player and set volume to mute
+        const player = new Vimeo.Player(iframe);
+        player.setVolume(0); // Mute the video
+    });
+
+    // Close the lightbox and stop the video
+    function closeLightbox() {
+        const lightbox = document.getElementById('videoLightbox');
+     lightbox.classList.remove('glightbox-open');
+        const iframe = document.getElementById('vimeoPlayer');
+        iframe.src = ""; // Reset iframe source to stop the video
+        lightbox.style.display = 'none';
+         
+    }
+</script>
+
+
+{% schema %}
+{
+  "name": "Custom Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+       {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+           {
+      "type": "text",
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Video"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,350 @@
+<style>
+  
+  .homeHeroSection {
+    /* background-color: #653490; */
+    background-color: #eadeee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .herosContainer{
+    width: 100%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+  .heroButtonWrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+  }
+  .heroButtonWrapper .button.button--xl {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25em;
+    text-transform: lowercase;
+    width: 100%;
+    max-width: 260px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .heroSectionWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .heroContentWrapper,
+  .animateImageWrapper{
+    width: calc(50% - 8px);
+  }
+  .heroContentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .listWrapper li {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: .8px;
+    text-transform: lowercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #653490;
+    text-align: center;
+  }
+  .heroSubText {
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.25em;
+    letter-spacing: 1.3px;
+    text-transform: lowercase;
+    color: #653490;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .heroImageWrapper {
+    position: relative;
+    /* overflow: hidden; */
+  }
+  .zooming-video {
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px #0000009e;
+}
+  .heroImageWrapper img {
+    height: 280px;
+    width: auto;
+    object-fit: contain;
+    transform-origin: top;
+    animation: zoomAnimate 6s forwards;
+  }
+  .listline{
+    color: #f09;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+
+  }
+  @keyframes zoomAnimate {
+  0% {
+    transform: scale(1) rotate(-0deg);
+  }
+  100% {
+    transform: scale(7) rotate(-45deg) translate(-12px, -57px);
+  }
+}
+
+  .listWrapper li,
+  .heroSubText{
+    opacity: 0;
+    animation: heroText 1s forwards;
+  }
+  .listWrapper ul li:nth-child(1) {
+  animation-delay: 1s;
+  }
+  .listWrapper ul li:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .listWrapper ul li:nth-child(3) {
+    animation-delay: 3s;
+  }
+  .listWrapper ul li:nth-child(4) {
+    animation-delay: 4s;
+  }
+  .heroSubText {
+    animation-delay: 5s;
+  }
+  @keyframes heroText {
+  to {
+    opacity: 1;
+  }
+}
+
+@media(min-width: 1450px){
+  .listWrapper li {
+    font-size: 6rem;
+  }
+  .heroSubText {
+    font-size: 2rem;
+  }
+  .herosContainer{
+    max-width: 1000px;
+  }
+  .heroImageWrapper img {
+    height: 320px;
+  }
+  @keyframes zoomAnimate {
+      0% {
+        transform: scale(1) rotate(-0deg);
+      }
+      100% {
+        transform: scale(7) rotate(-45deg) translate(-12px, -55px);
+      }
+    }
+}
+  
+  @media(max-width: 1400px){
+    .herosContainer {
+      max-width: 650px;
+    }
+    .listWrapper li {
+      font-size: 4rem;
+    }
+    .heroImageWrapper img {
+      height: 260px;
+    }
+    @keyframes zoomAnimate {
+      0% {
+        transform: scale(1) rotate(-0deg);
+      }
+      100% {
+        transform: scale(7) rotate(-45deg) translate(-12px, -52px);
+      }
+    }
+  }
+  @media(max-width: 1024.98px){
+    .listWrapper li {
+      font-size: 34px;
+    }
+    .heroSubText {
+      font-size: 20px;
+    }
+  }
+    @media(max-width: 767.98px){
+      .zooming-video{
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .herosContainer{
+        padding: 0 10px;
+      }
+    .heroSectionWrapper {
+      flex-direction: column-reverse;
+      max-width: 420px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+      .listline{
+        font-size:18px;
+      }
+    .heroContentWrapper,
+    .animateImageWrapper{
+      width: 100%;
+    }
+    .listWrapper li {
+      font-size: 3.7rem;
+    }
+    .heroSubText {
+      font-size: 16px;
+    }
+    .heroImageWrapper img {
+      height: 275px;
+    }
+    .heroButtonWrapper {
+      padding-top: 2rem;
+    }
+    .heroButtonWrapper .button.button--xl {
+      max-width: 152px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    @keyframes zoomAnimate {
+      0% {
+        transform: scale(1) rotate(-0deg);
+      }
+      100% {
+        transform: scale(6) rotate(-48deg) translate(-12px, -20px);
+      }
+    }
+    .heroButtonWrapper .button.button--xl{
+      opacity: 0;
+      animation: heroText 1s forwards;
+      animation-delay: 6s;
+    }
+  }
+  @media(max-width: 500px){
+    .zooming-video{
+      max-width: 240px;
+    }
+  }
+  @media(max-width: 439.98px){
+    .heroImageWrapper img {
+      height: 220px;
+    }
+    @keyframes zoomAnimate {
+      0% {
+        transform: scale(1) rotate(-0deg);
+      }
+      100% {
+        transform: scale(5.5) rotate(-48deg) translate(-5px, -8px);
+      }
+    }
+  }
+</style>
+
+<div class="section homeHeroSection {{ section.settings.class_name }}">
+  <div class="herosContainer">
+    <div class="heroSectionWrapper">
+      <div class="heroContentWrapper">   
+        <div class="listWrapper">
+          <div class="listline">now redesigned to help</div>
+          <ul>
+            {% if section.settings.tab1 != blank %}
+            <li>{{ section.settings.tab1 }}</li>
+            {% endif %}
+            {% if section.settings.tab2 != blank %}
+            <li>{{ section.settings.tab2 }}</li>
+            {% endif %}
+            {% if section.settings.tab3 != blank %}
+            <li>{{ section.settings.tab3 }}</li>
+            {% endif %}
+            {% if section.settings.tab4 != blank %}
+            <li>{{ section.settings.tab4 }}</li>
+            {% endif %}
+          </ul>
+          {% if section.settings.subtext != blank %}
+          <div class="heroSubText">{{ section.settings.subtext }}</div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="animateImageWrapper">
+        <div class="heroImageWrapper">
+          <!-- Vimeo Embed Code -->
+          <div style="padding:100% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1024826409?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;controls=0" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="gen 2 hero animation">
+            </iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+      </div>
+    </div>
+    {% if section.settings.btn_text != blank %}
+    <div class="heroButtonWrapper">
+      <a class="button button--xl" href="{{ section.settings.btn_link }}">{{ section.settings.btn_text }}</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Home Hero Section",
+    "settings": [
+      {
+                  "type": "text",
+                  "id": "class_name",
+                  "label": "Class Name"
+				},
+            {
+                  "type": "text",
+                  "id": "tab1",
+                  "label": "Tab 1"
+				},
+                  {
+                  "type": "text",
+                  "id": "tab2",
+                  "label": "Tab 2"
+				},
+                  {
+                  "type": "text",
+                  "id": "tab3",
+                  "label": "Tab 3"
+				},
+                  {
+                  "type": "text",
+                  "id": "tab4",
+                  "label": "Tab 4"
+				},
+           {
+                  "type": "text",
+                  "id": "subtext",
+                  "label": "Sub Text"
+				},
+           {
+                  "type": "text",
+                  "id": "btn_text",
+                  "label": "Button Text"
+				},
+           {
+                  "type": "url",
+                  "id": "btn_link",
+                  "label": "Button Link"
+				},
+    ],
+      "presets": [
+    {
+      "name": "Home Hero Section"
+    }
+  ]
+  }
+{% endschema %}

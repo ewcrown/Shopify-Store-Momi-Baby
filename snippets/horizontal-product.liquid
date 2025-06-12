@@ -1,0 +1,128 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  HORIZONTAL PRODUCT COMPONENT
+  ----------------------------------------------------------------------------------------------------------------------
+
+  This component is used in product page, blog page or collection to highlight small product
+
+  ********************************************
+  Supported variables
+  ********************************************
+
+  * product: the product to render
+  * size: can be "sm" or nothing
+  * show_add_to_cart: a boolean indicating if we show the add to cart
+  * background: an optional background color for the tile
+  * text_color: an optional text color for the tile
+  * output_link: if set to false, the link around the link is not set
+{%- endcomment -%}
+
+{%- capture class -%}horizontal-product {% if size == 'sm' %}horizontal-product--sm{% endif %} {% if background != 'rgba(0,0,0,0)' %}rounded-xs{% endif %} snap-start{%- endcapture -%}
+
+<div {% render 'surface', class: class, background: background, text_color: text_color %}>
+  {%- if product.featured_media != blank -%}
+    {{-
+      product.featured_media
+      | image_url: width: product.featured_media.width
+      | image_tag:
+        loading: 'lazy',
+        sizes: '(max-width: 740px) 64px, 80px',
+        widths: '64,128,80,160',
+        class: 'horizontal-product__image rounded-xs'
+    -}}
+  {%- endif -%}
+
+  <div class="horizontal-product__info">
+    <div class="v-stack gap-0.5">
+      {%- if output_link == false -%}
+        <span class="text-sm bold">{{ product.title }}</span>
+      {%- else -%}
+        <a href="{{ product.url }}" data-instant class="text-sm bold">
+          <span class="reversed-link hover:show">{{ product.title }}</span>
+        </a>
+      {%- endif -%}
+
+      {%- render 'price-list', product: product, size: 'sm' -%}
+      <div class="quicklook">
+        <span class="leading-xs flex items-center gap-1 self-start text-xs font-bold text-gray-400">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.6667 6.32357L14 2.99023M14 2.99023H10.6667M14 2.99023V6.32357M5.33333 6.32357L2 2.99023M2 2.99023L2 6.32357M2 2.99023L5.33333 2.99023M5.33333 11.6569L2 14.9902M2 14.9902H5.33333M2 14.9902L2 11.6569M10.6667 11.6569L14 14.9902M14 14.9902V11.6569M14 14.9902H10.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span class="quickbtn">Quick look</span></span
+        >
+      </div>
+    </div>
+
+    {%- if show_add_to_cart -%}
+      <div class="horizontal-product__cta">
+        {%- if product.available -%}
+          {%- capture unique_id -%}{{ section.id }}-{{ block.id }}-{{ product.id }}{%- endcapture -%}
+          {%- capture button_content -%}{% comment %}}{{ 'product.general.add_to_cart_short' | t }}{% endcomment %}<svg role="presentation" fill="none" stroke-width="2" focusable="false" width="16" height="15" class="icon icon-quick-buy-cart" viewBox="0 0 16 15">
+            <path d="M4.5 3.545H15l-2.546 5.728H5.136L3.546 1H1" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="5.955" cy="12.682" r=".5" fill="#252627" stroke="white" stroke-linecap="round" stroke-linejoin="round"></circle>
+            <circle cx="11.5" cy="12.682" r=".5" fill="#252627" stroke="white" stroke-linecap="round" stroke-linejoin="round"></circle>
+          </svg> {%- endcapture -%}
+
+          {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
+            {%- capture product_form_id -%}complementary-product-{{ unique_id }}{%- endcapture -%}
+
+            {%- form 'product', product, id: product_form_id, is: 'product-form' -%}
+              <input type="hidden" name="quantity" value="1">
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              {%- render 'button', content: button_content, type: 'submit', size: 'sm', subdued: true -%}
+            {%- endform -%}
+          {%- else -%}
+            {%- capture quick_buy_id -%}quick-buy-horizontal-{{ section.id }}-{{ product.id }}{%- endcapture -%}
+
+            {% comment %} {%- render 'button', content: button_content, size: 'sm', subdued: true, aria_controls: quick_buy_id -%}{% endcomment %}
+            {%- render 'button', content: button_content, size: 'sm', subdued: true, aria_controls: quick_buy_id -%}
+
+            <quick-buy-drawer
+              id="{{ quick_buy_id }}"
+              header-bordered
+              open-from="bottom"
+              handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}"
+              role="region"
+              aria-live="polite"
+              class="quick-buy-drawer drawer"
+            >
+              {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
+            </quick-buy-drawer>
+          {%- endif -%}
+        {%- else -%}
+          {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+          {%- render 'button', content: button_content, size: 'sm', disabled: true, subdued: true -%}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+      
+<div class="product-card__quick-buy">
+          {%- assign quick_add_label = 'product.general.quick_add' | t -%}
+
+          {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
+          {%- capture quick_buy_id -%}quick-buy-{{ section.id }}-{{ product.id }}{%- endcapture -%}
+
+            <div class="pointer-fine">
+              <button type="button" aria-controls="{{ quick_buy_id }}" aria-expanded="false" aria-label="{{ quick_add_label | escape }}" is="custom-button" class="product-card__mobile-quick-buy-button">
+                {%- render 'icon' with 'quick-buy-cart' -%}
+              </button>
+            </div>
+            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
+              {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
+            </quick-buy-drawer>
+          {%- else -%}
+            {%- capture quick_buy_id -%}quick-buy-{{ section.id }}-{{ product.id }}{%- endcapture -%}
+
+            <div class="pointer-fine">
+              <button type="button" aria-controls="{{ quick_buy_id }}" aria-expanded="false" aria-label="{{ quick_add_label | escape }}" is="custom-button" class="product-card__mobile-quick-buy-button">
+                {%- render 'icon' with 'quick-buy-cart' -%}
+              </button>
+            </div>
+            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
+              {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
+            </quick-buy-drawer>
+          {%- endif -%}
+        </div>
+</div>
+       
