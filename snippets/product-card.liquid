@@ -88,7 +88,7 @@ Supported variables
 
         {%- if show_secondary_image and product.media.size > 1 -%}
           {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
-          {{- next_media | image_url: width: next_media.width | image_tag: class: 'product-card__image product-card__image--secondary object-fill', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
+          {{- next_media | image_url: width: next_media.width | image_tag: class: 'sdfdsf product-card__image product-card__image--secondary object-fill', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
         {%- endif -%}
       </a>
 
@@ -157,6 +157,7 @@ Supported variables
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
+
   <div class="product-card__info {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
     {%- if show_vendor and product.vendor != blank -%}
       {%- if show_rating and text_alignment != 'center' -%}
@@ -209,50 +210,53 @@ Supported variables
           {%- capture name -%}swatch-{{ section.id }}-{{ product.id }}-{{ product_option.position }}{%- endcapture -%}
 
           <div class="product-card__aside">
-            {%- case settings.product_color_display -%}
-              {%- when 'count' -%}
-                <p class="product-card__color-count text-sm text-subdued">{{- 'product.general.available_colors_count' | t: count: product_option.values.size -}}</p>
+            {% render 'ew-product-variants', product: product %}
+            {% comment %}
+              {%- case settings.product_color_display -%}
+                {%- when 'count' -%}
+                  <p class="product-card__color-count text-sm text-subdued">{{- 'product.general.available_colors_count' | t: count: product_option.values.size -}}</p>
 
-              {%- when 'swatch' -%}
-                <fieldset class="product-card__swatch-list h-stack {% if settings.color_swatch_style == 'rectangle' %}gap-2.5{% else %}gap-0.5{% endif %}" data-option-position="{{ product_option.position }}">
-                  {%- liquid
-                    for option_value in product_option.values limit: 4
-                      if forloop.first or product.selected_or_first_available_variant.matched and option_value == product_option.selected_value
-                        assign selected = true
-                      else
-                        assign selected = false
-                      endif
-  
-                      if option_value.swatch != nil
-                        render 'option-value', type: 'swatch', swatch: option_value.swatch, value: option_value, name: name, selected: selected, size: 'sm'
-                      else
-                        render 'option-value', type: 'swatch', value: option_value, name: name, selected: selected, size: 'sm'
-                      endif
-                    endfor
-                  -%}
+                {%- when 'swatch' -%}
+                  <fieldset class="product-card__swatch-list h-stack {% if settings.color_swatch_style == 'rectangle' %}gap-2.5{% else %}gap-0.5{% endif %}" data-option-position="{{ product_option.position }}">
+                    {%- liquid
+                      for option_value in product_option.values limit: 4
+                        if forloop.first or product.selected_or_first_available_variant.matched and option_value == product_option.selected_value
+                          assign selected = true
+                        else
+                          assign selected = false
+                        endif
+    
+                        if option_value.swatch != nil
+                          render 'option-value', type: 'swatch', swatch: option_value.swatch, value: option_value, name: name, selected: selected, size: 'sm'
+                        else
+                          render 'option-value', type: 'swatch', value: option_value, name: name, selected: selected, size: 'sm'
+                        endif
+                      endfor
+                    -%}
 
-                  {% if product_option.values.size > 4 %}
-                    <a href="{{ product.url }}" data-instant class="color-swatch__view-more {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %} text-xxs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
-                  {% endif %}
-                </fieldset>
+                    {% if product_option.values.size > 4 %}
+                      <a href="{{ product.url }}" data-instant class="color-swatch__view-more {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %} text-xxs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                    {% endif %}
+                  </fieldset>
 
-              {%- when 'variant' -%}
-                <fieldset class="product-card__variant-list" data-option-position="{{ product_option.position }}">
-                  {%- for option_value in product_option.values limit: 4 -%}
-                    {%- if forloop.first or option_value.variant.matched and option_value == product_option.selected_value -%}
-                      {%- assign selected = true -%}
-                    {%- else -%}
-                      {%- assign selected = false -%}
+                {%- when 'variant' -%}
+                  <fieldset class="product-card__variant-list" data-option-position="{{ product_option.position }}">
+                    {%- for option_value in product_option.values limit: 4 -%}
+                      {%- if forloop.first or option_value.variant.matched and option_value == product_option.selected_value -%}
+                        {%- assign selected = true -%}
+                      {%- else -%}
+                        {%- assign selected = false -%}
+                      {%- endif -%}
+
+                      {%- render 'option-value', type: 'thumbnail', image: option_value.variant.featured_media, value: option_value, name: name, size: 'sm', selected: selected -%}
+                    {%- endfor -%}
+
+                    {%- if product_option.values.size > 4 -%}
+                      <a href="{{ product.url }}" data-instant class="thumbnail-swatch__view-more text-xs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
                     {%- endif -%}
-
-                    {%- render 'option-value', type: 'thumbnail', image: option_value.variant.featured_media, value: option_value, name: name, size: 'sm', selected: selected -%}
-                  {%- endfor -%}
-
-                  {%- if product_option.values.size > 4 -%}
-                    <a href="{{ product.url }}" data-instant class="thumbnail-swatch__view-more text-xs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
-                  {%- endif -%}
-                </fieldset>
-              {%- endcase -%}
+                  </fieldset>
+                {%- endcase -%}
+              {% endcomment %}
           </div>
 
           {%- break -%}

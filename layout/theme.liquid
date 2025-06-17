@@ -140,7 +140,7 @@
 }
 
 </style>
-
+  {{ "ew-product-variants.css" | asset_url | stylesheet_tag }}
   </head>
 
   <body
@@ -300,7 +300,8 @@ if (window.location.pathname === '/pages/shop') {
      
     </script>
     {% render 'navidium-scripts' %}
-{% render 'rebuy-smartcart-extensions' %}
-<div data-rebuy-id="110313"></div>
+    {% render 'rebuy-smartcart-extensions' %}
+    {{ 'ew-custom.js' | asset_url | script_tag }}
+    <div data-rebuy-id="110313"></div>
   </body>
 </html>

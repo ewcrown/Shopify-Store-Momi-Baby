@@ -1,0 +1,66 @@
+{%- assign sizes = "200x,300x,400x,500x,600x,700x,800x,1000x,1200x,1400x,1600x,1800x" | split: "," -%}
+{%- assign rendered_colors = "" -%}
+{%- assign first_swatch_rendered = false -%}
+{%- assign allowed_colors = "red,blue,green,black,white,gray,grey,yellow,pink,orange,brown,beige,navy,teal,maroon,olive,purple,lavender,indigo,gold,silver,cyan" | split: "," -%}
+
+{% capture main_srcset %}
+  {%- for s in sizes -%}
+    {{ product.featured_image | img_url: s }} {{ s | remove: "x" }}w{% unless forloop.last %}, {% endunless %}
+  {%- endfor -%}
+{% endcapture %}
+
+<div class="ew-product-variants">
+  <ul class="swatch-list">
+    {%- for variant in product.variants -%}
+      {%- if variant.available and variant.featured_image -%}
+
+        {%- assign color = "" -%}
+        {%- assign color_option1 = variant.option1 | downcase | strip -%}
+        {%- assign color_option2 = variant.option2 | downcase | strip -%}
+        {%- assign color_option3 = variant.option3 | downcase | strip -%}
+
+        {%- if color_option1 != "" -%}
+          {%- unless rendered_colors contains color_option1 -%}
+            {%- assign color = color_option1 -%}
+          {%- endunless -%}
+        {%- endif -%}
+
+        {%- if color == "" and color_option2 != "" -%}
+          {%- unless rendered_colors contains color_option2 -%}
+            {%- assign color = color_option2 -%}
+          {%- endunless -%}
+        {%- endif -%}
+
+        {%- if color == "" and color_option3 != "" -%}
+          {%- unless rendered_colors contains color_option3 -%}
+            {%- assign color = color_option3 -%}
+          {%- endunless -%}
+        {%- endif -%}
+
+        {%- if color != "" and allowed_colors contains color -%}
+          {% capture var_srcset %}
+            {%- for s in sizes -%}
+              {{ variant.featured_image | img_url: s }} {{ s | remove: "x" }}w{% unless forloop.last %}, {% endunless %}
+            {%- endfor -%}
+          {% endcapture %}
+
+          <li class="swatch-item">
+            <button
+              data-value="{{ color }}"
+              type="button"
+              class="swatch-btn {% unless first_swatch_rendered %}selected{% endunless %}"
+              data-src="{{ variant.featured_image | img_url: '1200x' }}"
+              data-srcset="{{ var_srcset | strip }}"
+              aria-label="{{ variant.title }}"
+              style="background-color: {{ color }};"
+            ></button>
+          </li>
+
+          {%- assign rendered_colors = rendered_colors | append: color | append: "," -%}
+          {%- assign first_swatch_rendered = true -%}
+        {%- endif -%}
+
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</div>

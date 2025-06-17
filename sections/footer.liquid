@@ -110,6 +110,10 @@
               {%- when 'text' -%}
                 {%- if block.settings.title != blank or block.settings.content != blank or shop.features.follow_on_shop? and block.settings.enable_follow_on_shop -%}
                   <div class="footer__block footer__block--text" {{ block.shopify_attributes }}>
+
+                    {% if block.settings.logo_img != blank %}
+                    <a href="/" class="footer-logo1"><img src="{{ block.settings.logo_img | img_url: 'master' }}" alt="footer logo"/></a>
+                    {% endif %}
                     {%- if block.settings.title != blank -%}
                       <p class="bold">{{ block.settings.title | escape }}</p>
                     {%- endif -%}
@@ -125,8 +129,10 @@
                         {{- shop | login_button: action: 'follow' -}}
                       </div>
                     {%- endif -%}
+                    {%- render 'social-media' -%}
                   </div>
                 {%- endif -%}
+
 
               {%- when 'links' -%}
                 {%- if block.settings.menu != blank -%}
@@ -215,7 +221,6 @@
 
         {%- if social_media != blank or country_selector or locale_selector -%}
           <div class="footer__aside-top">
-            {{- social_media -}}
 
             {%- if country_selector or locale_selector -%}
               <div class="h-stack gap-6">
@@ -360,6 +365,11 @@
       "type": "text",
       "name": "Text",
       "settings": [
+         {
+          "type": "image_picker",
+          "id": "logo_img",
+          "label": "Logo"
+        },
         {
           "type": "text",
           "id": "title",

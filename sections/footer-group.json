@@ -93,16 +93,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer_info_VaiLPf": {
-          "type": "footer_info",
-          "settings": {
-            "logo_img": "shopify://shop_images/momi_logo_white_4x_1.png",
-            "about_content": ""
-          }
-        },
         "text_whQByd": {
           "type": "text",
           "settings": {
+            "logo_img": "shopify://shop_images/momi_logo_white_4x_1.png",
             "title": "address",
             "content": "<p>2217 matthews township parkway<br/>suite d235 matthews, nc 28105 usa</p>",
             "enable_follow_on_shop": true
@@ -138,7 +132,6 @@
         }
       },
       "block_order": [
-        "footer_info_VaiLPf",
         "text_whQByd",
         "links",
         "links_RHAKt7",

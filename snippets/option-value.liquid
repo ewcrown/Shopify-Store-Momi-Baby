@@ -89,7 +89,7 @@ Color swatch specific parameters:
       # When color or image is not explicitly passed, we parse the config
       assign swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />'
 
-      assign swatch_style = '--swatch-background: linear-gradient(to right, ' | append: downcase_label | append: ', ' | append: downcase_label | append: ')'
+      assign swatch_style = '--swatch-background: linear-gradient(' | append: value | append: ', ' | append: value | append: ')'
 
       for swatch_item in swatch_config
         assign swatch_parts = swatch_item | split: ':'

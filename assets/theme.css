@@ -10174,9 +10174,9 @@ document.body.classList.add('custom-ck');
 .kl_reviews__star_rating_widget.kl_reviews__star_rating_widget.kl_reviews__star_rating_widget {
   pointer-events: none;
 }
-.product-card__aside {
+/* .product-card__aside {
   display: none !important;
-}
+} */
 
 #shopify-section-template--17779699777707__main .affirm-as-low-as {
   font-size: 12px !important;
