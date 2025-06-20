@@ -61,11 +61,12 @@
   filter: blur(2px);
 }
 
-@media(max-width:600px) {
-  .social-media li a {
-    color: #ffffff !important;
+@media(min-width:769px) {
+  #footer-top-menu {
+    display: none !important;
   }
-
+}
+@media(max-width:768px) {
   .footer-logo1 img {
     margin: auto;
     width: 200px;
